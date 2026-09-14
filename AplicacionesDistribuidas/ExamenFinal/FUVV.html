@@ -1,0 +1,368 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Examen final del PFC — Equipo FUVV</title><style>body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f4f6f5;color:#1e2a24}
+header{background:#006633;color:#fff;padding:22px 36px}header h1{margin:0;font-size:22px}
+header p{margin:6px 0 0;opacity:.9;font-size:13px}
+main{max-width:1180px;margin:0 auto;padding:24px 36px 70px}
+h2{color:#006633;border-bottom:3px solid #CC9900;padding-bottom:6px;margin-top:44px}
+h3{color:#006633;margin-top:30px}
+a{color:#006633}
+table{border-collapse:collapse;width:100%;font-size:13.5px;background:#fff}
+th,td{border:1px solid #cfd8d3;padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#e3efe8}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.grp td{background:#eef3f0;font-weight:600;color:#006633;font-size:12.5px;letter-spacing:.02em}
+.box{position:relative;background:#fff;border:1px solid #cfd8d3;border-left:5px solid #006633;border-radius:6px;margin:14px 0 6px}
+pre{margin:0;padding:18px 16px 16px;white-space:pre-wrap;word-wrap:break-word;font-family:Consolas,Courier New,monospace;font-size:12.6px;line-height:1.45;max-height:640px;overflow:auto}
+.copy{position:sticky;top:8px;float:right;margin:8px 10px 0 0;background:#CC9900;color:#1e2a24;border:0;border-radius:4px;padding:7px 14px;font-weight:600;cursor:pointer;z-index:2}
+.copy:hover{background:#b58600}
+.lv100{background:#d7f0dc}.lv75{background:#e9f5df}.lv50{background:#fff3cd}.lv25{background:#fde2d2}.lv0{background:#f8d0d0}
+.nota{font-size:26px;font-weight:800;color:#006633}.nota.cero{color:#a32020}
+.info{background:#fff;border:1px solid #cfd8d3;border-left:5px solid #CC9900;border-radius:6px;padding:12px 16px;margin:16px 0;font-size:13.5px}
+.piso{background:#fdf7f6;border:1px solid #e4cfcb;border-left:5px solid #a32020;border-radius:6px;padding:12px 16px;margin:16px 0;font-size:13.5px}
+.meta{font-size:12.5px;color:#555}
+.badge{display:inline-block;background:#006633;color:#fff;border-radius:12px;padding:2px 10px;font-size:12px;margin-left:8px}
+.calc{background:#fff;border:1px solid #cfd8d3;border-radius:6px;padding:14px 16px;margin:16px 0;font-family:Consolas,Courier New,monospace;font-size:13px;line-height:1.7;overflow-x:auto}
+.calc .r{border-top:1px solid #cfd8d3;margin-top:8px;padding-top:8px;font-size:15px;font-weight:700;color:#006633}
+.sube{color:#006633;font-weight:600}.baja{color:#a32020;font-weight:600}.igual{color:#888}
+@media(max-width:700px){main{padding:16px}table{font-size:12px}th,td{padding:4px 5px}}</style><script>function cp(id,btn){var t=document.getElementById(id).innerText;navigator.clipboard.writeText(t).then(function(){btn.textContent='Copiado';setTimeout(function(){btn.textContent='Copiar informe'},1800)});}</script></head><body><header><h1>Examen final del PFC — Equipo FUVV</h1><p>Séptimo semestre · UTEQ, Facultad de Ciencias de la Computación y Diseño Digital · PPA 2026-2027 · Alcance: último commit de cada repositorio, sin límite de fecha, revisado el 14 de septiembre de 2026 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p></header><main>
+<p><a href="index.html">&larr; Examen final — Aplicaciones Distribuidas</a> · <a href="../../index.html">Informes de evaluación</a></p>
+<p class="meta"><b>SCLI — Sistema de Control de Laboratorios Informáticos</b><br>Repositorio: <a href="https://github.com/ffarinangog2/Entrega-final-del-PFC">github.com/ffarinangog2/Entrega-final-del-PFC</a><br>Rama <code>feature/entrega-4</code> · último commit evaluado <code>d0ef60b</code> (13 de septiembre de 2026) · 366 commits de historia · 37 elementos exigidos, de los cuales 29 ya estaban resueltos y 8 se califican aquí.</p>
+<p class="meta">Nota del proyecto: <span class="nota">1,99</span> / 10,00 &nbsp;·&nbsp; suma de puntos 8,47 / 10,00</p>
+<div class="info"><b>Cómo se calcula la nota.</b> De todo lo exigido al proyecto, una parte estaba resuelta y verificada con anterioridad y no vuelve a puntuar: aparece como <b>Hecho</b>. Lo demás se califica, y cada elemento cuenta dos veces. Tiene un <b>peso</b> —los pesos suman 10— sobre el que recibe una calificación, y esa calificación dividida entre su máximo da un <b>factor</b> que multiplica. La nota es <code>(f₁ × f₂ × … × fₙ) × (p₁ + p₂ + … + pₙ)</code>. El factor vale 1 solamente cuando el elemento está terminado y correcto al cien por cien, y un elemento en cero deja el multiplicador en cero y con él la nota. Por eso, junto a cada nota publico también la suma de puntos: es la medida de cuánto trabajo hay hecho. <b>La entrega del proyecto vale el 100 % de la nota</b>; no interviene ninguna otra calificación.</div>
+<div class="piso"><b>Criterios de piso — vigentes, expuestos y no aplicados en esta evaluación.</b> En una evaluación ordinaria, el incumplimiento de cualquiera de ellos deja la calificación en cero. Aquí la nota sale únicamente de la rúbrica.<ol><li>Subir al SGA un PDF con carátula de identificación que muestre, en una sola línea y de forma legible, la dirección del repositorio donde está el trabajo.</li><li>Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilación escritas en el README.</li><li>Que todo el trabajo esté integrado en la rama principal en el commit de la entrega.</li><li>Que cada integrante sepa explicar el código y las mediciones que se le atribuyen.</li></ol></div>
+<h2>Hoja de cálculo</h2>
+<table><tr><th style="width:3%">#</th><th style="width:22%">Elemento</th><th class="n" style="width:5%">Peso</th><th class="n" style="width:6%">Antes</th><th class="n" style="width:7%">Ahora</th><th class="n" style="width:6%">Puntos</th><th class="n" style="width:6%">Factor</th><th>Qué encontré</th></tr>
+<tr class="grp"><td colspan="8">Resuelto y verificado con anterioridad — no puntúa</td></tr>
+<tr><td class="n">1</td><td colspan="2">Refactorización en capas y principios SOLID</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">2</td><td colspan="2">Patrones de diseño documentados en registros de decisión</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">3</td><td colspan="2">Vistas de arquitectura C4 (tres niveles) con fuente versionada</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">4</td><td colspan="2">Esquema de base de datos y semillas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">5</td><td colspan="2">Persistencia distribuida operando con evidencia de tolerancia a fallos</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">6</td><td colspan="2">Aplicación web funcional (construye y ejecuta)</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">7</td><td colspan="2">Calidad de la aplicación web (pruebas de unidad)</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">8</td><td colspan="2">Aplicación móvil funcional</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">9</td><td colspan="2">Capacidades de dispositivo (cámara y notificaciones)</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">10</td><td colspan="2">Integración web + móvil + backend</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">11</td><td colspan="2">Pruebas de unidad e integración del backend</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">12</td><td colspan="2">Pruebas de contrato</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">13</td><td colspan="2">Pruebas de extremo a extremo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">14</td><td colspan="2">Pruebas de carga</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">15</td><td colspan="2">Pipeline de integración y despliegue con publicación etiquetada</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">16</td><td colspan="2">Observabilidad: métricas, trazas, registros y tableros</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">17</td><td colspan="2">Procesamiento paralelo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">18</td><td colspan="2">Protocolo experimental e instrumental de medición</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">19</td><td colspan="2">Datos crudos preservados con metadatos y sumas de verificación</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">20</td><td colspan="2">Fijación de finales de línea para verificación reproducible</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">21</td><td colspan="2">Manuscrito compilable, acumulativo y sin referencias indefinidas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">22</td><td colspan="2">Bibliografía verificada con identificador persistente</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">23</td><td colspan="2">Amenazas a la validez con mitigación declarada</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">24</td><td colspan="2">Reflexión ética referida al código de ética profesional</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">25</td><td colspan="2">README con instrucciones de compilación y reproducibilidad</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">26</td><td colspan="2">Licencia y archivo de citación</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">27</td><td colspan="2">Declaración de uso de herramientas de inteligencia artificial</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">28</td><td colspan="2">Capturas de la aplicación en release</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">29</td><td colspan="2">Higiene del repositorio (sin artefactos de compilación versionados)</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr class="grp"><td colspan="8">Lo calificado — cada elemento es sumando y factor</td></tr>
+<tr><td class="n">E1</td><td><b>Preguntas de investigación</b><br><span class="meta">Modificar</span></td><td class="n">2,0</td><td class="n"><span class="sube">7 &uarr;</span></td><td class="n lv100">9/10</td><td class="n">1,80</td><td class="n">0,90</td><td>Recalculé yo mismo los percentiles desde el dato bruto: leí las ocho filas <code>GET /api/v1/reservas</code> de <code>experimentos/resultados/raw/eficiencia_nominal_50u_5m/rep-02..rep-09/locust_stats.csv</code>, obtuve p95 de 24, 80, 24, 54, 31, 58, 27 y 66 ms y p99 de 40, 1000, 45, 740, 85, 410, 110 y 540 ms, y reproduje exactamente media 45,50 ms con IC95 [27,30; 63,70] y media 371,25 ms con IC95 [66,91; 675,59], las mismas cifras que publica hoy el documento y que imprime <code>experimentos/analizar_iso25010.py</code>. Conté 57.241 consultas y 0 fallos en la población central, cifra que el texto declara literalmente. Comprobé que no tocaron el dato: el único commit que alcanza el directorio de crudos desde el anterior solo añade un archivo de exclusión. Confirmé que los umbrales son anteriores a la campaña, con commits del 18 y 24 de agosto frente a una ejecución del 30 de agosto. El analizador ya no puede descartar filas en silencio porque aborta ante cualquier petición no clasificada, y al mutar la condición que excluye la fila agregada puse sus tres pruebas nuevas en rojo, de modo que sí pueden fallar. El límite es que el propio documento admite ahora que las dos preguntas se formalizaron después de la ejecución sobre criterios preexistentes, que el cambio de población convierte un percentil que no cumplía en uno que cumple, y que la cola sigue muy dispersa, con desviación de 364,03 ms y un límite superior de 675,59 ms frente a un umbral de 750.</td></tr>
+<tr><td class="n">E2</td><td><b>La prueba de fiabilidad de una hora</b><br><span class="meta">Modificar</span></td><td class="n">1,8</td><td class="n"><span class="igual">8 =</span></td><td class="n lv100">8/10</td><td class="n">1,44</td><td class="n">0,80</td><td>Verifiqué que la causa está corregida en el código y no solo en el texto: <code>tests/load/locustfile.py</code> conserva ahora los dos testigos y su expiración, renueva con treinta segundos de margen y reintenta una sola vez ante un rechazo, y sus cinco pruebas pasan; al alterar el cálculo de la expiración se pusieron en rojo. Recalculé el censo histórico desde los crudos de las diez repeticiones y obtuve 889.868 peticiones, 668.367 rechazos y 612 errores de servidor, es decir 75,1086 %, exactamente lo que declara <code>experimentos/cierre-e2-fiabilidad.md</code>; acoté además el primer rechazo de cada repetición entre 901 y 929 segundos, coherente con el vencimiento de 900. El ensayo correctivo es real: sus marcas de inicio y fin dan 1.500 segundos exactos, el identificador de commit que registra apunta al que introduce la corrección, y no hay un solo rechazo en su registro de fallos. Lo que impide subir es que la campaña correctiva no se ejecutó: <code>experimentos/resultados/iso25010-correctiva.csv</code> es una plantilla con diez filas vacías, el directorio de crudos de esa campaña no existe, y pese a ello el dictamen afirma que la corrección se verificó con una repetición completa de una hora y atribuye cifras a corridas que nadie puede revalidar; además la verificación de sumas del ensayo solo pasa 4 de 7, y ni la corrección ni el ensayo llegan al informe, cuyos percentiles oficiales siguen saliendo de la campaña contaminada.</td></tr>
+<tr><td class="n">E3</td><td><b>Las cinco características de calidad</b><br><span class="meta">Modificar</span></td><td class="n">1,7</td><td class="n"><span class="igual">8 =</span></td><td class="n lv100">8/10</td><td class="n">1,36</td><td class="n">0,80</td><td>Comprobé una por una las afirmaciones de procedencia y todas se sostienen: los manifiestos de las tres repeticiones de mantenibilidad declaran ventanas de tiempo que no se solapan, los tres informes de cobertura tienen resúmenes distintos que coinciden dígito a dígito con los publicados, y los identificadores de sesión del instrumental son también distintos, de modo que son invocaciones separadas y no un mismo archivo triplicado; el texto ya no deduce independencia de una desviación cero y conserva el umbral del 70 % y el incumplimiento de la aplicación móvil en 38,34 %. Regeneré además el análisis completo y el resultado es idéntico al versionado. El límite lo encontré al ejecutar la verificación de sumas del paquete canónico de evidencia: pasa 7 de 50 y fallan 43, y comprobé que las 43 se explican íntegramente por normalización de finales de línea, el mismo estado que ya existía antes; es decir, ese paquete no es verificable por suma tal como se entrega, y el diseño sigue siendo tres ejecuciones deterministas de la misma suite sobre el mismo código, con intervalo degenerado.</td></tr>
+<tr><td class="n">E4</td><td><b>Lo medido que llega al documento</b><br><span class="meta">Modificar</span></td><td class="n">1,5</td><td class="n"><span class="sube">8 &uarr;</span></td><td class="n lv100">9/10</td><td class="n">1,35</td><td class="n">0,90</td><td>Los dos defectos que había señalado están resueltos y los verifiqué de forma independiente. Ejecuté la verificación del manifiesto general y obtuve 468 correctos y 0 incorrectos sobre un archivo de 468 líneas, exactamente lo que el texto afirma ahora, frente a las 198 entradas que declaraba antes. Reproduje el censo de errores sin usar su resumen: recorrí los manifiestos crudos de la campaña y conté en la población central 10.000 registros y 948 con código igual o superior a 400, todos de servidor y ninguno de cliente, con repartos que coinciden cifra por cifra con la tabla publicada; comprobé también que cada error conserva sus marcas de tiempo, que las 10.000 latencias coinciden sin error con la resta de sus marcas y que las medias por corrida reproducen las publicadas con desviación máxima del orden de 10 elevado a menos 12, de modo que los errores no fueron excluidos del estimando. El manifiesto de la campaña verifica 315 de 315. Lo que impide el diez es que la prueba que ellos mismos añadieron para blindar esto está en rojo: falla al comparar medias con doce decimales por una diferencia del orden de 10 elevado a menos 13, y como el flujo automático ejecuta el descubrimiento de pruebas sin condicionales, el trabajo experimental queda fallando en el commit entregado.</td></tr>
+<tr><td class="n">E5</td><td><b>El contrato de todos los servicios</b><br><span class="meta">Modificar</span></td><td class="n">1,0</td><td class="n"><span class="sube">8 &uarr;</span></td><td class="n lv100">9/10</td><td class="n">0,90</td><td class="n">0,90</td><td>Ejecuté yo mismo las pruebas de los cinco módulos y todas pasan, incluidas la que acredita las 77 operaciones con la funcionalidad opcional deshabilitada frente a las 79 habilitables y las nueve del servicio de puerta de entrada. Leí el verificador nuevo y confirmé que ya no hay circularidad: obtiene las operaciones del registro de rutas que el propio marco resuelve en tiempo de ejecución, no lee fuentes Java ni comparte código con el validador por expresión regular, y las cantidades 12, 44, 71, 79 y 224 están fijadas en las aserciones y no derivadas del contrato que se evalúa. Comprobé además que las pruebas pueden fallar: al borrar una ruta del contrato de usuarios el módulo se puso en rojo con «se esperaban 44 y hubo 42», y al añadir una ruta fantasma al contrato de la puerta de entrada falló con «se esperaban 224 y hubo 225». La validación corre en el flujo sin condicionales para los cinco servicios en cada envío. El límite es doble: la documentación sigue afirmando que la prueba de la puerta de entrada usa servicios locales efímeros cuando un commit posterior los sustituyó por un doble, de modo que el salto real ya no se ejercita, y la completitud se define desde los contratos de los servicios detrás más alias explícitos, por lo que una ruta aceptada y no documentada por ningún contrato no se detectaría.</td></tr>
+<tr><td class="n">E6</td><td><b>Un solo documento por entrega</b><br><span class="meta">Modificar</span></td><td class="n">0,8</td><td class="n"><span class="igual">8 =</span></td><td class="n lv100">8/10</td><td class="n">0,64</td><td class="n">0,80</td><td>Compilé la instantánea de la entrega anterior desde una copia limpia con el guion que ellos añadieron y terminó con código de salida 0, catorce páginas, cero referencias y citas indefinidas y ninguna figura ausente, de modo que el defecto que había señalado desaparece en esa carpeta; verifiqué también que su verificación de sumas pasa 21 de 21 y que su fuente es idéntica a la del commit histórico salvo el salto de línea final. Confirmé además que el documento vivo sigue sano, con 33 páginas y cero referencias y citas indefinidas compilado desde copia limpia. Lo que impide subir es que el mismo defecto persiste intacto en la otra carpeta: el documento de esta entrega sigue incluyendo por referencia las secciones vivas y, compilado hoy, aborta por una figura ausente y deja 21 referencias y 21 citas sin resolver, exactamente el fallo que se corrigió en la anterior; a ello se suma que el índice de documentación se contradice al describir esa misma carpeta como instantánea histórica dos párrafos después de declarar que las fuentes vigentes están precisamente ahí.</td></tr>
+<tr><td class="n">E7</td><td><b>El instalable de la aplicación móvil</b><br><span class="meta">Modificar</span></td><td class="n">0,7</td><td class="n"><span class="sube">8 &uarr;</span></td><td class="n lv100">9/10</td><td class="n">0,63</td><td class="n">0,90</td><td>Leí el trabajo completo de firma en el flujo automático y confirmé que el paso de comprobación termina con un fallo explícito ante la ausencia de cualquiera de los cuatro secretos, sin tolerancia al error, por lo que la falta de material de firma hace fallar el trabajo en lugar de producir un verde engañoso. Verifiqué que el paquete sigue intacto y firmado: ningún commit posterior toca el directorio de entrega ni la aplicación móvil, su suma de verificación pasa, y al inspeccionar los bytes del paquete encontré el bloque de firma con los identificadores correspondientes a los esquemas v2 y v3 junto a los archivos del esquema v1. El límite que impide el diez es que el trabajo sigue condicionado a envíos sobre una rama concreta, de modo que en cualquier otra, incluida la que se evalúa, no se ejecuta en absoluto y un flujo en verde continúa sin demostrar que el instalable se generó; además la ejecución que la documentación cita como origen no es comprobable desde el repositorio.</td></tr>
+<tr><td class="n">E8</td><td><b>Actas de reunión</b><br><span class="meta">Modificar</span></td><td class="n">0,5</td><td class="n"><span class="sube">5 &uarr;</span></td><td class="n lv100">7/10</td><td class="n">0,35</td><td class="n">0,70</td><td>La incoherencia cronológica que había señalado desaparece porque ya no se datan reuniones: los cinco documentos declaran ahora como única fecha verificable la de su consolidación, y comprobé que el commit que los crea está fechado exactamente ese día y a esa hora, y que ninguno de los periodos técnicos asociados es posterior. Extraje los once resúmenes de commit citados en las actas y verifiqué uno a uno que todos existen y que sus fechas caen dentro del periodo que cada registro les atribuye. También confirmé que el texto retira explícitamente las afirmaciones que el control de versiones no sostiene, tanto en las actas como en el documento principal, donde ya se dice que los commits acreditan resultados técnicos pero no reuniones, modalidad, hora ni asistencia. Lo que impide un nivel mayor es que, corregida la cronología, queda a la vista que el indicador sigue sin su artefacto central: no hay evidencia contemporánea de ninguna reunión, y la revisión cruzada continúa vacía, con cero revisores solicitados, cero revisiones y cero aprobaciones, y el propio documento concluye que permanece pendiente.</td></tr>
+<tr><th colspan="5">Totales</th><th class="n">8,47</th><th class="n">0,235146</th><th></th></tr>
+</table>
+<div class="calc"><div>Suma de puntos&nbsp;&nbsp;S = 8,47 sobre 10</div><div>Producto de los factores&nbsp;&nbsp;0,9&nbsp;&times;&nbsp;0,8&nbsp;&times;&nbsp;0,8&nbsp;&times;&nbsp;0,9&nbsp;&times;&nbsp;0,9&nbsp;&times;&nbsp;0,8&nbsp;&times;&nbsp;0,9&nbsp;&times;&nbsp;0,7 = 0,235146</div><div class="r">Nota del proyecto = 0,235146 &times; 8,47 = 1,99 / 10,00</div></div>
+<h2>Aporte de cada integrante</h2>
+<p class="meta">Medido sobre el historial completo del repositorio (366 commits sin fusiones), sin límite de fecha, atribuyendo por el correo del autor del commit. El reparto equitativo entre 4 integrantes es el 25 %: quien lo alcanza recibe la nota completa del proyecto, quien queda por debajo la recibe en proporción. Ningún integrante puede superar la nota del proyecto.</p>
+<table><tr><th>Integrante</th><th class="n">Participación</th><th class="n">Factor</th><th class="n">Nota final</th></tr>
+<tr><td>Farinango Guandinango Freddy Vladimir</td><td class="n">43,3 %</td><td class="n">1,000</td><td class="n lv25">1,99</td></tr>
+<tr><td>Vinueza Sanchez Harold Nicolas</td><td class="n">24,8 %</td><td class="n">0,994</td><td class="n lv25">1,98</td></tr>
+<tr><td>Villamarin Cuenca Ivan Andres</td><td class="n">18,7 %</td><td class="n">0,749</td><td class="n lv25">1,49</td></tr>
+<tr><td>Urbina Romero Isaias Abraham</td><td class="n">13,2 %</td><td class="n">0,527</td><td class="n lv25">1,05</td></tr>
+</table>
+<h2>Informes individuales</h2>
+<p class="meta">Cada recuadro se copia entero con su botón y está listo para pegar en el espacio del estudiante en el SGA.</p>
+<h3 id="farinango_guandinango_freddy_vladimir">Farinango Guandinango Freddy Vladimir<span class="badge">1,99 / 10</span></h3>
+<div class="box"><button class="copy" onclick="cp('FUVV_1',this)">Copiar informe</button><pre id="FUVV_1">============================================================================
+EXAMEN FINAL DEL PROYECTO FIN DE CURSO -- APLICACIONES DISTRIBUIDAS (ISR-701)
+============================================================================
+Estudiante: Farinango Guandinango Freddy Vladimir
+Equipo: FUVV -- SCLI — Sistema de Control de Laboratorios Informáticos
+Repositorio: https://github.com/ffarinangog2/Entrega-final-del-PFC
+Ultimo commit evaluado: d0ef60b (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 366 commits de historia.
+La entrega del proyecto vale el 100 % de la nota.
+
+QUE EVALUE
+Evalue los 8 elementos que quedaban pendientes del proyecto, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de las calificaciones.
+Los 29 elementos que ya estaban resueltos y verificados con anterioridad no vuelven a puntuar.
+
+CRITERIOS DE PISO -- vigentes, expuestos y no aplicados en esta evaluacion
+  1. Subir al SGA un PDF con caratula que muestre, en una sola linea, la direccion del repositorio del trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el .tex, con las instrucciones en el README.
+  3. Que todo el trabajo este integrado en la rama principal en el commit de la entrega.
+  4. Que cada integrante sepa explicar el codigo y las mediciones que se le atribuyen.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero; aqui no se han aplicado.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volví a evaluar la entrega sobre el último commit del repositorio, sin límite de fecha, de modo que todo el trabajo correctivo que subieron cuenta.
+Y cuenta bastante: atacaron los ocho indicadores con cambios de código y de datos, no con reescritura de texto, que es la diferencia que de verdad importa.
+Cinco subieron de nivel y ninguno bajó.
+Lo mejor del lote es la corrección de la población experimental: recalculé yo mismo los percentiles desde los ocho archivos crudos y reproduje sus cifras exactas, incluida la media de 371,25 ms con su intervalo, y comprobé que los umbrales se declararon semanas antes de medir.
+Reproduje también el censo de errores de la campaña principal contando registro por registro, y coincide cifra por cifra con la tabla que publican; el manifiesto general pasa ahora 468 de 468, cuando antes fallaba uno y el texto declaraba una cantidad equivocada.
+La validación de contratos dejó de ser circular: ahora compara contra las rutas que el propio marco resuelve al arrancar, la ejecuté en los cinco servicios y comprobé que puede fallar borrando una ruta y añadiendo otra inexistente.
+Y el trabajo de firma del instalable ya no se salta en silencio cuando faltan los secretos, sino que falla.
+Las actas quedaron bien resueltas, y quiero decirlo con precisión porque es un caso instructivo.
+No inventaron reuniones para tapar el problema: retiraron las fechas que el control de versiones no podía sostener y dejaron solo lo verificable, que es exactamente la decisión correcta.
+Ahora lo que sigue sin cerrar, que es poco pero es del tipo que un revisor externo detecta enseguida.
+La campaña correctiva de fiabilidad no se ejecutó: el archivo de resultados es una plantilla con diez filas vacías y el directorio de datos crudos no existe, y sin embargo el documento de cierre afirma que la corrección se verificó con una repetición completa de una hora.
+Corrigieron la causa y lo demostraron con un ensayo real de veinticinco minutos, que está bien hecho, pero entonces hay que decir eso y no otra cosa.
+Afirmar una campaña que no está en el repositorio es el error más caro que se puede cometer en un trabajo experimental.
+El paquete canónico de evidencia de calidad sigue sin verificar por suma: pasa 7 de 50 por normalización de finales de línea, y eso se arregla en una tarde.
+La instantánea de la entrega anterior quedó congelada y compila limpia, pero la de esta entrega conserva intacto el mismo defecto que acaban de corregir en la otra.
+Y dejaron una prueba en rojo dentro del flujo automático, la que ustedes mismos añadieron, por comparar medias con doce decimales.
+Revisen que el flujo esté en verde antes de dar por cerrada una entrega: es lo primero que mira quien recibe el trabajo.
+
+HOJA DE CALCULO
+  E1   Preguntas de investigación                           peso 2,0  antes 7  ahora 9/10  puntos 1,80  factor 0,90  [Modificar]
+  E2   La prueba de fiabilidad de una hora                  peso 1,8  antes 8  ahora 8/10  puntos 1,44  factor 0,80  [Modificar]
+  E3   Las cinco características de calidad                 peso 1,7  antes 8  ahora 8/10  puntos 1,36  factor 0,80  [Modificar]
+  E4   Lo medido que llega al documento                     peso 1,5  antes 8  ahora 9/10  puntos 1,35  factor 0,90  [Modificar]
+  E5   El contrato de todos los servicios                   peso 1,0  antes 8  ahora 9/10  puntos 0,90  factor 0,90  [Modificar]
+  E6   Un solo documento por entrega                        peso 0,8  antes 8  ahora 8/10  puntos 0,64  factor 0,80  [Modificar]
+  E7   El instalable de la aplicación móvil                 peso 0,7  antes 8  ahora 9/10  puntos 0,63  factor 0,90  [Modificar]
+  E8   Actas de reunión                                     peso 0,5  antes 5  ahora 7/10  puntos 0,35  factor 0,70  [Modificar]
+  Suma de puntos S = 8,47 sobre 10.
+  Producto de los factores = 0,235146.
+  Nota del proyecto = 0,235146 x 8,47 = 1,99 sobre 10.
+
+SU APORTE Y SU NOTA
+  El peso de cada elemento se reparte entre quienes lo trabajaron, segun el historial completo del repositorio.
+  El reparto equitativo entre 4 integrantes es el 25 %.
+  Farinango Guandinango  aporte  43,3 %   factor 1,000   nota 1,99 &lt;-- usted
+  Vinueza Sanchez Harold aporte  24,8 %   factor 0,994   nota 1,98
+  Villamarin Cuenca Ivan aporte  18,7 %   factor 0,749   nota 1,49
+  Urbina Romero Isaias A aporte  13,2 %   factor 0,527   nota 1,05
+
+  Su aporte: 43,3 % frente a un reparto equitativo del 25 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,99 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<h3 id="vinueza_sanchez_harold_nicolas">Vinueza Sanchez Harold Nicolas<span class="badge">1,98 / 10</span></h3>
+<div class="box"><button class="copy" onclick="cp('FUVV_2',this)">Copiar informe</button><pre id="FUVV_2">============================================================================
+EXAMEN FINAL DEL PROYECTO FIN DE CURSO -- APLICACIONES DISTRIBUIDAS (ISR-701)
+============================================================================
+Estudiante: Vinueza Sanchez Harold Nicolas
+Equipo: FUVV -- SCLI — Sistema de Control de Laboratorios Informáticos
+Repositorio: https://github.com/ffarinangog2/Entrega-final-del-PFC
+Ultimo commit evaluado: d0ef60b (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 366 commits de historia.
+La entrega del proyecto vale el 100 % de la nota.
+
+QUE EVALUE
+Evalue los 8 elementos que quedaban pendientes del proyecto, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de las calificaciones.
+Los 29 elementos que ya estaban resueltos y verificados con anterioridad no vuelven a puntuar.
+
+CRITERIOS DE PISO -- vigentes, expuestos y no aplicados en esta evaluacion
+  1. Subir al SGA un PDF con caratula que muestre, en una sola linea, la direccion del repositorio del trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el .tex, con las instrucciones en el README.
+  3. Que todo el trabajo este integrado en la rama principal en el commit de la entrega.
+  4. Que cada integrante sepa explicar el codigo y las mediciones que se le atribuyen.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero; aqui no se han aplicado.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volví a evaluar la entrega sobre el último commit del repositorio, sin límite de fecha, de modo que todo el trabajo correctivo que subieron cuenta.
+Y cuenta bastante: atacaron los ocho indicadores con cambios de código y de datos, no con reescritura de texto, que es la diferencia que de verdad importa.
+Cinco subieron de nivel y ninguno bajó.
+Lo mejor del lote es la corrección de la población experimental: recalculé yo mismo los percentiles desde los ocho archivos crudos y reproduje sus cifras exactas, incluida la media de 371,25 ms con su intervalo, y comprobé que los umbrales se declararon semanas antes de medir.
+Reproduje también el censo de errores de la campaña principal contando registro por registro, y coincide cifra por cifra con la tabla que publican; el manifiesto general pasa ahora 468 de 468, cuando antes fallaba uno y el texto declaraba una cantidad equivocada.
+La validación de contratos dejó de ser circular: ahora compara contra las rutas que el propio marco resuelve al arrancar, la ejecuté en los cinco servicios y comprobé que puede fallar borrando una ruta y añadiendo otra inexistente.
+Y el trabajo de firma del instalable ya no se salta en silencio cuando faltan los secretos, sino que falla.
+Las actas quedaron bien resueltas, y quiero decirlo con precisión porque es un caso instructivo.
+No inventaron reuniones para tapar el problema: retiraron las fechas que el control de versiones no podía sostener y dejaron solo lo verificable, que es exactamente la decisión correcta.
+Ahora lo que sigue sin cerrar, que es poco pero es del tipo que un revisor externo detecta enseguida.
+La campaña correctiva de fiabilidad no se ejecutó: el archivo de resultados es una plantilla con diez filas vacías y el directorio de datos crudos no existe, y sin embargo el documento de cierre afirma que la corrección se verificó con una repetición completa de una hora.
+Corrigieron la causa y lo demostraron con un ensayo real de veinticinco minutos, que está bien hecho, pero entonces hay que decir eso y no otra cosa.
+Afirmar una campaña que no está en el repositorio es el error más caro que se puede cometer en un trabajo experimental.
+El paquete canónico de evidencia de calidad sigue sin verificar por suma: pasa 7 de 50 por normalización de finales de línea, y eso se arregla en una tarde.
+La instantánea de la entrega anterior quedó congelada y compila limpia, pero la de esta entrega conserva intacto el mismo defecto que acaban de corregir en la otra.
+Y dejaron una prueba en rojo dentro del flujo automático, la que ustedes mismos añadieron, por comparar medias con doce decimales.
+Revisen que el flujo esté en verde antes de dar por cerrada una entrega: es lo primero que mira quien recibe el trabajo.
+
+HOJA DE CALCULO
+  E1   Preguntas de investigación                           peso 2,0  antes 7  ahora 9/10  puntos 1,80  factor 0,90  [Modificar]
+  E2   La prueba de fiabilidad de una hora                  peso 1,8  antes 8  ahora 8/10  puntos 1,44  factor 0,80  [Modificar]
+  E3   Las cinco características de calidad                 peso 1,7  antes 8  ahora 8/10  puntos 1,36  factor 0,80  [Modificar]
+  E4   Lo medido que llega al documento                     peso 1,5  antes 8  ahora 9/10  puntos 1,35  factor 0,90  [Modificar]
+  E5   El contrato de todos los servicios                   peso 1,0  antes 8  ahora 9/10  puntos 0,90  factor 0,90  [Modificar]
+  E6   Un solo documento por entrega                        peso 0,8  antes 8  ahora 8/10  puntos 0,64  factor 0,80  [Modificar]
+  E7   El instalable de la aplicación móvil                 peso 0,7  antes 8  ahora 9/10  puntos 0,63  factor 0,90  [Modificar]
+  E8   Actas de reunión                                     peso 0,5  antes 5  ahora 7/10  puntos 0,35  factor 0,70  [Modificar]
+  Suma de puntos S = 8,47 sobre 10.
+  Producto de los factores = 0,235146.
+  Nota del proyecto = 0,235146 x 8,47 = 1,99 sobre 10.
+
+SU APORTE Y SU NOTA
+  El peso de cada elemento se reparte entre quienes lo trabajaron, segun el historial completo del repositorio.
+  El reparto equitativo entre 4 integrantes es el 25 %.
+  Farinango Guandinango  aporte  43,3 %   factor 1,000   nota 1,99
+  Vinueza Sanchez Harold aporte  24,8 %   factor 0,994   nota 1,98 &lt;-- usted
+  Villamarin Cuenca Ivan aporte  18,7 %   factor 0,749   nota 1,49
+  Urbina Romero Isaias A aporte  13,2 %   factor 0,527   nota 1,05
+
+  Su aporte: 24,8 % frente a un reparto equitativo del 25 %.
+  Factor individual: 0,994. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,98 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<h3 id="villamarin_cuenca_ivan_andres">Villamarin Cuenca Ivan Andres<span class="badge">1,49 / 10</span></h3>
+<div class="box"><button class="copy" onclick="cp('FUVV_3',this)">Copiar informe</button><pre id="FUVV_3">============================================================================
+EXAMEN FINAL DEL PROYECTO FIN DE CURSO -- APLICACIONES DISTRIBUIDAS (ISR-701)
+============================================================================
+Estudiante: Villamarin Cuenca Ivan Andres
+Equipo: FUVV -- SCLI — Sistema de Control de Laboratorios Informáticos
+Repositorio: https://github.com/ffarinangog2/Entrega-final-del-PFC
+Ultimo commit evaluado: d0ef60b (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 366 commits de historia.
+La entrega del proyecto vale el 100 % de la nota.
+
+QUE EVALUE
+Evalue los 8 elementos que quedaban pendientes del proyecto, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de las calificaciones.
+Los 29 elementos que ya estaban resueltos y verificados con anterioridad no vuelven a puntuar.
+
+CRITERIOS DE PISO -- vigentes, expuestos y no aplicados en esta evaluacion
+  1. Subir al SGA un PDF con caratula que muestre, en una sola linea, la direccion del repositorio del trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el .tex, con las instrucciones en el README.
+  3. Que todo el trabajo este integrado en la rama principal en el commit de la entrega.
+  4. Que cada integrante sepa explicar el codigo y las mediciones que se le atribuyen.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero; aqui no se han aplicado.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volví a evaluar la entrega sobre el último commit del repositorio, sin límite de fecha, de modo que todo el trabajo correctivo que subieron cuenta.
+Y cuenta bastante: atacaron los ocho indicadores con cambios de código y de datos, no con reescritura de texto, que es la diferencia que de verdad importa.
+Cinco subieron de nivel y ninguno bajó.
+Lo mejor del lote es la corrección de la población experimental: recalculé yo mismo los percentiles desde los ocho archivos crudos y reproduje sus cifras exactas, incluida la media de 371,25 ms con su intervalo, y comprobé que los umbrales se declararon semanas antes de medir.
+Reproduje también el censo de errores de la campaña principal contando registro por registro, y coincide cifra por cifra con la tabla que publican; el manifiesto general pasa ahora 468 de 468, cuando antes fallaba uno y el texto declaraba una cantidad equivocada.
+La validación de contratos dejó de ser circular: ahora compara contra las rutas que el propio marco resuelve al arrancar, la ejecuté en los cinco servicios y comprobé que puede fallar borrando una ruta y añadiendo otra inexistente.
+Y el trabajo de firma del instalable ya no se salta en silencio cuando faltan los secretos, sino que falla.
+Las actas quedaron bien resueltas, y quiero decirlo con precisión porque es un caso instructivo.
+No inventaron reuniones para tapar el problema: retiraron las fechas que el control de versiones no podía sostener y dejaron solo lo verificable, que es exactamente la decisión correcta.
+Ahora lo que sigue sin cerrar, que es poco pero es del tipo que un revisor externo detecta enseguida.
+La campaña correctiva de fiabilidad no se ejecutó: el archivo de resultados es una plantilla con diez filas vacías y el directorio de datos crudos no existe, y sin embargo el documento de cierre afirma que la corrección se verificó con una repetición completa de una hora.
+Corrigieron la causa y lo demostraron con un ensayo real de veinticinco minutos, que está bien hecho, pero entonces hay que decir eso y no otra cosa.
+Afirmar una campaña que no está en el repositorio es el error más caro que se puede cometer en un trabajo experimental.
+El paquete canónico de evidencia de calidad sigue sin verificar por suma: pasa 7 de 50 por normalización de finales de línea, y eso se arregla en una tarde.
+La instantánea de la entrega anterior quedó congelada y compila limpia, pero la de esta entrega conserva intacto el mismo defecto que acaban de corregir en la otra.
+Y dejaron una prueba en rojo dentro del flujo automático, la que ustedes mismos añadieron, por comparar medias con doce decimales.
+Revisen que el flujo esté en verde antes de dar por cerrada una entrega: es lo primero que mira quien recibe el trabajo.
+
+HOJA DE CALCULO
+  E1   Preguntas de investigación                           peso 2,0  antes 7  ahora 9/10  puntos 1,80  factor 0,90  [Modificar]
+  E2   La prueba de fiabilidad de una hora                  peso 1,8  antes 8  ahora 8/10  puntos 1,44  factor 0,80  [Modificar]
+  E3   Las cinco características de calidad                 peso 1,7  antes 8  ahora 8/10  puntos 1,36  factor 0,80  [Modificar]
+  E4   Lo medido que llega al documento                     peso 1,5  antes 8  ahora 9/10  puntos 1,35  factor 0,90  [Modificar]
+  E5   El contrato de todos los servicios                   peso 1,0  antes 8  ahora 9/10  puntos 0,90  factor 0,90  [Modificar]
+  E6   Un solo documento por entrega                        peso 0,8  antes 8  ahora 8/10  puntos 0,64  factor 0,80  [Modificar]
+  E7   El instalable de la aplicación móvil                 peso 0,7  antes 8  ahora 9/10  puntos 0,63  factor 0,90  [Modificar]
+  E8   Actas de reunión                                     peso 0,5  antes 5  ahora 7/10  puntos 0,35  factor 0,70  [Modificar]
+  Suma de puntos S = 8,47 sobre 10.
+  Producto de los factores = 0,235146.
+  Nota del proyecto = 0,235146 x 8,47 = 1,99 sobre 10.
+
+SU APORTE Y SU NOTA
+  El peso de cada elemento se reparte entre quienes lo trabajaron, segun el historial completo del repositorio.
+  El reparto equitativo entre 4 integrantes es el 25 %.
+  Farinango Guandinango  aporte  43,3 %   factor 1,000   nota 1,99
+  Vinueza Sanchez Harold aporte  24,8 %   factor 0,994   nota 1,98
+  Villamarin Cuenca Ivan aporte  18,7 %   factor 0,749   nota 1,49 &lt;-- usted
+  Urbina Romero Isaias A aporte  13,2 %   factor 0,527   nota 1,05
+
+  Su aporte: 18,7 % frente a un reparto equitativo del 25 %.
+  Factor individual: 0,749. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,49 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<h3 id="urbina_romero_isaias_abraham">Urbina Romero Isaias Abraham<span class="badge">1,05 / 10</span></h3>
+<div class="box"><button class="copy" onclick="cp('FUVV_4',this)">Copiar informe</button><pre id="FUVV_4">============================================================================
+EXAMEN FINAL DEL PROYECTO FIN DE CURSO -- APLICACIONES DISTRIBUIDAS (ISR-701)
+============================================================================
+Estudiante: Urbina Romero Isaias Abraham
+Equipo: FUVV -- SCLI — Sistema de Control de Laboratorios Informáticos
+Repositorio: https://github.com/ffarinangog2/Entrega-final-del-PFC
+Ultimo commit evaluado: d0ef60b (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 366 commits de historia.
+La entrega del proyecto vale el 100 % de la nota.
+
+QUE EVALUE
+Evalue los 8 elementos que quedaban pendientes del proyecto, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de las calificaciones.
+Los 29 elementos que ya estaban resueltos y verificados con anterioridad no vuelven a puntuar.
+
+CRITERIOS DE PISO -- vigentes, expuestos y no aplicados en esta evaluacion
+  1. Subir al SGA un PDF con caratula que muestre, en una sola linea, la direccion del repositorio del trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el .tex, con las instrucciones en el README.
+  3. Que todo el trabajo este integrado en la rama principal en el commit de la entrega.
+  4. Que cada integrante sepa explicar el codigo y las mediciones que se le atribuyen.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero; aqui no se han aplicado.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volví a evaluar la entrega sobre el último commit del repositorio, sin límite de fecha, de modo que todo el trabajo correctivo que subieron cuenta.
+Y cuenta bastante: atacaron los ocho indicadores con cambios de código y de datos, no con reescritura de texto, que es la diferencia que de verdad importa.
+Cinco subieron de nivel y ninguno bajó.
+Lo mejor del lote es la corrección de la población experimental: recalculé yo mismo los percentiles desde los ocho archivos crudos y reproduje sus cifras exactas, incluida la media de 371,25 ms con su intervalo, y comprobé que los umbrales se declararon semanas antes de medir.
+Reproduje también el censo de errores de la campaña principal contando registro por registro, y coincide cifra por cifra con la tabla que publican; el manifiesto general pasa ahora 468 de 468, cuando antes fallaba uno y el texto declaraba una cantidad equivocada.
+La validación de contratos dejó de ser circular: ahora compara contra las rutas que el propio marco resuelve al arrancar, la ejecuté en los cinco servicios y comprobé que puede fallar borrando una ruta y añadiendo otra inexistente.
+Y el trabajo de firma del instalable ya no se salta en silencio cuando faltan los secretos, sino que falla.
+Las actas quedaron bien resueltas, y quiero decirlo con precisión porque es un caso instructivo.
+No inventaron reuniones para tapar el problema: retiraron las fechas que el control de versiones no podía sostener y dejaron solo lo verificable, que es exactamente la decisión correcta.
+Ahora lo que sigue sin cerrar, que es poco pero es del tipo que un revisor externo detecta enseguida.
+La campaña correctiva de fiabilidad no se ejecutó: el archivo de resultados es una plantilla con diez filas vacías y el directorio de datos crudos no existe, y sin embargo el documento de cierre afirma que la corrección se verificó con una repetición completa de una hora.
+Corrigieron la causa y lo demostraron con un ensayo real de veinticinco minutos, que está bien hecho, pero entonces hay que decir eso y no otra cosa.
+Afirmar una campaña que no está en el repositorio es el error más caro que se puede cometer en un trabajo experimental.
+El paquete canónico de evidencia de calidad sigue sin verificar por suma: pasa 7 de 50 por normalización de finales de línea, y eso se arregla en una tarde.
+La instantánea de la entrega anterior quedó congelada y compila limpia, pero la de esta entrega conserva intacto el mismo defecto que acaban de corregir en la otra.
+Y dejaron una prueba en rojo dentro del flujo automático, la que ustedes mismos añadieron, por comparar medias con doce decimales.
+Revisen que el flujo esté en verde antes de dar por cerrada una entrega: es lo primero que mira quien recibe el trabajo.
+
+HOJA DE CALCULO
+  E1   Preguntas de investigación                           peso 2,0  antes 7  ahora 9/10  puntos 1,80  factor 0,90  [Modificar]
+  E2   La prueba de fiabilidad de una hora                  peso 1,8  antes 8  ahora 8/10  puntos 1,44  factor 0,80  [Modificar]
+  E3   Las cinco características de calidad                 peso 1,7  antes 8  ahora 8/10  puntos 1,36  factor 0,80  [Modificar]
+  E4   Lo medido que llega al documento                     peso 1,5  antes 8  ahora 9/10  puntos 1,35  factor 0,90  [Modificar]
+  E5   El contrato de todos los servicios                   peso 1,0  antes 8  ahora 9/10  puntos 0,90  factor 0,90  [Modificar]
+  E6   Un solo documento por entrega                        peso 0,8  antes 8  ahora 8/10  puntos 0,64  factor 0,80  [Modificar]
+  E7   El instalable de la aplicación móvil                 peso 0,7  antes 8  ahora 9/10  puntos 0,63  factor 0,90  [Modificar]
+  E8   Actas de reunión                                     peso 0,5  antes 5  ahora 7/10  puntos 0,35  factor 0,70  [Modificar]
+  Suma de puntos S = 8,47 sobre 10.
+  Producto de los factores = 0,235146.
+  Nota del proyecto = 0,235146 x 8,47 = 1,99 sobre 10.
+
+SU APORTE Y SU NOTA
+  El peso de cada elemento se reparte entre quienes lo trabajaron, segun el historial completo del repositorio.
+  El reparto equitativo entre 4 integrantes es el 25 %.
+  Farinango Guandinango  aporte  43,3 %   factor 1,000   nota 1,99
+  Vinueza Sanchez Harold aporte  24,8 %   factor 0,994   nota 1,98
+  Villamarin Cuenca Ivan aporte  18,7 %   factor 0,749   nota 1,49
+  Urbina Romero Isaias A aporte  13,2 %   factor 0,527   nota 1,05 &lt;-- usted
+
+  Su aporte: 13,2 % frente a un reparto equitativo del 25 %.
+  Factor individual: 0,527. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,05 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<div class="info"><b>Cómo audité.</b> Cloné los cuatro repositorios y evalué el último commit de cada uno, sin aplicar fecha límite, de modo que todo el trabajo correctivo posterior a la evaluación anterior cuenta. Volví a comprobar cada elemento uno por uno: ejecuté las suites de pruebas, medí yo mismo la cobertura sin los filtros del proyecto, recalculé desde los datos crudos las cifras publicadas en cada documento, ejecuté las verificaciones de sumas contando cuántas pasan y cuántas fallan, y comprobé en cada caso que las pruebas puedan fallar rompiendo una aserción o el dato y confirmando el rojo. El aporte individual lo medí sobre el historial completo con <code>git log --no-merges --numstat</code>, atribuyendo por el correo del autor del commit. La columna <b>Antes</b> de cada hoja de cálculo muestra la calificación de la evaluación anterior, para que se vea qué se movió y en qué dirección.</div>
+<footer class="meta" style="border-top:2px solid #CC9900;margin-top:46px;padding:18px 0">Universidad Técnica Estatal de Quevedo — PPA 2026-2027</footer>
+</main></body></html>

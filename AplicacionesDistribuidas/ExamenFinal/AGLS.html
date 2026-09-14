@@ -1,0 +1,377 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Examen final del PFC — Equipo AGLS</title><style>body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f4f6f5;color:#1e2a24}
+header{background:#006633;color:#fff;padding:22px 36px}header h1{margin:0;font-size:22px}
+header p{margin:6px 0 0;opacity:.9;font-size:13px}
+main{max-width:1180px;margin:0 auto;padding:24px 36px 70px}
+h2{color:#006633;border-bottom:3px solid #CC9900;padding-bottom:6px;margin-top:44px}
+h3{color:#006633;margin-top:30px}
+a{color:#006633}
+table{border-collapse:collapse;width:100%;font-size:13.5px;background:#fff}
+th,td{border:1px solid #cfd8d3;padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#e3efe8}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.grp td{background:#eef3f0;font-weight:600;color:#006633;font-size:12.5px;letter-spacing:.02em}
+.box{position:relative;background:#fff;border:1px solid #cfd8d3;border-left:5px solid #006633;border-radius:6px;margin:14px 0 6px}
+pre{margin:0;padding:18px 16px 16px;white-space:pre-wrap;word-wrap:break-word;font-family:Consolas,Courier New,monospace;font-size:12.6px;line-height:1.45;max-height:640px;overflow:auto}
+.copy{position:sticky;top:8px;float:right;margin:8px 10px 0 0;background:#CC9900;color:#1e2a24;border:0;border-radius:4px;padding:7px 14px;font-weight:600;cursor:pointer;z-index:2}
+.copy:hover{background:#b58600}
+.lv100{background:#d7f0dc}.lv75{background:#e9f5df}.lv50{background:#fff3cd}.lv25{background:#fde2d2}.lv0{background:#f8d0d0}
+.nota{font-size:26px;font-weight:800;color:#006633}.nota.cero{color:#a32020}
+.info{background:#fff;border:1px solid #cfd8d3;border-left:5px solid #CC9900;border-radius:6px;padding:12px 16px;margin:16px 0;font-size:13.5px}
+.piso{background:#fdf7f6;border:1px solid #e4cfcb;border-left:5px solid #a32020;border-radius:6px;padding:12px 16px;margin:16px 0;font-size:13.5px}
+.meta{font-size:12.5px;color:#555}
+.badge{display:inline-block;background:#006633;color:#fff;border-radius:12px;padding:2px 10px;font-size:12px;margin-left:8px}
+.calc{background:#fff;border:1px solid #cfd8d3;border-radius:6px;padding:14px 16px;margin:16px 0;font-family:Consolas,Courier New,monospace;font-size:13px;line-height:1.7;overflow-x:auto}
+.calc .r{border-top:1px solid #cfd8d3;margin-top:8px;padding-top:8px;font-size:15px;font-weight:700;color:#006633}
+.sube{color:#006633;font-weight:600}.baja{color:#a32020;font-weight:600}.igual{color:#888}
+@media(max-width:700px){main{padding:16px}table{font-size:12px}th,td{padding:4px 5px}}</style><script>function cp(id,btn){var t=document.getElementById(id).innerText;navigator.clipboard.writeText(t).then(function(){btn.textContent='Copiado';setTimeout(function(){btn.textContent='Copiar informe'},1800)});}</script></head><body><header><h1>Examen final del PFC — Equipo AGLS</h1><p>Séptimo semestre · UTEQ, Facultad de Ciencias de la Computación y Diseño Digital · PPA 2026-2027 · Alcance: último commit de cada repositorio, sin límite de fecha, revisado el 14 de septiembre de 2026 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p></header><main>
+<p><a href="index.html">&larr; Examen final — Aplicaciones Distribuidas</a> · <a href="../../index.html">Informes de evaluación</a></p>
+<p class="meta"><b>TiendaTech — Comercio electrónico distribuido con asistente de armado</b><br>Repositorio: <a href="https://github.com/JoseLozanoMorales/TiendaTech">github.com/JoseLozanoMorales/TiendaTech</a><br>Rama <code>main</code> · último commit evaluado <code>822399a</code> (13 de septiembre de 2026) · 309 commits de historia · 46 elementos exigidos, de los cuales 37 ya estaban resueltos y 9 se califican aquí.</p>
+<p class="meta">Nota del proyecto: <span class="nota">4,12</span> / 10,00 &nbsp;·&nbsp; suma de puntos 9,41 / 10,00</p>
+<div class="info"><b>Cómo se calcula la nota.</b> De todo lo exigido al proyecto, una parte estaba resuelta y verificada con anterioridad y no vuelve a puntuar: aparece como <b>Hecho</b>. Lo demás se califica, y cada elemento cuenta dos veces. Tiene un <b>peso</b> —los pesos suman 10— sobre el que recibe una calificación, y esa calificación dividida entre su máximo da un <b>factor</b> que multiplica. La nota es <code>(f₁ × f₂ × … × fₙ) × (p₁ + p₂ + … + pₙ)</code>. El factor vale 1 solamente cuando el elemento está terminado y correcto al cien por cien, y un elemento en cero deja el multiplicador en cero y con él la nota. Por eso, junto a cada nota publico también la suma de puntos: es la medida de cuánto trabajo hay hecho. <b>La entrega del proyecto vale el 100 % de la nota</b>; no interviene ninguna otra calificación.</div>
+<div class="piso"><b>Criterios de piso — vigentes, expuestos y no aplicados en esta evaluación.</b> En una evaluación ordinaria, el incumplimiento de cualquiera de ellos deja la calificación en cero. Aquí la nota sale únicamente de la rúbrica.<ol><li>Subir al SGA un PDF con carátula de identificación que muestre, en una sola línea y de forma legible, la dirección del repositorio donde está el trabajo.</li><li>Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilación escritas en el README.</li><li>Que todo el trabajo esté integrado en la rama principal en el commit de la entrega.</li><li>Que cada integrante sepa explicar el código y las mediciones que se le atribuyen.</li></ol></div>
+<h2>Hoja de cálculo</h2>
+<table><tr><th style="width:3%">#</th><th style="width:22%">Elemento</th><th class="n" style="width:5%">Peso</th><th class="n" style="width:6%">Antes</th><th class="n" style="width:7%">Ahora</th><th class="n" style="width:6%">Puntos</th><th class="n" style="width:6%">Factor</th><th>Qué encontré</th></tr>
+<tr class="grp"><td colspan="8">Resuelto y verificado con anterioridad — no puntúa</td></tr>
+<tr><td class="n">1</td><td colspan="2">Refactorización en capas y principios SOLID</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">2</td><td colspan="2">Patrones de diseño documentados en registros de decisión</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">3</td><td colspan="2">Vistas de arquitectura C4 (tres niveles) versionadas como fuente</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">4</td><td colspan="2">Contrato de interfaz OpenAPI</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">5</td><td colspan="2">Esquema de base de datos y migraciones</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">6</td><td colspan="2">Persistencia distribuida operando con fragmentación y réplica</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">7</td><td colspan="2">Aplicación web funcional (construye y ejecuta)</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">8</td><td colspan="2">Aplicación móvil funcional</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">9</td><td colspan="2">Capacidades de dispositivo (cámara y notificaciones)</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">10</td><td colspan="2">Integración web + móvil + backend</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">11</td><td colspan="2">Pruebas de unidad e integración del backend</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">12</td><td colspan="2">Pruebas de contrato</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">13</td><td colspan="2">Pruebas de extremo a extremo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">14</td><td colspan="2">Pruebas de carga</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">15</td><td colspan="2">Cobertura y complejidad reportadas con valores verificables</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">16</td><td colspan="2">Pipeline de integración con compuerta de calidad efectiva</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">17</td><td colspan="2">Observabilidad: métricas, trazas, registros y tableros</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">18</td><td colspan="2">Procesamiento paralelo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">19</td><td colspan="2">Protocolo experimental e instrumental de medición</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">20</td><td colspan="2">Campaña ejecutada y totales reproducibles desde el dato crudo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">21</td><td colspan="2">Análisis estadístico con tamaño de efecto e intervalos</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">22</td><td colspan="2">Datos crudos preservados</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">23</td><td colspan="2">Evaluación de calidad con las características medidas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">24</td><td colspan="2">Manuscrito compilable, sin referencias indefinidas ni figuras huérfanas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">25</td><td colspan="2">Verificación del hash del artefacto documental</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">26</td><td colspan="2">Bibliografía verificada con identificador persistente</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">27</td><td colspan="2">Preguntas de investigación formuladas y respondidas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">28</td><td colspan="2">Amenazas a la validez tratadas por tipo y con mitigación</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">29</td><td colspan="2">Reflexión ética referida al código de ética profesional</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">30</td><td colspan="2">Corrección explícita de afirmaciones previas no sostenidas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">31</td><td colspan="2">Integración de las ramas de trabajo a la principal</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">32</td><td colspan="2">README con instrucciones de compilación y reproducibilidad</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">33</td><td colspan="2">Licencia y archivo de citación</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">34</td><td colspan="2">Actas de reunión</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">35</td><td colspan="2">Declaración de uso de herramientas de inteligencia artificial</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">36</td><td colspan="2">Capturas de la aplicación en release</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr><td class="n">37</td><td colspan="2">Higiene del repositorio (sin artefactos de compilación versionados)</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td class="meta">Verificado en la evaluación anterior.</td></tr>
+<tr class="grp"><td colspan="8">Lo calificado — cada elemento es sumando y factor</td></tr>
+<tr><td class="n">E1</td><td><b>Pruebas de la aplicación web</b><br><span class="meta">Modificar</span></td><td class="n">2,3</td><td class="n"><span class="igual">9 =</span></td><td class="n lv100">9/10</td><td class="n">2,07</td><td class="n">0,90</td><td>Ejecuté la suite completa sobre una copia del árbol y obtuve 62 pruebas en 14 archivos, frente a las 19 de la evaluación anterior, y comprobé que la configuración ya instrumenta las doce vistas y no tres. Para medir sin las restricciones del proyecto escribí mi propia configuración sobre el árbol completo y recalculé: 56,22 % de sentencias (741/1318), 45,10 % de ramas (433/960), 44,47 % de funciones (193/434) y 71,77 % de líneas, cifras prácticamente iguales a las que publica el proyecto con su filtro, de modo que el defecto que señalé, la medición acotada a tres vistas, está realmente corregido y ya no infla el resultado. Comprobé además que las pruebas nuevas pueden fallar: inyecté diez mutaciones en el código de producción y ocho dieron rojo, entre ellas invertir la comparación de contraseñas, anular el filtro de búsqueda del catálogo, intercambiar las métricas del panel de trabajador y hacer que el armador sume cero al total; las dos supervivientes corresponden a comportamientos que las pruebas no afirman, no a aserciones huecas. El límite que impide subir es que el manuscrito no se actualizó: el documento y el PDF regenerado siguen publicando 19 pruebas y 53,39 % de líneas sobre un conjunto instrumentado de tres vistas, cuando el repositorio de hoy tiene 62 pruebas sobre doce; a esto se suma que el filtro sigue siendo una lista blanca de vistas, por lo que el servicio de carrito y el componente raíz quedan en 0 % y la vista más grande apenas alcanza 35,85 %.</td></tr>
+<tr><td class="n">E2</td><td><b>Que exista todo archivo que el documento cita</b><br><span class="meta">Completo</span></td><td class="n">1,6</td><td class="n"><span class="igual">10 =</span></td><td class="n lv100">10/10</td><td class="n">1,60</td><td class="n">1,00</td><td>Ejecuté el validador de referencias sobre el commit entregado y resolvió 69 referencias con cero fallos, listando además 66 excepciones declaradas y explicadas una a una, y confirmé que el paso sigue enganchado en el flujo automático antes de compilar el manuscrito. Volví a inyectarle defectos para asegurarme de que no se ha vuelto complaciente tras los cambios del documento: una ruta inexistente dentro de la macro de evidencia, un enlace apuntando a un archivo que no está en ese commit y un formato de enlace no contemplado; los tres terminaron en fallo y código de salida 1. Verifiqué también lo que el validador no cubre, porque un commit degradó dos citas a una macro no validada: recorrí a mano las 40 apariciones de esa macro en los cinco archivos fuente y comprobé que las 40 resuelven contra archivos realmente versionados, de modo que ninguna cita del manuscrito apunta a un archivo ausente. Contrasté por último el PDF entregado con su fuente extrayendo su texto, y la tabla de complejidad impresa coincide exactamente con el archivo de resumen, así que el documento publicado no va por detrás de su propia fuente.</td></tr>
+<tr><td class="n">E3</td><td><b>Revisor de código de la aplicación web</b><br><span class="meta">Completo</span></td><td class="n">1,4</td><td class="n"><span class="sube">9 &uarr;</span></td><td class="n lv100">10/10</td><td class="n">1,40</td><td class="n">1,00</td><td>Descargué la misma versión del analizador que fija el proyecto y volví a medir yo mismo los siete módulos con el conjunto de reglas del repositorio: obtuve máximos de 7, 8, 8, 9, 8, 9 y 8 sobre 36, 114, 199, 298, 175, 305 y 155 métodos, valores idénticos uno a uno a los publicados, de modo que la afirmación de que los siete servicios cumplen se sostiene. Regeneré también la medición de la aplicación web y salieron 434 funciones con máximo 9, exactamente lo que declara el documento, y el revisor de estilo devolvió 39 archivos con cero errores y cero advertencias, con su informe idéntico al versionado. Un commit que fuerza el código de salida cero me hizo sospechar, así que revisé el guion y comprobé que solo neutraliza un código concreto en el paso de medición, mientras la decisión de aprobar o fallar vive en un paso separado que lee el resumen; verifiqué que ese mecanismo funciona de verdad inyectando un método con trece decisiones, que el analizador midió en 13 y dejó el módulo en incumplimiento, y añadiendo una función equivalente en la aplicación web, tras lo cual el guion informó máximo 13 y terminó con código 1. Revisé además que no haya tolerancia al error ni expresiones que absorban el fallo en ningún trabajo de calidad, y que el trabajo de la web dependa del de complejidad del servidor.</td></tr>
+<tr><td class="n">E4</td><td><b>Publicar las imágenes en el registro prescrito</b><br><span class="meta">Completo</span></td><td class="n">1,3</td><td class="n"><span class="sube">9 &uarr;</span></td><td class="n lv100">10/10</td><td class="n">1,30</td><td class="n">1,00</td><td>No me quedé en el documento: consulté el registro en vivo y descargué los ocho manifiestos por resumen, recalculando el SHA-256 de los bytes de respuesta; los ocho coinciden con los registrados en su archivo de verificación, la consulta por etiqueta devuelve en los ocho casos el mismo resumen en la cabecera de contenido, y cada índice declara las dos arquitecturas. Fui más allá del commit que ellos documentan y comprobé el commit entregado: existen las ocho etiquetas correspondientes y verifiqué una por una que las ocho publican las dos arquitecturas, de modo que la imagen del código final está realmente en el registro prescrito y no solo la de una revisión intermedia. Listé además el catálogo completo del repositorio de paquetes: 287 etiquetas, todas con sufijo de commit y ninguna móvil, así que cada imagen queda atada a una revisión concreta. El paso de verificación aborta si el conjunto de plataformas no incluye ambas arquitecturas y el artefacto se sube con fallo explícito si no encuentra archivos, por lo que no puede saltarse en silencio.</td></tr>
+<tr><td class="n">E5</td><td><b>Códigos de verificación de los datos</b><br><span class="meta">Modificar</span></td><td class="n">1,2</td><td class="n"><span class="sube">6 &uarr;</span></td><td class="n lv100">9/10</td><td class="n">1,08</td><td class="n">0,90</td><td>Ejecuté el verificador global y comprobó 60 sumas, exactamente los 60 archivos tabulares que devuelve el índice del repositorio, frente al único archivo que cubría el manifiesto en mi evaluación anterior; el verificador por campaña comprobó otras 16 repartidas en las dos campañas y en los resultados de carga, y las once pruebas negativas de ambos pasaron. Cloné el repositorio a un árbol desechable y provoqué cuatro alteraciones: añadí un byte a un archivo crudo de experimento, modifiqué una línea de un archivo de resultados de carga, agregué al índice un archivo nuevo sin suma y borré una línea del manifiesto; las cuatro fueron detectadas con código de salida 1 y mensaje explícito, y en los dos primeros casos fallaron a la vez el manifiesto global y el de la campaña correspondiente. Revisé el flujo de integridad y sus cuatro pasos corren en envío y en solicitud de incorporación sin tolerancia al error, sin expresiones que absorban el fallo y sin regenerar nunca el manifiesto. El límite que impide el diez es el alcance: el inventario es deliberadamente tabular y deja sin suma nueve archivos estructurados de las propias carpetas de campaña, entre ellos los que contienen los veredictos del experimento, limitación que el equipo declara por escrito pero que sigue sin cubrirse.</td></tr>
+<tr><td class="n">E6</td><td><b>El instalable de la aplicación móvil</b><br><span class="meta">Modificar</span></td><td class="n">0,8</td><td class="n"><span class="sube">8 &uarr;</span></td><td class="n lv100">9/10</td><td class="n">0,72</td><td class="n">0,90</td><td>Extraje yo mismo el bloque de firma del paquete versionado, recorriendo sus pares hasta el identificador del esquema v2 y sacando el certificado: el titular es el nombre propio de un integrante, autofirmado, RSA de 3072 bits, válido hasta 2054, con huella idéntica a la del certificado público versionado y a la documentada; el bloque del esquema v1 lleva el mismo titular, y para contrastar extraje el del paquete de depuración que sigue en la misma carpeta, que sí es el titular genérico de depuración, así que el defecto que señalé está resuelto de verdad. La suma del paquete coincide con la publicada. Confirmé también la segunda condición: el archivo de construcción declara ya una configuración de firma alimentada por cuatro variables de entorno y registra una tarea que aborta si falta alguna, unida por dependencia a las tres tareas de empaquetado, de modo que no puede recaer en silencio sobre la clave de depuración, y el trabajo del flujo depende de otros nueve, exige los cuatro secretos y cierra comparando contra la huella exacta del certificado. El límite que impide el diez es que el binario entregado no es reproducible desde el repositorio: el archivo de verificación registra un resumen del guion de construcción que no coincide con el del archivo versionado en ningún commit, y el paquete que produce el flujo es un artefacto distinto del versionado que solo se publica como versión preliminar.</td></tr>
+<tr><td class="n">E7</td><td><b>Tableros sin duplicación</b><br><span class="meta">Completo</span></td><td class="n">0,6</td><td class="n"><span class="igual">10 =</span></td><td class="n lv100">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>Verifiqué que sigue habiendo un único tablero versionado y un solo árbol de provisión con un proveedor de fuentes de datos y uno de tableros; no apareció ningún segundo archivo de panel ni una carpeta de provisión duplicada entre los treinta y dos commits nuevos. Comprobé que el archivo de composición monta exactamente esas rutas en el servicio correspondiente, las dos de provisión en solo lectura y el directorio del panel en su ruta, y que el proveedor apunta con carga desde archivo a esa misma carpeta con la actualización por interfaz deshabilitada, de manera que el tablero se carga como código y no por importación manual. El indicador se mantiene íntegro tras los cambios del resto de la entrega.</td></tr>
+<tr><td class="n">E8</td><td><b>Raíz sin carpetas sueltas</b><br><span class="meta">Completo</span></td><td class="n">0,4</td><td class="n"><span class="sube">8 &uarr;</span></td><td class="n lv100">10/10</td><td class="n">0,40</td><td class="n">1,00</td><td>Comprobé que la contradicción que señalé desapareció: el índice del repositorio devuelve hoy un único archivo bajo la carpeta de configuración del entorno de desarrollo, frente a los ocho anteriores, y la regla de exclusión declara ahora esa carpeta con una excepción explícita para ese archivo, de modo que la regla y el contenido versionado coinciden y el repositorio ya no ignora por escrito algo que sigue rastreando. Enumeré las carpetas de primer nivel realmente versionadas y son quince, y las contrasté una a una con la tabla de estructura del índice: las quince figuran, incluidas las dos que faltaban, y la fila de la carpeta de configuración explica además por qué se conserva ese único archivo. La raíz no tiene módulos huérfanos ni carpetas sin documentar, y el árbol de trabajo del commit entregado está limpio.</td></tr>
+<tr><td class="n">E9</td><td><b>Fijación de finales de línea</b><br><span class="meta">Por terminar</span></td><td class="n">0,4</td><td class="n"><span class="baja">8 &darr;</span></td><td class="n lv75">6/10</td><td class="n">0,24</td><td class="n">0,60</td><td>Reproduje el comando del flujo sobre el árbol entregado y sale en verde, pero al examinar qué cubre de verdad encontré que la ampliación es inerte. El patrón de archivos tabulares separados por tabulación no selecciona ningún archivo, porque el índice no devuelve ninguno. El patrón de los cuatro archivos de evidencia selecciona archivos codificados en UTF-16 con marca de orden y miles de bytes nulos, que ya contienen finales de Windows en el propio objeto versionado, de modo que la regla que se les declara la incumplen desde el primer día; además el guardián no puede verlos, porque la opción que el comando usa los descarta como binarios, y lo comprobé convirtiendo uno de ellos a finales de Windows completos y viendo que el trabajo seguía en verde, mientras que el mismo experimento sobre un archivo tabular real sí se detecta y el trabajo fallaría. El alcance efectivo del control sigue siendo por tanto exactamente el mismo que en mi evaluación anterior, a lo que se suma que el archivo de atributos declara la regla para dos patrones que el comando nunca inspecciona y que no existe ninguna regla global de normalización, así que el código fuente sigue sin normalización alguna. Lo que está bien es que los finales de Windows que quedan se limitan a dos guiones para ese sistema y siete capturas de cabeceras crudas, donde corresponde, y que el trabajo figura en las dependencias de la compuerta final; bajo el nivel porque la ampliación anunciada en el mensaje del commit no la sostiene el repositorio y además introduce cuatro archivos que contradicen el atributo que se les asigna.</td></tr>
+<tr><th colspan="5">Totales</th><th class="n">9,41</th><th class="n">0,437400</th><th></th></tr>
+</table>
+<div class="calc"><div>Suma de puntos&nbsp;&nbsp;S = 9,41 sobre 10</div><div>Producto de los factores&nbsp;&nbsp;0,9&nbsp;&times;&nbsp;1,0&nbsp;&times;&nbsp;1,0&nbsp;&times;&nbsp;1,0&nbsp;&times;&nbsp;0,9&nbsp;&times;&nbsp;0,9&nbsp;&times;&nbsp;1,0&nbsp;&times;&nbsp;1,0&nbsp;&times;&nbsp;0,6 = 0,437400</div><div class="r">Nota del proyecto = 0,437400 &times; 9,41 = 4,12 / 10,00</div></div>
+<h2>Aporte de cada integrante</h2>
+<p class="meta">Medido sobre el historial completo del repositorio (309 commits sin fusiones), sin límite de fecha, atribuyendo por el correo del autor del commit. El reparto equitativo entre 4 integrantes es el 25 %: quien lo alcanza recibe la nota completa del proyecto, quien queda por debajo la recibe en proporción. Ningún integrante puede superar la nota del proyecto.</p>
+<table><tr><th>Integrante</th><th class="n">Participación</th><th class="n">Factor</th><th class="n">Nota final</th></tr>
+<tr><td>Sanchez Pilaloa Andy Paul</td><td class="n">32,3 %</td><td class="n">1,000</td><td class="n lv50">4,12</td></tr>
+<tr><td>Lozano Morales Jose Alejandro</td><td class="n">27,2 %</td><td class="n">1,000</td><td class="n lv50">4,12</td></tr>
+<tr><td>Gaibor Rodriguez Jeremy Ruperto</td><td class="n">24,6 %</td><td class="n">0,983</td><td class="n lv50">4,04</td></tr>
+<tr><td>Aucatoma Celorio Jhinson Stalyn</td><td class="n">15,9 %</td><td class="n">0,637</td><td class="n lv25">2,62</td></tr>
+</table>
+<h2>Informes individuales</h2>
+<p class="meta">Cada recuadro se copia entero con su botón y está listo para pegar en el espacio del estudiante en el SGA.</p>
+<h3 id="sanchez_pilaloa_andy_paul">Sanchez Pilaloa Andy Paul<span class="badge">4,12 / 10</span></h3>
+<div class="box"><button class="copy" onclick="cp('AGLS_1',this)">Copiar informe</button><pre id="AGLS_1">============================================================================
+EXAMEN FINAL DEL PROYECTO FIN DE CURSO -- APLICACIONES DISTRIBUIDAS (ISR-701)
+============================================================================
+Estudiante: Sanchez Pilaloa Andy Paul
+Equipo: AGLS -- TiendaTech — Comercio electrónico distribuido con asistente de armado
+Repositorio: https://github.com/JoseLozanoMorales/TiendaTech
+Ultimo commit evaluado: 822399a (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 309 commits de historia.
+La entrega del proyecto vale el 100 % de la nota.
+
+QUE EVALUE
+Evalue los 9 elementos que quedaban pendientes del proyecto, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de las calificaciones.
+Los 37 elementos que ya estaban resueltos y verificados con anterioridad no vuelven a puntuar.
+
+CRITERIOS DE PISO -- vigentes, expuestos y no aplicados en esta evaluacion
+  1. Subir al SGA un PDF con caratula que muestre, en una sola linea, la direccion del repositorio del trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el .tex, con las instrucciones en el README.
+  3. Que todo el trabajo este integrado en la rama principal en el commit de la entrega.
+  4. Que cada integrante sepa explicar el codigo y las mediciones que se le atribuyen.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero; aqui no se han aplicado.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volví a evaluar la entrega sobre el último commit del repositorio, sin límite de fecha, y cerraron los dos huecos más serios que arrastraban.
+El primero era la cobertura acotada a tres de las once vistas.
+Hoy la configuración instrumenta las doce, la suite pasó de 19 a 62 pruebas, y medí yo mismo sin ninguno de sus filtros sobre el árbol completo: 56,22 % de sentencias, prácticamente igual a lo que publican, de modo que la cifra ya no está inflada por el alcance.
+Comprobé además que esas pruebas pueden fallar inyectando diez mutaciones en el código de producción; ocho dieron rojo, y las dos supervivientes corresponden a comportamientos que no afirman, no a aserciones huecas.
+El segundo hueco era el manifiesto de verificación que cubría un archivo de sesenta.
+Hoy cubre los sesenta, más dieciséis sumas por campaña, y provoqué cuatro alteraciones distintas —un byte añadido, una línea cambiada, un archivo nuevo sin suma y una línea borrada del manifiesto— y las cuatro fueron detectadas.
+A eso se suma el análisis de complejidad, que pasó de estar versionado sin ejecutarse a ser una compuerta real: reproduje la medición de los siete servicios y obtuve sus mismos valores uno a uno, y comprobé que se pone en rojo inyectando un método de trece decisiones.
+Verifiqué en vivo contra el registro los ocho manifiestos publicados y, más aún, que las ocho imágenes del commit final existen con las dos arquitecturas, entre 287 etiquetas y ninguna móvil.
+Y el instalable dejó de estar firmado con la clave de depuración: extraje el certificado del bloque de firma y el titular es ya una identidad propia, con la huella que ustedes documentan.
+Ahora lo que no cerraron, y uno de los puntos es un retroceso que conviene entender bien.
+La regla de finales de línea la anunciaron ampliada y no lo está.
+El patrón de archivos separados por tabulación no selecciona ni un solo archivo del repositorio, y los cuatro archivos de evidencia que añadieron al control están codificados en UTF-16 y ya contienen finales de Windows en el propio objeto versionado, de modo que incumplen desde el primer día el atributo que se les asigna; además el comando de comprobación los descarta por binarios y ni siquiera los mira.
+Lo verifiqué convirtiendo uno a finales de Windows completos: el trabajo siguió en verde.
+El alcance efectivo del control es hoy exactamente el mismo que antes, así que bajo el nivel de ese indicador.
+Y el manuscrito quedó atrás respecto del repositorio: sigue publicando 19 pruebas y 53,39 % de líneas sobre tres vistas cuando el trabajo real de ustedes es muy superior a eso.
+Es el único caso del curso en que un equipo se perjudica a sí mismo por no actualizar el documento: hicieron el trabajo y no lo contaron.
+
+HOJA DE CALCULO
+  E1   Pruebas de la aplicación web                         peso 2,3  antes 9  ahora 9/10  puntos 2,07  factor 0,90  [Modificar]
+  E2   Que exista todo archivo que el documento cita        peso 1,6  antes 10  ahora 10/10  puntos 1,60  factor 1,00  [Completo]
+  E3   Revisor de código de la aplicación web               peso 1,4  antes 9  ahora 10/10  puntos 1,40  factor 1,00  [Completo]
+  E4   Publicar las imágenes en el registro prescrito       peso 1,3  antes 9  ahora 10/10  puntos 1,30  factor 1,00  [Completo]
+  E5   Códigos de verificación de los datos                 peso 1,2  antes 6  ahora 9/10  puntos 1,08  factor 0,90  [Modificar]
+  E6   El instalable de la aplicación móvil                 peso 0,8  antes 8  ahora 9/10  puntos 0,72  factor 0,90  [Modificar]
+  E7   Tableros sin duplicación                             peso 0,6  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Completo]
+  E8   Raíz sin carpetas sueltas                            peso 0,4  antes 8  ahora 10/10  puntos 0,40  factor 1,00  [Completo]
+  E9   Fijación de finales de línea                         peso 0,4  antes 8  ahora 6/10  puntos 0,24  factor 0,60  [Por terminar]
+  Suma de puntos S = 9,41 sobre 10.
+  Producto de los factores = 0,437400.
+  Nota del proyecto = 0,437400 x 9,41 = 4,12 sobre 10.
+
+SU APORTE Y SU NOTA
+  El peso de cada elemento se reparte entre quienes lo trabajaron, segun el historial completo del repositorio.
+  El reparto equitativo entre 4 integrantes es el 25 %.
+  Sanchez Pilaloa Andy P aporte  32,3 %   factor 1,000   nota 4,12 &lt;-- usted
+  Lozano Morales Jose Al aporte  27,2 %   factor 1,000   nota 4,12
+  Gaibor Rodriguez Jerem aporte  24,6 %   factor 0,983   nota 4,04
+  Aucatoma Celorio Jhins aporte  15,9 %   factor 0,637   nota 2,62
+
+  Su aporte: 32,3 % frente a un reparto equitativo del 25 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 4,12 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<h3 id="lozano_morales_jose_alejandro">Lozano Morales Jose Alejandro<span class="badge">4,12 / 10</span></h3>
+<div class="box"><button class="copy" onclick="cp('AGLS_2',this)">Copiar informe</button><pre id="AGLS_2">============================================================================
+EXAMEN FINAL DEL PROYECTO FIN DE CURSO -- APLICACIONES DISTRIBUIDAS (ISR-701)
+============================================================================
+Estudiante: Lozano Morales Jose Alejandro
+Equipo: AGLS -- TiendaTech — Comercio electrónico distribuido con asistente de armado
+Repositorio: https://github.com/JoseLozanoMorales/TiendaTech
+Ultimo commit evaluado: 822399a (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 309 commits de historia.
+La entrega del proyecto vale el 100 % de la nota.
+
+QUE EVALUE
+Evalue los 9 elementos que quedaban pendientes del proyecto, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de las calificaciones.
+Los 37 elementos que ya estaban resueltos y verificados con anterioridad no vuelven a puntuar.
+
+CRITERIOS DE PISO -- vigentes, expuestos y no aplicados en esta evaluacion
+  1. Subir al SGA un PDF con caratula que muestre, en una sola linea, la direccion del repositorio del trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el .tex, con las instrucciones en el README.
+  3. Que todo el trabajo este integrado en la rama principal en el commit de la entrega.
+  4. Que cada integrante sepa explicar el codigo y las mediciones que se le atribuyen.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero; aqui no se han aplicado.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volví a evaluar la entrega sobre el último commit del repositorio, sin límite de fecha, y cerraron los dos huecos más serios que arrastraban.
+El primero era la cobertura acotada a tres de las once vistas.
+Hoy la configuración instrumenta las doce, la suite pasó de 19 a 62 pruebas, y medí yo mismo sin ninguno de sus filtros sobre el árbol completo: 56,22 % de sentencias, prácticamente igual a lo que publican, de modo que la cifra ya no está inflada por el alcance.
+Comprobé además que esas pruebas pueden fallar inyectando diez mutaciones en el código de producción; ocho dieron rojo, y las dos supervivientes corresponden a comportamientos que no afirman, no a aserciones huecas.
+El segundo hueco era el manifiesto de verificación que cubría un archivo de sesenta.
+Hoy cubre los sesenta, más dieciséis sumas por campaña, y provoqué cuatro alteraciones distintas —un byte añadido, una línea cambiada, un archivo nuevo sin suma y una línea borrada del manifiesto— y las cuatro fueron detectadas.
+A eso se suma el análisis de complejidad, que pasó de estar versionado sin ejecutarse a ser una compuerta real: reproduje la medición de los siete servicios y obtuve sus mismos valores uno a uno, y comprobé que se pone en rojo inyectando un método de trece decisiones.
+Verifiqué en vivo contra el registro los ocho manifiestos publicados y, más aún, que las ocho imágenes del commit final existen con las dos arquitecturas, entre 287 etiquetas y ninguna móvil.
+Y el instalable dejó de estar firmado con la clave de depuración: extraje el certificado del bloque de firma y el titular es ya una identidad propia, con la huella que ustedes documentan.
+Ahora lo que no cerraron, y uno de los puntos es un retroceso que conviene entender bien.
+La regla de finales de línea la anunciaron ampliada y no lo está.
+El patrón de archivos separados por tabulación no selecciona ni un solo archivo del repositorio, y los cuatro archivos de evidencia que añadieron al control están codificados en UTF-16 y ya contienen finales de Windows en el propio objeto versionado, de modo que incumplen desde el primer día el atributo que se les asigna; además el comando de comprobación los descarta por binarios y ni siquiera los mira.
+Lo verifiqué convirtiendo uno a finales de Windows completos: el trabajo siguió en verde.
+El alcance efectivo del control es hoy exactamente el mismo que antes, así que bajo el nivel de ese indicador.
+Y el manuscrito quedó atrás respecto del repositorio: sigue publicando 19 pruebas y 53,39 % de líneas sobre tres vistas cuando el trabajo real de ustedes es muy superior a eso.
+Es el único caso del curso en que un equipo se perjudica a sí mismo por no actualizar el documento: hicieron el trabajo y no lo contaron.
+
+HOJA DE CALCULO
+  E1   Pruebas de la aplicación web                         peso 2,3  antes 9  ahora 9/10  puntos 2,07  factor 0,90  [Modificar]
+  E2   Que exista todo archivo que el documento cita        peso 1,6  antes 10  ahora 10/10  puntos 1,60  factor 1,00  [Completo]
+  E3   Revisor de código de la aplicación web               peso 1,4  antes 9  ahora 10/10  puntos 1,40  factor 1,00  [Completo]
+  E4   Publicar las imágenes en el registro prescrito       peso 1,3  antes 9  ahora 10/10  puntos 1,30  factor 1,00  [Completo]
+  E5   Códigos de verificación de los datos                 peso 1,2  antes 6  ahora 9/10  puntos 1,08  factor 0,90  [Modificar]
+  E6   El instalable de la aplicación móvil                 peso 0,8  antes 8  ahora 9/10  puntos 0,72  factor 0,90  [Modificar]
+  E7   Tableros sin duplicación                             peso 0,6  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Completo]
+  E8   Raíz sin carpetas sueltas                            peso 0,4  antes 8  ahora 10/10  puntos 0,40  factor 1,00  [Completo]
+  E9   Fijación de finales de línea                         peso 0,4  antes 8  ahora 6/10  puntos 0,24  factor 0,60  [Por terminar]
+  Suma de puntos S = 9,41 sobre 10.
+  Producto de los factores = 0,437400.
+  Nota del proyecto = 0,437400 x 9,41 = 4,12 sobre 10.
+
+SU APORTE Y SU NOTA
+  El peso de cada elemento se reparte entre quienes lo trabajaron, segun el historial completo del repositorio.
+  El reparto equitativo entre 4 integrantes es el 25 %.
+  Sanchez Pilaloa Andy P aporte  32,3 %   factor 1,000   nota 4,12
+  Lozano Morales Jose Al aporte  27,2 %   factor 1,000   nota 4,12 &lt;-- usted
+  Gaibor Rodriguez Jerem aporte  24,6 %   factor 0,983   nota 4,04
+  Aucatoma Celorio Jhins aporte  15,9 %   factor 0,637   nota 2,62
+
+  Su aporte: 27,2 % frente a un reparto equitativo del 25 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 4,12 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<h3 id="gaibor_rodriguez_jeremy_ruperto">Gaibor Rodriguez Jeremy Ruperto<span class="badge">4,04 / 10</span></h3>
+<div class="box"><button class="copy" onclick="cp('AGLS_3',this)">Copiar informe</button><pre id="AGLS_3">============================================================================
+EXAMEN FINAL DEL PROYECTO FIN DE CURSO -- APLICACIONES DISTRIBUIDAS (ISR-701)
+============================================================================
+Estudiante: Gaibor Rodriguez Jeremy Ruperto
+Equipo: AGLS -- TiendaTech — Comercio electrónico distribuido con asistente de armado
+Repositorio: https://github.com/JoseLozanoMorales/TiendaTech
+Ultimo commit evaluado: 822399a (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 309 commits de historia.
+La entrega del proyecto vale el 100 % de la nota.
+
+QUE EVALUE
+Evalue los 9 elementos que quedaban pendientes del proyecto, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de las calificaciones.
+Los 37 elementos que ya estaban resueltos y verificados con anterioridad no vuelven a puntuar.
+
+CRITERIOS DE PISO -- vigentes, expuestos y no aplicados en esta evaluacion
+  1. Subir al SGA un PDF con caratula que muestre, en una sola linea, la direccion del repositorio del trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el .tex, con las instrucciones en el README.
+  3. Que todo el trabajo este integrado en la rama principal en el commit de la entrega.
+  4. Que cada integrante sepa explicar el codigo y las mediciones que se le atribuyen.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero; aqui no se han aplicado.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volví a evaluar la entrega sobre el último commit del repositorio, sin límite de fecha, y cerraron los dos huecos más serios que arrastraban.
+El primero era la cobertura acotada a tres de las once vistas.
+Hoy la configuración instrumenta las doce, la suite pasó de 19 a 62 pruebas, y medí yo mismo sin ninguno de sus filtros sobre el árbol completo: 56,22 % de sentencias, prácticamente igual a lo que publican, de modo que la cifra ya no está inflada por el alcance.
+Comprobé además que esas pruebas pueden fallar inyectando diez mutaciones en el código de producción; ocho dieron rojo, y las dos supervivientes corresponden a comportamientos que no afirman, no a aserciones huecas.
+El segundo hueco era el manifiesto de verificación que cubría un archivo de sesenta.
+Hoy cubre los sesenta, más dieciséis sumas por campaña, y provoqué cuatro alteraciones distintas —un byte añadido, una línea cambiada, un archivo nuevo sin suma y una línea borrada del manifiesto— y las cuatro fueron detectadas.
+A eso se suma el análisis de complejidad, que pasó de estar versionado sin ejecutarse a ser una compuerta real: reproduje la medición de los siete servicios y obtuve sus mismos valores uno a uno, y comprobé que se pone en rojo inyectando un método de trece decisiones.
+Verifiqué en vivo contra el registro los ocho manifiestos publicados y, más aún, que las ocho imágenes del commit final existen con las dos arquitecturas, entre 287 etiquetas y ninguna móvil.
+Y el instalable dejó de estar firmado con la clave de depuración: extraje el certificado del bloque de firma y el titular es ya una identidad propia, con la huella que ustedes documentan.
+Ahora lo que no cerraron, y uno de los puntos es un retroceso que conviene entender bien.
+La regla de finales de línea la anunciaron ampliada y no lo está.
+El patrón de archivos separados por tabulación no selecciona ni un solo archivo del repositorio, y los cuatro archivos de evidencia que añadieron al control están codificados en UTF-16 y ya contienen finales de Windows en el propio objeto versionado, de modo que incumplen desde el primer día el atributo que se les asigna; además el comando de comprobación los descarta por binarios y ni siquiera los mira.
+Lo verifiqué convirtiendo uno a finales de Windows completos: el trabajo siguió en verde.
+El alcance efectivo del control es hoy exactamente el mismo que antes, así que bajo el nivel de ese indicador.
+Y el manuscrito quedó atrás respecto del repositorio: sigue publicando 19 pruebas y 53,39 % de líneas sobre tres vistas cuando el trabajo real de ustedes es muy superior a eso.
+Es el único caso del curso en que un equipo se perjudica a sí mismo por no actualizar el documento: hicieron el trabajo y no lo contaron.
+
+HOJA DE CALCULO
+  E1   Pruebas de la aplicación web                         peso 2,3  antes 9  ahora 9/10  puntos 2,07  factor 0,90  [Modificar]
+  E2   Que exista todo archivo que el documento cita        peso 1,6  antes 10  ahora 10/10  puntos 1,60  factor 1,00  [Completo]
+  E3   Revisor de código de la aplicación web               peso 1,4  antes 9  ahora 10/10  puntos 1,40  factor 1,00  [Completo]
+  E4   Publicar las imágenes en el registro prescrito       peso 1,3  antes 9  ahora 10/10  puntos 1,30  factor 1,00  [Completo]
+  E5   Códigos de verificación de los datos                 peso 1,2  antes 6  ahora 9/10  puntos 1,08  factor 0,90  [Modificar]
+  E6   El instalable de la aplicación móvil                 peso 0,8  antes 8  ahora 9/10  puntos 0,72  factor 0,90  [Modificar]
+  E7   Tableros sin duplicación                             peso 0,6  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Completo]
+  E8   Raíz sin carpetas sueltas                            peso 0,4  antes 8  ahora 10/10  puntos 0,40  factor 1,00  [Completo]
+  E9   Fijación de finales de línea                         peso 0,4  antes 8  ahora 6/10  puntos 0,24  factor 0,60  [Por terminar]
+  Suma de puntos S = 9,41 sobre 10.
+  Producto de los factores = 0,437400.
+  Nota del proyecto = 0,437400 x 9,41 = 4,12 sobre 10.
+
+SU APORTE Y SU NOTA
+  El peso de cada elemento se reparte entre quienes lo trabajaron, segun el historial completo del repositorio.
+  El reparto equitativo entre 4 integrantes es el 25 %.
+  Sanchez Pilaloa Andy P aporte  32,3 %   factor 1,000   nota 4,12
+  Lozano Morales Jose Al aporte  27,2 %   factor 1,000   nota 4,12
+  Gaibor Rodriguez Jerem aporte  24,6 %   factor 0,983   nota 4,04 &lt;-- usted
+  Aucatoma Celorio Jhins aporte  15,9 %   factor 0,637   nota 2,62
+
+  Su aporte: 24,6 % frente a un reparto equitativo del 25 %.
+  Factor individual: 0,983. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 4,04 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<h3 id="aucatoma_celorio_jhinson_stalyn">Aucatoma Celorio Jhinson Stalyn<span class="badge">2,62 / 10</span></h3>
+<div class="box"><button class="copy" onclick="cp('AGLS_4',this)">Copiar informe</button><pre id="AGLS_4">============================================================================
+EXAMEN FINAL DEL PROYECTO FIN DE CURSO -- APLICACIONES DISTRIBUIDAS (ISR-701)
+============================================================================
+Estudiante: Aucatoma Celorio Jhinson Stalyn
+Equipo: AGLS -- TiendaTech — Comercio electrónico distribuido con asistente de armado
+Repositorio: https://github.com/JoseLozanoMorales/TiendaTech
+Ultimo commit evaluado: 822399a (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 309 commits de historia.
+La entrega del proyecto vale el 100 % de la nota.
+
+QUE EVALUE
+Evalue los 9 elementos que quedaban pendientes del proyecto, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de las calificaciones.
+Los 37 elementos que ya estaban resueltos y verificados con anterioridad no vuelven a puntuar.
+
+CRITERIOS DE PISO -- vigentes, expuestos y no aplicados en esta evaluacion
+  1. Subir al SGA un PDF con caratula que muestre, en una sola linea, la direccion del repositorio del trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el .tex, con las instrucciones en el README.
+  3. Que todo el trabajo este integrado en la rama principal en el commit de la entrega.
+  4. Que cada integrante sepa explicar el codigo y las mediciones que se le atribuyen.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero; aqui no se han aplicado.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volví a evaluar la entrega sobre el último commit del repositorio, sin límite de fecha, y cerraron los dos huecos más serios que arrastraban.
+El primero era la cobertura acotada a tres de las once vistas.
+Hoy la configuración instrumenta las doce, la suite pasó de 19 a 62 pruebas, y medí yo mismo sin ninguno de sus filtros sobre el árbol completo: 56,22 % de sentencias, prácticamente igual a lo que publican, de modo que la cifra ya no está inflada por el alcance.
+Comprobé además que esas pruebas pueden fallar inyectando diez mutaciones en el código de producción; ocho dieron rojo, y las dos supervivientes corresponden a comportamientos que no afirman, no a aserciones huecas.
+El segundo hueco era el manifiesto de verificación que cubría un archivo de sesenta.
+Hoy cubre los sesenta, más dieciséis sumas por campaña, y provoqué cuatro alteraciones distintas —un byte añadido, una línea cambiada, un archivo nuevo sin suma y una línea borrada del manifiesto— y las cuatro fueron detectadas.
+A eso se suma el análisis de complejidad, que pasó de estar versionado sin ejecutarse a ser una compuerta real: reproduje la medición de los siete servicios y obtuve sus mismos valores uno a uno, y comprobé que se pone en rojo inyectando un método de trece decisiones.
+Verifiqué en vivo contra el registro los ocho manifiestos publicados y, más aún, que las ocho imágenes del commit final existen con las dos arquitecturas, entre 287 etiquetas y ninguna móvil.
+Y el instalable dejó de estar firmado con la clave de depuración: extraje el certificado del bloque de firma y el titular es ya una identidad propia, con la huella que ustedes documentan.
+Ahora lo que no cerraron, y uno de los puntos es un retroceso que conviene entender bien.
+La regla de finales de línea la anunciaron ampliada y no lo está.
+El patrón de archivos separados por tabulación no selecciona ni un solo archivo del repositorio, y los cuatro archivos de evidencia que añadieron al control están codificados en UTF-16 y ya contienen finales de Windows en el propio objeto versionado, de modo que incumplen desde el primer día el atributo que se les asigna; además el comando de comprobación los descarta por binarios y ni siquiera los mira.
+Lo verifiqué convirtiendo uno a finales de Windows completos: el trabajo siguió en verde.
+El alcance efectivo del control es hoy exactamente el mismo que antes, así que bajo el nivel de ese indicador.
+Y el manuscrito quedó atrás respecto del repositorio: sigue publicando 19 pruebas y 53,39 % de líneas sobre tres vistas cuando el trabajo real de ustedes es muy superior a eso.
+Es el único caso del curso en que un equipo se perjudica a sí mismo por no actualizar el documento: hicieron el trabajo y no lo contaron.
+
+HOJA DE CALCULO
+  E1   Pruebas de la aplicación web                         peso 2,3  antes 9  ahora 9/10  puntos 2,07  factor 0,90  [Modificar]
+  E2   Que exista todo archivo que el documento cita        peso 1,6  antes 10  ahora 10/10  puntos 1,60  factor 1,00  [Completo]
+  E3   Revisor de código de la aplicación web               peso 1,4  antes 9  ahora 10/10  puntos 1,40  factor 1,00  [Completo]
+  E4   Publicar las imágenes en el registro prescrito       peso 1,3  antes 9  ahora 10/10  puntos 1,30  factor 1,00  [Completo]
+  E5   Códigos de verificación de los datos                 peso 1,2  antes 6  ahora 9/10  puntos 1,08  factor 0,90  [Modificar]
+  E6   El instalable de la aplicación móvil                 peso 0,8  antes 8  ahora 9/10  puntos 0,72  factor 0,90  [Modificar]
+  E7   Tableros sin duplicación                             peso 0,6  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Completo]
+  E8   Raíz sin carpetas sueltas                            peso 0,4  antes 8  ahora 10/10  puntos 0,40  factor 1,00  [Completo]
+  E9   Fijación de finales de línea                         peso 0,4  antes 8  ahora 6/10  puntos 0,24  factor 0,60  [Por terminar]
+  Suma de puntos S = 9,41 sobre 10.
+  Producto de los factores = 0,437400.
+  Nota del proyecto = 0,437400 x 9,41 = 4,12 sobre 10.
+
+SU APORTE Y SU NOTA
+  El peso de cada elemento se reparte entre quienes lo trabajaron, segun el historial completo del repositorio.
+  El reparto equitativo entre 4 integrantes es el 25 %.
+  Sanchez Pilaloa Andy P aporte  32,3 %   factor 1,000   nota 4,12
+  Lozano Morales Jose Al aporte  27,2 %   factor 1,000   nota 4,12
+  Gaibor Rodriguez Jerem aporte  24,6 %   factor 0,983   nota 4,04
+  Aucatoma Celorio Jhins aporte  15,9 %   factor 0,637   nota 2,62 &lt;-- usted
+
+  Su aporte: 15,9 % frente a un reparto equitativo del 25 %.
+  Factor individual: 0,637. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 2,62 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<div class="info"><b>Cómo audité.</b> Cloné los cuatro repositorios y evalué el último commit de cada uno, sin aplicar fecha límite, de modo que todo el trabajo correctivo posterior a la evaluación anterior cuenta. Volví a comprobar cada elemento uno por uno: ejecuté las suites de pruebas, medí yo mismo la cobertura sin los filtros del proyecto, recalculé desde los datos crudos las cifras publicadas en cada documento, ejecuté las verificaciones de sumas contando cuántas pasan y cuántas fallan, y comprobé en cada caso que las pruebas puedan fallar rompiendo una aserción o el dato y confirmando el rojo. El aporte individual lo medí sobre el historial completo con <code>git log --no-merges --numstat</code>, atribuyendo por el correo del autor del commit. La columna <b>Antes</b> de cada hoja de cálculo muestra la calificación de la evaluación anterior, para que se vea qué se movió y en qué dirección.</div>
+<footer class="meta" style="border-top:2px solid #CC9900;margin-top:46px;padding:18px 0">Universidad Técnica Estatal de Quevedo — PPA 2026-2027</footer>
+</main></body></html>

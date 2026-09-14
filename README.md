@@ -14,6 +14,7 @@ Docente: Dr. Gleiston Cicerón Guerrero Ulloa, Ph.D. — gguerrero@uteq.edu.ec
 |---|---|
 | `index.html` | Portada con el listado de asignaturas |
 | `AplicacionesWeb/ExamenFinal/` | Examen final del PFC, PPA 2026-2027, semana 19 |
+| `AplicacionesDistribuidas/ExamenFinal/` | Examen final del PFC (ISR-701), PPA 2026-2027 |
 
 ## Por qué este repositorio existe
 
