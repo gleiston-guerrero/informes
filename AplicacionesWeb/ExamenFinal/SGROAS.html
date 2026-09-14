@@ -21,199 +21,189 @@ pre{margin:0;padding:18px 16px 16px;white-space:pre-wrap;word-wrap:break-word;fo
 .meta{font-size:12.5px;color:#555}
 .badge{display:inline-block;background:#006633;color:#fff;border-radius:12px;padding:2px 10px;font-size:12px;margin-left:8px}
 .prov{color:#7a5a00;font-weight:600}
-@media(max-width:700px){main{padding:16px}table{font-size:12px}th,td{padding:4px 5px}}</style><script>function cp(id,btn){var t=document.getElementById(id).innerText;navigator.clipboard.writeText(t).then(function(){btn.textContent='Copiado';setTimeout(function(){btn.textContent='Copiar informe'},1800)});}</script></head><body><header><h1>Examen final del PFC — SGROAS</h1><p>Aplicaciones Web (Quinto nivel) · UTEQ · Corte: 11 de septiembre de 2026, 23:59 (UTC-5) — cierre de la semana 19 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p></header><main>
+@media(max-width:700px){main{padding:16px}table{font-size:12px}th,td{padding:4px 5px}}</style><script>function cp(id,btn){var t=document.getElementById(id).innerText;navigator.clipboard.writeText(t).then(function(){btn.textContent='Copiado';setTimeout(function(){btn.textContent='Copiar informe'},1800)});}</script></head><body><header><h1>Examen final del PFC — SGROAS</h1><p>Aplicaciones Web (Quinto nivel) · UTEQ · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p></header><main>
 <p><a href="index.html">&larr; Volver al índice</a></p>
-<p class="meta">Gestión de flota de transporte &middot; <a href="https://github.com/Alxjandr07/SGROAS-ProyectoAppWeb">https://github.com/Alxjandr07/SGROAS-ProyectoAppWeb</a><br>Commit evaluado: <code>e7c2e4cb</code> (2026-09-11 19:43). El tag v1.0.0 se movió el 12-sep, después del corte; evalúo el último commit dentro del plazo.</p>
+<p class="meta">Gestión de flota de transporte &middot; <a href="https://github.com/Alxjandr07/SGROAS-ProyectoAppWeb">https://github.com/Alxjandr07/SGROAS-ProyectoAppWeb</a><br>Último commit evaluado: <code>110d5a1</code> (2026-09-13 16:14). Evalúo el último commit del repositorio, con 275 commits de historia.</p>
 <div class="info"><b>Criterios de piso.</b> La extensión del PDF que suben al SGA no se penaliza. Lo que exijo es que el PDF traiga la URL del repositorio y que el repositorio abra sin pedir sesión.<ul>
-<li><b>Piso 1 — URL del repositorio accesible en el PDF del SGA — CUMPLE.</b> Las tres carátulas llevan la URL y el repositorio abre sin pedir sesión. La extensión del PDF no se penaliza.</li>
+<li><b>Piso 1 — URL del repositorio accesible — CUMPLE.</b> Las tres carátulas llevan la URL y el repositorio abre sin pedir sesión.</li>
 <li><b>Piso 2 — el informe se regenera desde el README — CUMPLE.</b> informe-final.pdf, 100 páginas, cero referencias sin resolver.</li>
-<li><b>Piso 3 — autoría limpia — CUMPLE.</b> Tres identidades que corresponden a los tres integrantes.</li>
+<li><b>Piso 3 — autoría limpia — CUMPLE.</b> Cuatro identidades que corresponden a los tres integrantes.</li>
 </ul></div>
 <h2>Hoja de cálculo</h2>
 <table><tr><th>#</th><th>Punto</th><th class="n">Peso</th><th class="n">Nivel</th><th class="n">Puntos</th><th class="n">Factor</th><th>Qué encontré</th></tr>
-<tr><td class="n">1</td><td>DOI inexistentes y el documento de verificación</td><td class="n">0,9</td><td class="n lv100">Completo</td><td class="n">0,900</td><td class="n">1,000</td><td>Retiraron VERIFICACION-REFERENCIAS.md y rehicieron la bibliografía: los DOI que revisé (IEEE 29148, RFC 7519, ACM) resuelven a la obra citada.</td></tr>
-<tr><td class="n">2</td><td>SpotBugs ejecutado de verdad</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>spotbugsXml.xml regenerado y, además, scripts/spotbugs-include.xml con el perfil de seguridad.</td></tr>
-<tr><td class="n">3</td><td>ZAP: ejecutarlo o retirar la afirmación</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>Camino A: dataset/zap/zap-baseline-2026-09-06.html y .md, con corrida fechada dentro de la ventana.</td></tr>
-<tr><td class="n">4</td><td>@EnableMethodSecurity</td><td class="n">0,4</td><td class="n lv100">Completo</td><td class="n">0,400</td><td class="n">1,000</td><td>La anotación está presente: las @PreAuthorize de ReporteController ya surten efecto.</td></tr>
-<tr><td class="n">5</td><td>Kevin Castro en la portada</td><td class="n">0,2</td><td class="n lv100">Completo</td><td class="n">0,200</td><td class="n">1,000</td><td>Aparece en la portada del informe y en la carátula del SGA.</td></tr>
-<tr><td class="n">6</td><td>El error 500 de asignaciones</td><td class="n">0,5</td><td class="n lv75">Casi</td><td class="n">0,375</td><td class="n">0,986</td><td>El backend responde UP con la base de datos arriba, comprobado en vivo. No pude ejercitar GET /api/asignaciones con sesión iniciada. <span class="prov">(prov.)</span></td></tr>
-<tr><td class="n">7</td><td>k6 completo</td><td class="n">0,5</td><td class="n lv75">Casi</td><td class="n">0,375</td><td class="n">0,986</td><td>Está el directorio de mediciones con las corridas y el objetivo bench-render en el Makefile. No pude confirmar las cinco corridas ni el escenario de caché fría. <span class="prov">(prov.)</span></td></tr>
+<tr><td class="n">1</td><td>Referencias verificables</td><td class="n">0,9</td><td class="n lv100">Completo</td><td class="n">0,900</td><td class="n">1,000</td><td>71 claves citadas y los DOI que revisé resuelven a la obra citada. El documento de verificación que no se sostenía ya no está.</td></tr>
+<tr><td class="n">2</td><td>Análisis estático ejecutado</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>spotbugsXml.xml es salida real de la herramienta, con scripts/spotbugs-include.xml y el perfil de seguridad.</td></tr>
+<tr><td class="n">3</td><td>Escaneo de seguridad ejecutado</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>dataset/zap/zap-baseline con informe en HTML y Markdown, con corrida fechada.</td></tr>
+<tr><td class="n">4</td><td>Autorización efectiva</td><td class="n">0,4</td><td class="n lv100">Completo</td><td class="n">0,400</td><td class="n">1,000</td><td>@EnableMethodSecurity presente, así que las anotaciones de los controladores surten efecto.</td></tr>
+<tr><td class="n">5</td><td>Autoría completa en la portada</td><td class="n">0,2</td><td class="n lv100">Completo</td><td class="n">0,200</td><td class="n">1,000</td><td>Los tres integrantes figuran en la portada del informe y en la carátula del SGA.</td></tr>
+<tr><td class="n">6</td><td>Endpoints funcionando en producción</td><td class="n">0,5</td><td class="n lv75">Casi</td><td class="n">0,375</td><td class="n">0,986</td><td>El backend responde UP con la base de datos arriba, comprobado en vivo. No pude ejercitar el endpoint de asignaciones con sesión iniciada. <span class="prov">(prov.)</span></td></tr>
+<tr><td class="n">7</td><td>Medición de rendimiento con k6</td><td class="n">0,5</td><td class="n lv75">Casi</td><td class="n">0,375</td><td class="n">0,986</td><td>Directorio de mediciones con corridas y objetivo bench-render en el Makefile. No pude confirmar las cinco corridas ni el escenario de caché fría. <span class="prov">(prov.)</span></td></tr>
 <tr><td class="n">8</td><td>Lighthouse completo</td><td class="n">0,4</td><td class="n lv50">A medias</td><td class="n">0,200</td><td class="n">0,973</td><td>Hay configuración lighthouserc.js y corridas, pero no encontré los tres informes por perfil, incluido escritorio. <span class="prov">(prov.)</span></td></tr>
-<tr><td class="n">9</td><td>Informe que compila y README ejecutable</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>El informe de 100 páginas se regenera y el README documenta comandos, directorio y pasadas.</td></tr>
+<tr><td class="n">9</td><td>Informe que compila y README ejecutable</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>Las 100 páginas se regeneran y el README documenta comandos, directorio y número de pasadas.</td></tr>
 <tr><td class="n">10</td><td>make all desde un clon limpio</td><td class="n">0,4</td><td class="n lv75">Casi</td><td class="n">0,300</td><td class="n">0,989</td><td>El Makefile trae all, pdf, jacoco y bench. No pude comprobar el bit de ejecución de mvnw desde un clon limpio en Linux. <span class="prov">(prov.)</span></td></tr>
-<tr><td class="n">11</td><td>Validador de trazabilidad honesto</td><td class="n">0,4</td><td class="n lv75">Casi</td><td class="n">0,300</td><td class="n">0,989</td><td>La matriz y los scripts se rehicieron en esta ronda. No pude forzar el fallo para ver el código de salida. <span class="prov">(prov.)</span></td></tr>
-<tr><td class="n">12</td><td>Cobertura de ramas</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>El jacoco.xml de cierre da 89,96 % de líneas y 88,38 % de ramas. Venían de 18,18 % en controladores.</td></tr>
-<tr><td class="n">13</td><td>SUS con quince y demografía correcta</td><td class="n">0,6</td><td class="n lv75">Casi</td><td class="n">0,450</td><td class="n">0,983</td><td>docs/mediciones/sus/sus-raw.csv tiene ya 15 respuestas, frente a las 10 del dataset anterior. No pude cruzar la demografía del capítulo 5 con esas filas. <span class="prov">(prov.)</span></td></tr>
-<tr><td class="n">14</td><td>Resúmenes y figuras en el PDF</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>Resumen 209 y abstract 187 palabras, y el .tex declara 24 figuras con 25 includegraphics, frente a los tres labels huérfanos de antes.</td></tr>
-<tr><td class="n">15</td><td>Zenodo y checksums</td><td class="n">0,3</td><td class="n lv75">Casi</td><td class="n">0,225</td><td class="n">0,991</td><td>Tres DOI en el árbol con software y dataset separados. No pude verificar el manifiesto con sha256sum. <span class="prov">(prov.)</span></td></tr>
-<tr><td class="n">16</td><td>Cookie segura y token fuera del JSON</td><td class="n">0,4</td><td class="n lv75">Casi</td><td class="n">0,300</td><td class="n">0,989</td><td>La configuración de seguridad se rehizo. No pude comprobarlo iniciando sesión contra el despliegue. <span class="prov">(prov.)</span></td></tr>
-<tr><td class="n">17</td><td>Listados con código que existe</td><td class="n">0,4</td><td class="n lv75">Casi</td><td class="n">0,300</td><td class="n">0,989</td><td>Los listados se rehicieron junto con el capítulo. No pude cruzar los tres señalados contra el código. <span class="prov">(prov.)</span></td></tr>
-<tr><td class="n">E1</td><td>Nombres del código en inglés</td><td class="n">0,8</td><td class="n lv25">Apenas</td><td class="n">0,200</td><td class="n">0,895</td><td>77 de 131 tipos (58,8 %) y 241 de 471 métodos (51,2 %) siguen con nombre español. Hay avance, pero sigue por encima del 30 %.</td></tr>
-<tr><td class="n">E2</td><td>Comentarios que generan documentación (Javadoc)</td><td class="n">0,9</td><td class="n lv0">Nada</td><td class="n">0,000</td><td class="n">0,000</td><td>No hay ni un @param, ni un @return, ni un @throws en todo el backend, y solo 17 de 225 métodos públicos (7,6 %) llevan bloque de documentación. La exigencia sigue sin atenderse.</td></tr>
-<tr><td class="n">E3</td><td>Figuras en inglés</td><td class="n">0,4</td><td class="n lv25">Apenas</td><td class="n">0,100</td><td class="n">0,946</td><td>Se añadieron 24 figuras, pero el rotulado sigue mayoritariamente en español. <span class="prov">(prov.)</span></td></tr>
-<tr><th colspan="4" class="n">S = suma de puntos</th><th class="n">7,125</th><th colspan="2"></th></tr>
-<tr><th colspan="5" class="n">M = multiplicación de todos los factores</th><th class="n">0,0000</th><th></th></tr>
-<tr><th colspan="4" class="n">Nota = M × S</th><th colspan="3" class="n">0,00 / 10</th></tr>
+<tr><td class="n">11</td><td>Validador de trazabilidad honesto</td><td class="n">0,4</td><td class="n lv75">Casi</td><td class="n">0,300</td><td class="n">0,989</td><td>Matriz y scripts rehechos. No pude forzar el fallo para ver el código de salida. <span class="prov">(prov.)</span></td></tr>
+<tr><td class="n">12</td><td>Cobertura de pruebas</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>89,96 % de líneas y 88,38 % de ramas. Es la cobertura más pareja del curso.</td></tr>
+<tr><td class="n">13</td><td>SUS con quince participantes</td><td class="n">0,6</td><td class="n lv75">Casi</td><td class="n">0,450</td><td class="n">0,983</td><td>sus-raw.csv tiene 15 respuestas. No pude cruzar la demografía del capítulo 5 con esas filas. <span class="prov">(prov.)</span></td></tr>
+<tr><td class="n">14</td><td>Resúmenes y figuras en el PDF</td><td class="n">0,5</td><td class="n lv100">Completo</td><td class="n">0,500</td><td class="n">1,000</td><td>Resumen 209 y abstract 187 palabras, y el .tex declara 24 figuras con 25 includegraphics.</td></tr>
+<tr><td class="n">15</td><td>Depósito y verificación de integridad</td><td class="n">0,3</td><td class="n lv75">Casi</td><td class="n">0,225</td><td class="n">0,991</td><td>Cinco DOI en el árbol con software y dataset separados. No pude verificar el manifiesto con sha256sum. <span class="prov">(prov.)</span></td></tr>
+<tr><td class="n">16</td><td>Cookie segura y manejo del token</td><td class="n">0,4</td><td class="n lv75">Casi</td><td class="n">0,300</td><td class="n">0,989</td><td>La configuración de seguridad está rehecha. No pude comprobarlo iniciando sesión contra el despliegue. <span class="prov">(prov.)</span></td></tr>
+<tr><td class="n">17</td><td>Listados con código que existe</td><td class="n">0,4</td><td class="n lv75">Casi</td><td class="n">0,300</td><td class="n">0,989</td><td>Los listados se rehicieron junto con el capítulo. No pude cruzar cada uno contra el código. <span class="prov">(prov.)</span></td></tr>
+<tr><td class="n">E1</td><td>Nombres del código en inglés</td><td class="n">0,8</td><td class="n lv25">Apenas</td><td class="n">0,200</td><td class="n">0,895</td><td>28 de 131 tipos (21,4 %) pero 221 de 471 métodos (46,9 %) siguen con nombre español. Las clases están bien, los métodos no.</td></tr>
+<tr><td class="n">E2</td><td>Comentarios que generan documentación (Javadoc)</td><td class="n">0,9</td><td class="n lv75">Casi</td><td class="n">0,675</td><td class="n">0,974</td><td>202 de 225 métodos públicos (89,8 %) documentados, con 413 @param, 224 @return y 57 @throws. Se queda a dos décimas del 90 %.</td></tr>
+<tr><td class="n">E3</td><td>Figuras en inglés</td><td class="n">0,4</td><td class="n lv25">Apenas</td><td class="n">0,100</td><td class="n">0,946</td><td>24 figuras en el informe, pero el rotulado sigue mayoritariamente en español. <span class="prov">(prov.)</span></td></tr>
+<tr><th colspan="4" class="n">S = suma de puntos</th><th class="n">7,800</th><th colspan="2"></th></tr>
+<tr><th colspan="5" class="n">M = multiplicación de todos los factores</th><th class="n">0,7257</th><th></th></tr>
+<tr><th colspan="4" class="n">Nota = M × S</th><th colspan="3" class="n">5,66 / 10</th></tr>
 </table>
-<p class="nota cero">0,00 / 10</p>
-<div class="info">El multiplicador vale cero porque el punto E2 quedó en <b>Nada</b>. Un solo factor en cero arrastra toda la nota.<br>Suma de puntos sin el multiplicador: <b>7,12 / 10</b>, que es la medida de cuánto trabajo hay hecho.</div>
+<p class="nota">5,66 / 10</p>
 <h2>Informes individuales</h2>
 <p class="meta">Cada recuadro se copia entero con su botón y está listo para pegar en el espacio del estudiante en el SGA.</p>
-<h3>Escudero Plaza María del Rosario<span class="badge">0,00 / 10</span></h3>
+<h3>Escudero Plaza María del Rosario<span class="badge">5,66 / 10</span></h3>
 <div class="box"><button class="copy" onclick="cp('SGROAS_1',this)">Copiar informe</button><pre id="SGROAS_1">============================================================================
 EXAMEN FINAL DEL PROYECTO FINAL DE CURSO -- APLICACIONES WEB (QUINTO NIVEL)
 ============================================================================
 Estudiante: Escudero Plaza María del Rosario
 Equipo: SGROAS -- Gestión de flota de transporte
 Repositorio: https://github.com/Alxjandr07/SGROAS-ProyectoAppWeb
-Commit evaluado: e7c2e4cb (2026-09-11 19:43)
-Corte de evaluacion: 11 de septiembre de 2026, 23:59 (UTC-5) — cierre de la semana 19
+Ultimo commit evaluado: 110d5a1 (2026-09-13 16:14)
+Alcance: último commit de cada repositorio, revisado el 14 de septiembre de 2026
 
 QUE EVALUE
-Evalue los 20 puntos que le pedi a su equipo en mi revision del 2 de septiembre, uno por uno, sobre el repositorio.
+Evalue 20 aspectos del trabajo de su equipo, uno por uno, sobre el repositorio completo.
 Cada punto tiene un peso; los pesos suman 10.
 A cada punto le puse un nivel: Completo, Casi, A medias, Apenas o Nada.
 El nivel da puntos y ademas da un factor que multiplica, asi que la nota es la multiplicacion de los factores por la suma de los puntos.
-El tag v1.0.0 se movió el 12-sep, después del corte; evalúo el último commit dentro del plazo.
+Evalúo el último commit del repositorio, con 275 commits de historia.
 
 CRITERIOS DE PISO
-  Piso 1 — URL del repositorio accesible en el PDF del SGA: CUMPLE. Las tres carátulas llevan la URL y el repositorio abre sin pedir sesión. La extensión del PDF no se penaliza.
+  Piso 1 — URL del repositorio accesible: CUMPLE. Las tres carátulas llevan la URL y el repositorio abre sin pedir sesión.
   Piso 2 — el informe se regenera desde el README: CUMPLE. informe-final.pdf, 100 páginas, cero referencias sin resolver.
-  Piso 3 — autoría limpia: CUMPLE. Tres identidades que corresponden a los tres integrantes.
+  Piso 3 — autoría limpia: CUMPLE. Cuatro identidades que corresponden a los tres integrantes.
 
-LO QUE SI RESOLVIERON
-  Punto 1 (DOI inexistentes y el documento de verificación): Retiraron VERIFICACION-REFERENCIAS.md y rehicieron la bibliografía: los DOI que revisé (IEEE 29148, RFC 7519, ACM) resuelven a la obra citada.
-  Punto 2 (SpotBugs ejecutado de verdad): spotbugsXml.xml regenerado y, además, scripts/spotbugs-include.xml con el perfil de seguridad.
-  Punto 3 (ZAP: ejecutarlo o retirar la afirmación): Camino A: dataset/zap/zap-baseline-2026-09-06.html y .md, con corrida fechada dentro de la ventana.
-  Punto 4 (@EnableMethodSecurity): La anotación está presente: las @PreAuthorize de ReporteController ya surten efecto.
-  Punto 5 (Kevin Castro en la portada): Aparece en la portada del informe y en la carátula del SGA.
-  Punto 9 (Informe que compila y README ejecutable): El informe de 100 páginas se regenera y el README documenta comandos, directorio y pasadas.
-  Punto 12 (Cobertura de ramas): El jacoco.xml de cierre da 89,96 % de líneas y 88,38 % de ramas. Venían de 18,18 % en controladores.
-  Punto 14 (Resúmenes y figuras en el PDF): Resumen 209 y abstract 187 palabras, y el .tex declara 24 figuras con 25 includegraphics, frente a los tres labels huérfanos de antes.
+LO QUE ESTA BIEN RESUELTO
+  Punto 1 (Referencias verificables): 71 claves citadas y los DOI que revisé resuelven a la obra citada. El documento de verificación que no se sostenía ya no está.
+  Punto 2 (Análisis estático ejecutado): spotbugsXml.xml es salida real de la herramienta, con scripts/spotbugs-include.xml y el perfil de seguridad.
+  Punto 3 (Escaneo de seguridad ejecutado): dataset/zap/zap-baseline con informe en HTML y Markdown, con corrida fechada.
+  Punto 4 (Autorización efectiva): @EnableMethodSecurity presente, así que las anotaciones de los controladores surten efecto.
+  Punto 5 (Autoría completa en la portada): Los tres integrantes figuran en la portada del informe y en la carátula del SGA.
+  Punto 9 (Informe que compila y README ejecutable): Las 100 páginas se regeneran y el README documenta comandos, directorio y número de pasadas.
+  Punto 12 (Cobertura de pruebas): 89,96 % de líneas y 88,38 % de ramas. Es la cobertura más pareja del curso.
+  Punto 14 (Resúmenes y figuras en el PDF): Resumen 209 y abstract 187 palabras, y el .tex declara 24 figuras con 25 includegraphics.
 
-LO QUE LES COSTO LA NOTA
-  Punto E2 (Comentarios que generan documentación (Javadoc)) quedo en Nada: No hay ni un @param, ni un @return, ni un @throws en todo el backend, y solo 17 de 225 métodos públicos (7,6 %) llevan bloque de documentación. La exigencia sigue sin atenderse.
+LO QUE FALTA O NO SE SOSTIENE
   Punto 8 (Lighthouse completo) quedo en A medias: Hay configuración lighthouserc.js y corridas, pero no encontré los tres informes por perfil, incluido escritorio.
-  Punto E1 (Nombres del código en inglés) quedo en Apenas: 77 de 131 tipos (58,8 %) y 241 de 471 métodos (51,2 %) siguen con nombre español. Hay avance, pero sigue por encima del 30 %.
-  Punto E3 (Figuras en inglés) quedo en Apenas: Se añadieron 24 figuras, pero el rotulado sigue mayoritariamente en español.
+  Punto E1 (Nombres del código en inglés) quedo en Apenas: 28 de 131 tipos (21,4 %) pero 221 de 471 métodos (46,9 %) siguen con nombre español. Las clases están bien, los métodos no.
+  Punto E3 (Figuras en inglés) quedo en Apenas: 24 figuras en el informe, pero el rotulado sigue mayoritariamente en español.
 
 SOBRE SU APORTE INDIVIDUAL
-Entre el 2 y el 11 de septiembre registro 37 commits, 177.436 lineas de fuente propia y 3 dias distintos de trabajo.
+En todo el proyecto registra 110 commits, 271.106 lineas de fuente propia y 12 dias distintos con actividad.
 Lo medi con git log --no-merges --numstat, unificando sus identidades de Git y excluyendo los artefactos generados.
 Identidad de Git: mescuderop@uteq.edu.ec.
-37 commits y el mayor volumen del equipo, concentrado en tres días.
+El mayor número de commits y el mayor volumen del equipo.
 
 SU CALIFICACION
 Esta rubrica califica el resultado del equipo, no el reparto interno del trabajo.
-Suma de puntos obtenidos: 7,12 sobre 10.
-Multiplicador: 0, porque el punto E2 quedo en Nada.
-Por como esta construida la rubrica, un solo factor en cero deja la nota en cero aunque el resto este bien.
-CALIFICACION: 0,00 / 10
+Suma de puntos obtenidos: 7,80 sobre 10.
+CALIFICACION: 5,66 / 10
 ============================================================================</pre></div>
-<div class="doc"><b>Observaciones para el docente.</b> Aporte verificado con <code>git log</code> entre el 2 y el 11 de septiembre: 37 commits, 177.436 líneas y 3 días activos (mescuderop@uteq.edu.ec). Nota del equipo 0,00 (suma 7,12, multiplicador 0,0000). El cero viene de los puntos E2. Puntos con nivel provisional: 6, 7, 8, 10, 11, 13, 15, 16, 17, E3. </div>
-<h3>Tejada Bajaña Luis Alejandro<span class="badge">0,00 / 10</span></h3>
+<div class="doc"><b>Observaciones para el docente.</b> Aporte verificado con <code>git log</code> sobre todo el historial: 110 commits, 271.106 líneas y 12 días activos (mescuderop@uteq.edu.ec). Nota del equipo 5,66 (suma 7,80, multiplicador 0,7257). Puntos con nivel provisional: 6, 7, 8, 10, 11, 13, 15, 16, 17, E3. </div>
+<h3>Tejada Bajaña Luis Alejandro<span class="badge">5,66 / 10</span></h3>
 <div class="box"><button class="copy" onclick="cp('SGROAS_2',this)">Copiar informe</button><pre id="SGROAS_2">============================================================================
 EXAMEN FINAL DEL PROYECTO FINAL DE CURSO -- APLICACIONES WEB (QUINTO NIVEL)
 ============================================================================
 Estudiante: Tejada Bajaña Luis Alejandro
 Equipo: SGROAS -- Gestión de flota de transporte
 Repositorio: https://github.com/Alxjandr07/SGROAS-ProyectoAppWeb
-Commit evaluado: e7c2e4cb (2026-09-11 19:43)
-Corte de evaluacion: 11 de septiembre de 2026, 23:59 (UTC-5) — cierre de la semana 19
+Ultimo commit evaluado: 110d5a1 (2026-09-13 16:14)
+Alcance: último commit de cada repositorio, revisado el 14 de septiembre de 2026
 
 QUE EVALUE
-Evalue los 20 puntos que le pedi a su equipo en mi revision del 2 de septiembre, uno por uno, sobre el repositorio.
+Evalue 20 aspectos del trabajo de su equipo, uno por uno, sobre el repositorio completo.
 Cada punto tiene un peso; los pesos suman 10.
 A cada punto le puse un nivel: Completo, Casi, A medias, Apenas o Nada.
 El nivel da puntos y ademas da un factor que multiplica, asi que la nota es la multiplicacion de los factores por la suma de los puntos.
-El tag v1.0.0 se movió el 12-sep, después del corte; evalúo el último commit dentro del plazo.
+Evalúo el último commit del repositorio, con 275 commits de historia.
 
 CRITERIOS DE PISO
-  Piso 1 — URL del repositorio accesible en el PDF del SGA: CUMPLE. Las tres carátulas llevan la URL y el repositorio abre sin pedir sesión. La extensión del PDF no se penaliza.
+  Piso 1 — URL del repositorio accesible: CUMPLE. Las tres carátulas llevan la URL y el repositorio abre sin pedir sesión.
   Piso 2 — el informe se regenera desde el README: CUMPLE. informe-final.pdf, 100 páginas, cero referencias sin resolver.
-  Piso 3 — autoría limpia: CUMPLE. Tres identidades que corresponden a los tres integrantes.
+  Piso 3 — autoría limpia: CUMPLE. Cuatro identidades que corresponden a los tres integrantes.
 
-LO QUE SI RESOLVIERON
-  Punto 1 (DOI inexistentes y el documento de verificación): Retiraron VERIFICACION-REFERENCIAS.md y rehicieron la bibliografía: los DOI que revisé (IEEE 29148, RFC 7519, ACM) resuelven a la obra citada.
-  Punto 2 (SpotBugs ejecutado de verdad): spotbugsXml.xml regenerado y, además, scripts/spotbugs-include.xml con el perfil de seguridad.
-  Punto 3 (ZAP: ejecutarlo o retirar la afirmación): Camino A: dataset/zap/zap-baseline-2026-09-06.html y .md, con corrida fechada dentro de la ventana.
-  Punto 4 (@EnableMethodSecurity): La anotación está presente: las @PreAuthorize de ReporteController ya surten efecto.
-  Punto 5 (Kevin Castro en la portada): Aparece en la portada del informe y en la carátula del SGA.
-  Punto 9 (Informe que compila y README ejecutable): El informe de 100 páginas se regenera y el README documenta comandos, directorio y pasadas.
-  Punto 12 (Cobertura de ramas): El jacoco.xml de cierre da 89,96 % de líneas y 88,38 % de ramas. Venían de 18,18 % en controladores.
-  Punto 14 (Resúmenes y figuras en el PDF): Resumen 209 y abstract 187 palabras, y el .tex declara 24 figuras con 25 includegraphics, frente a los tres labels huérfanos de antes.
+LO QUE ESTA BIEN RESUELTO
+  Punto 1 (Referencias verificables): 71 claves citadas y los DOI que revisé resuelven a la obra citada. El documento de verificación que no se sostenía ya no está.
+  Punto 2 (Análisis estático ejecutado): spotbugsXml.xml es salida real de la herramienta, con scripts/spotbugs-include.xml y el perfil de seguridad.
+  Punto 3 (Escaneo de seguridad ejecutado): dataset/zap/zap-baseline con informe en HTML y Markdown, con corrida fechada.
+  Punto 4 (Autorización efectiva): @EnableMethodSecurity presente, así que las anotaciones de los controladores surten efecto.
+  Punto 5 (Autoría completa en la portada): Los tres integrantes figuran en la portada del informe y en la carátula del SGA.
+  Punto 9 (Informe que compila y README ejecutable): Las 100 páginas se regeneran y el README documenta comandos, directorio y número de pasadas.
+  Punto 12 (Cobertura de pruebas): 89,96 % de líneas y 88,38 % de ramas. Es la cobertura más pareja del curso.
+  Punto 14 (Resúmenes y figuras en el PDF): Resumen 209 y abstract 187 palabras, y el .tex declara 24 figuras con 25 includegraphics.
 
-LO QUE LES COSTO LA NOTA
-  Punto E2 (Comentarios que generan documentación (Javadoc)) quedo en Nada: No hay ni un @param, ni un @return, ni un @throws en todo el backend, y solo 17 de 225 métodos públicos (7,6 %) llevan bloque de documentación. La exigencia sigue sin atenderse.
+LO QUE FALTA O NO SE SOSTIENE
   Punto 8 (Lighthouse completo) quedo en A medias: Hay configuración lighthouserc.js y corridas, pero no encontré los tres informes por perfil, incluido escritorio.
-  Punto E1 (Nombres del código en inglés) quedo en Apenas: 77 de 131 tipos (58,8 %) y 241 de 471 métodos (51,2 %) siguen con nombre español. Hay avance, pero sigue por encima del 30 %.
-  Punto E3 (Figuras en inglés) quedo en Apenas: Se añadieron 24 figuras, pero el rotulado sigue mayoritariamente en español.
+  Punto E1 (Nombres del código en inglés) quedo en Apenas: 28 de 131 tipos (21,4 %) pero 221 de 471 métodos (46,9 %) siguen con nombre español. Las clases están bien, los métodos no.
+  Punto E3 (Figuras en inglés) quedo en Apenas: 24 figuras en el informe, pero el rotulado sigue mayoritariamente en español.
 
 SOBRE SU APORTE INDIVIDUAL
-Entre el 2 y el 11 de septiembre registro 32 commits, 8.133 lineas de fuente propia y 2 dias distintos de trabajo.
+En todo el proyecto registra 82 commits, 52.040 lineas de fuente propia y 12 dias distintos con actividad.
 Lo medi con git log --no-merges --numstat, unificando sus identidades de Git y excluyendo los artefactos generados.
-Identidad de Git: luistejada5434@gmail.com.
-32 commits en dos días. Sigue usando correo personal, no el institucional.
+Identidad de Git: luistejada5434@gmail.com y ltejadab@uteq.edu.ec.
+82 commits en doce días, con la misma constancia que su compañera. Usa sobre todo el correo personal.
 
 SU CALIFICACION
 Esta rubrica califica el resultado del equipo, no el reparto interno del trabajo.
-Suma de puntos obtenidos: 7,12 sobre 10.
-Multiplicador: 0, porque el punto E2 quedo en Nada.
-Por como esta construida la rubrica, un solo factor en cero deja la nota en cero aunque el resto este bien.
-CALIFICACION: 0,00 / 10
+Suma de puntos obtenidos: 7,80 sobre 10.
+CALIFICACION: 5,66 / 10
 ============================================================================</pre></div>
-<div class="doc"><b>Observaciones para el docente.</b> Aporte verificado con <code>git log</code> entre el 2 y el 11 de septiembre: 32 commits, 8.133 líneas y 2 días activos (luistejada5434@gmail.com). Nota del equipo 0,00 (suma 7,12, multiplicador 0,0000). El cero viene de los puntos E2. Puntos con nivel provisional: 6, 7, 8, 10, 11, 13, 15, 16, 17, E3. </div>
-<h3>Castro Espinoza Kevin Moisés<span class="badge">0,00 / 10</span></h3>
+<div class="doc"><b>Observaciones para el docente.</b> Aporte verificado con <code>git log</code> sobre todo el historial: 82 commits, 52.040 líneas y 12 días activos (luistejada5434@gmail.com y ltejadab@uteq.edu.ec). Nota del equipo 5,66 (suma 7,80, multiplicador 0,7257). Puntos con nivel provisional: 6, 7, 8, 10, 11, 13, 15, 16, 17, E3. </div>
+<h3>Castro Espinoza Kevin Moisés<span class="badge">5,66 / 10</span></h3>
 <div class="box"><button class="copy" onclick="cp('SGROAS_3',this)">Copiar informe</button><pre id="SGROAS_3">============================================================================
 EXAMEN FINAL DEL PROYECTO FINAL DE CURSO -- APLICACIONES WEB (QUINTO NIVEL)
 ============================================================================
 Estudiante: Castro Espinoza Kevin Moisés
 Equipo: SGROAS -- Gestión de flota de transporte
 Repositorio: https://github.com/Alxjandr07/SGROAS-ProyectoAppWeb
-Commit evaluado: e7c2e4cb (2026-09-11 19:43)
-Corte de evaluacion: 11 de septiembre de 2026, 23:59 (UTC-5) — cierre de la semana 19
+Ultimo commit evaluado: 110d5a1 (2026-09-13 16:14)
+Alcance: último commit de cada repositorio, revisado el 14 de septiembre de 2026
 
 QUE EVALUE
-Evalue los 20 puntos que le pedi a su equipo en mi revision del 2 de septiembre, uno por uno, sobre el repositorio.
+Evalue 20 aspectos del trabajo de su equipo, uno por uno, sobre el repositorio completo.
 Cada punto tiene un peso; los pesos suman 10.
 A cada punto le puse un nivel: Completo, Casi, A medias, Apenas o Nada.
 El nivel da puntos y ademas da un factor que multiplica, asi que la nota es la multiplicacion de los factores por la suma de los puntos.
-El tag v1.0.0 se movió el 12-sep, después del corte; evalúo el último commit dentro del plazo.
+Evalúo el último commit del repositorio, con 275 commits de historia.
 
 CRITERIOS DE PISO
-  Piso 1 — URL del repositorio accesible en el PDF del SGA: CUMPLE. Las tres carátulas llevan la URL y el repositorio abre sin pedir sesión. La extensión del PDF no se penaliza.
+  Piso 1 — URL del repositorio accesible: CUMPLE. Las tres carátulas llevan la URL y el repositorio abre sin pedir sesión.
   Piso 2 — el informe se regenera desde el README: CUMPLE. informe-final.pdf, 100 páginas, cero referencias sin resolver.
-  Piso 3 — autoría limpia: CUMPLE. Tres identidades que corresponden a los tres integrantes.
+  Piso 3 — autoría limpia: CUMPLE. Cuatro identidades que corresponden a los tres integrantes.
 
-LO QUE SI RESOLVIERON
-  Punto 1 (DOI inexistentes y el documento de verificación): Retiraron VERIFICACION-REFERENCIAS.md y rehicieron la bibliografía: los DOI que revisé (IEEE 29148, RFC 7519, ACM) resuelven a la obra citada.
-  Punto 2 (SpotBugs ejecutado de verdad): spotbugsXml.xml regenerado y, además, scripts/spotbugs-include.xml con el perfil de seguridad.
-  Punto 3 (ZAP: ejecutarlo o retirar la afirmación): Camino A: dataset/zap/zap-baseline-2026-09-06.html y .md, con corrida fechada dentro de la ventana.
-  Punto 4 (@EnableMethodSecurity): La anotación está presente: las @PreAuthorize de ReporteController ya surten efecto.
-  Punto 5 (Kevin Castro en la portada): Aparece en la portada del informe y en la carátula del SGA.
-  Punto 9 (Informe que compila y README ejecutable): El informe de 100 páginas se regenera y el README documenta comandos, directorio y pasadas.
-  Punto 12 (Cobertura de ramas): El jacoco.xml de cierre da 89,96 % de líneas y 88,38 % de ramas. Venían de 18,18 % en controladores.
-  Punto 14 (Resúmenes y figuras en el PDF): Resumen 209 y abstract 187 palabras, y el .tex declara 24 figuras con 25 includegraphics, frente a los tres labels huérfanos de antes.
+LO QUE ESTA BIEN RESUELTO
+  Punto 1 (Referencias verificables): 71 claves citadas y los DOI que revisé resuelven a la obra citada. El documento de verificación que no se sostenía ya no está.
+  Punto 2 (Análisis estático ejecutado): spotbugsXml.xml es salida real de la herramienta, con scripts/spotbugs-include.xml y el perfil de seguridad.
+  Punto 3 (Escaneo de seguridad ejecutado): dataset/zap/zap-baseline con informe en HTML y Markdown, con corrida fechada.
+  Punto 4 (Autorización efectiva): @EnableMethodSecurity presente, así que las anotaciones de los controladores surten efecto.
+  Punto 5 (Autoría completa en la portada): Los tres integrantes figuran en la portada del informe y en la carátula del SGA.
+  Punto 9 (Informe que compila y README ejecutable): Las 100 páginas se regeneran y el README documenta comandos, directorio y número de pasadas.
+  Punto 12 (Cobertura de pruebas): 89,96 % de líneas y 88,38 % de ramas. Es la cobertura más pareja del curso.
+  Punto 14 (Resúmenes y figuras en el PDF): Resumen 209 y abstract 187 palabras, y el .tex declara 24 figuras con 25 includegraphics.
 
-LO QUE LES COSTO LA NOTA
-  Punto E2 (Comentarios que generan documentación (Javadoc)) quedo en Nada: No hay ni un @param, ni un @return, ni un @throws en todo el backend, y solo 17 de 225 métodos públicos (7,6 %) llevan bloque de documentación. La exigencia sigue sin atenderse.
+LO QUE FALTA O NO SE SOSTIENE
   Punto 8 (Lighthouse completo) quedo en A medias: Hay configuración lighthouserc.js y corridas, pero no encontré los tres informes por perfil, incluido escritorio.
-  Punto E1 (Nombres del código en inglés) quedo en Apenas: 77 de 131 tipos (58,8 %) y 241 de 471 métodos (51,2 %) siguen con nombre español. Hay avance, pero sigue por encima del 30 %.
-  Punto E3 (Figuras en inglés) quedo en Apenas: Se añadieron 24 figuras, pero el rotulado sigue mayoritariamente en español.
+  Punto E1 (Nombres del código en inglés) quedo en Apenas: 28 de 131 tipos (21,4 %) pero 221 de 471 métodos (46,9 %) siguen con nombre español. Las clases están bien, los métodos no.
+  Punto E3 (Figuras en inglés) quedo en Apenas: 24 figuras en el informe, pero el rotulado sigue mayoritariamente en español.
 
 SOBRE SU APORTE INDIVIDUAL
-Entre el 2 y el 11 de septiembre registro 8 commits, 6.699 lineas de fuente propia y 3 dias distintos de trabajo.
+En todo el proyecto registra 63 commits, 81.862 lineas de fuente propia y 7 dias distintos con actividad.
 Lo medi con git log --no-merges --numstat, unificando sus identidades de Git y excluyendo los artefactos generados.
 Identidad de Git: 0999595561kevin@gmail.com.
-8 commits repartidos en tres días. Es el aporte más bajo del equipo, aunque ya figura en la portada.
+63 commits y un volumen considerable, aunque concentrado en menos días. Usa correo personal, no el institucional.
 
 SU CALIFICACION
 Esta rubrica califica el resultado del equipo, no el reparto interno del trabajo.
-Suma de puntos obtenidos: 7,12 sobre 10.
-Multiplicador: 0, porque el punto E2 quedo en Nada.
-Por como esta construida la rubrica, un solo factor en cero deja la nota en cero aunque el resto este bien.
-CALIFICACION: 0,00 / 10
+Suma de puntos obtenidos: 7,80 sobre 10.
+CALIFICACION: 5,66 / 10
 ============================================================================</pre></div>
-<div class="doc"><b>Observaciones para el docente.</b> Aporte verificado con <code>git log</code> entre el 2 y el 11 de septiembre: 8 commits, 6.699 líneas y 3 días activos (0999595561kevin@gmail.com). Nota del equipo 0,00 (suma 7,12, multiplicador 0,0000). El cero viene de los puntos E2. Puntos con nivel provisional: 6, 7, 8, 10, 11, 13, 15, 16, 17, E3. </div>
-<p class="meta">Recibí tres capturas del cuestionario con 5,16, 4,76 y 4,52, sin que el PDF identifique a quién corresponde cada una.</p>
+<div class="doc"><b>Observaciones para el docente.</b> Aporte verificado con <code>git log</code> sobre todo el historial: 63 commits, 81.862 líneas y 7 días activos (0999595561kevin@gmail.com). Nota del equipo 5,66 (suma 7,80, multiplicador 0,7257). Puntos con nivel provisional: 6, 7, 8, 10, 11, 13, 15, 16, 17, E3. </div>
+<p class="meta">Recibí tres capturas del cuestionario del SGA con 5,16, 4,76 y 4,52, sin que el PDF identifique a quién corresponde cada una.</p>
 </main></body></html>
