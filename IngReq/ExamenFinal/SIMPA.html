@@ -1,0 +1,326 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrega final del PFC — Equipo SIMPA</title><style>
+:root{--tinta:#1b1b1b;--suave:#5a5a5a;--linea:#d8d8d8;--verde:#0b6b3a;--granate:#8c1c2e;--fondo:#fbfbf9;--caja:#f2f4f1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.62 Georgia,"Times New Roman",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 64px}
+h1{font-size:1.85rem;line-height:1.25;margin:.2em 0 .35em}
+h2{font-size:1.3rem;margin:2.2em 0 .6em;border-bottom:2px solid var(--verde);padding-bottom:.25em;color:var(--verde)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+.meta{color:var(--suave);font-size:.9rem;line-height:1.5}
+.nav a{color:var(--verde);text-decoration:none;border-bottom:1px solid transparent}
+.nav a:hover{border-bottom-color:var(--verde)}
+.ficha{background:var(--caja);border:1px solid var(--linea);border-left:5px solid var(--verde);padding:14px 16px;margin:18px 0}
+.nota{font-size:1.5rem;font-weight:700;color:var(--granate)}
+.nota small{font-size:.85rem;font-weight:400;color:var(--suave)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;background:#fff;margin:10px 0 6px}
+th,td{border:1px solid var(--linea);padding:7px 9px;vertical-align:top;text-align:left}
+th{background:#eef1ec;font-size:.82rem}
+td.n,th.n{text-align:center;white-space:nowrap}
+tr.sec td{background:#eef1ec;font-weight:700;font-size:.84rem}
+tr.tot td{background:#f7f3e8;font-weight:700}
+.badge{display:inline-block;font-size:.72rem;padding:1px 6px;border-radius:9px;border:1px solid}
+.b-hecho{color:#0b6b3a;border-color:#0b6b3a;background:#eef7f1}
+.b-mod{color:#8a6d00;border-color:#c9a227;background:#fdf7e3}
+.b-term{color:#8c1c2e;border-color:#8c1c2e;background:#fceff1}
+.piso{background:#fceff1;border:1px solid var(--granate);border-left:5px solid var(--granate);padding:12px 16px;margin:16px 0}
+.piso h3{margin-top:0;color:var(--granate)}
+pre{background:#11150f;color:#e8e8e0;padding:14px;overflow:auto;font:12.5px/1.5 "SFMono-Regular",Consolas,monospace;white-space:pre;border-radius:4px}
+.copiar{background:var(--verde);color:#fff;border:0;padding:6px 12px;font-size:.8rem;border-radius:3px;cursor:pointer;margin:6px 0}
+.copiar:hover{background:#094f2b}
+.rep{border-top:1px solid var(--linea);padding-top:10px;margin-top:26px}
+.rep h3{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rep h3 span{color:var(--granate);font-weight:700}
+.lista{columns:2;column-gap:28px}
+@media(max-width:820px){.lista{columns:1}table{font-size:.8rem}}
+footer{margin-top:44px;border-top:1px solid var(--linea);padding-top:12px;color:var(--suave);font-size:.82rem}
+</style></head><body><div class="wrap">
+<h1>Entrega final del PFC — Equipo SIMPA</h1>
+<p class="meta">Septimo semestre · UTEQ, Facultad de Ciencias de la Computacion · Ingenieria de Requisitos (ISR-401) · PPA 2026-2027 · Paralelo 4.º A · Alcance: ultimo commit del repositorio, sin limite de fecha, revisado el 14 de septiembre de 2026 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p>
+<p class="nav"><a href="index.html">← Entrega final — Ingenieria de Requisitos</a></p>
+<div class="ficha">
+<p><strong>SIMPA — Sistema Inteligente de Mantenimiento de Palma Africana</strong><br>
+Repositorio: <a href="https://github.com/AlanNVR/SIMPA_ISR401">github.com/AlanNVR/SIMPA_ISR401</a><br>
+Ultimo commit evaluado <code>831b833</code> (13 de septiembre de 2026) · 669 commits de historia · 18 elementos exigidos, de los cuales 5 ya estaban resueltos y 13 se califican aqui.</p>
+<p class="nota">Nota del proyecto: 0,37 / 10,00 <small>· suma de puntos 7,54 / 10,00</small></p>
+</div>
+<p><strong>Como se calcula la nota.</strong> De todo lo exigido al proyecto, una parte estaba resuelta y verificada con anterioridad y no vuelve a puntuar: aparece como <strong>Hecho</strong> en el primer bloque. Lo demas se califica, y cada elemento cuenta dos veces. Tiene un <strong>peso</strong> —los pesos suman 10— sobre el que recibe una calificacion de 0 a 10, y esa calificacion dividida entre su maximo da un <strong>factor</strong> que multiplica. La nota es <code>(f₁ × f₂ × … × fₙ) × (p₁ + p₂ + … + pₙ)</code>. El factor vale 1 solamente cuando el elemento esta terminado y correcto al cien por cien, y un elemento en cero deja el multiplicador en cero y con el la nota. Por eso, junto a cada nota publico tambien la suma de puntos: es la medida de cuanto trabajo hay hecho.</p>
+<div class="piso"><h3>Criterios de piso — vigentes y expuestos</h3><ol><li>Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.</li><li>Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.</li><li>Que ningun archivo anuncie una pieza de evidencia sin contenerla.</li><li>Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.</li><li>Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.</li><li>Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.</li><li>Que exista la evidencia de autoria con los doce elementos de A1 a A12.</li><li>Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.</li></ol>
+<p>En una evaluacion ordinaria el incumplimiento de cualquiera de ellos deja la calificacion en cero.</p></div>
+<h2>Hoja de calculo</h2>
+<table><thead><tr><th class="n">#</th><th>Elemento</th><th class="n">Peso</th><th class="n">Antes</th><th class="n">Ahora</th><th class="n">Puntos</th><th class="n">Factor</th><th>Que encontre</th></tr></thead><tbody><tr class="sec"><td colspan="8">Resuelto y verificado con anterioridad — no puntua</td></tr><tr><td class="n">1</td><td colspan="2">El ERS se compila desde fuente LaTeX modular versionada, con bibliografia y figuras propias</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">2</td><td colspan="2">La especificacion supera los minimos y el texto cubre explicabilidad, equidad y monitoreo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">3</td><td colspan="2">El inventario tecnico declara duracion, codec, tamano, SHA-256, contenedor y ruta interna</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">4</td><td colspan="2">Los 16 consentimientos estan firmados y nombrados con fecha, rol y codigo de entrevista</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">5</td><td colspan="2">Existe etiqueta anotada de linea base y comprobante de registro del protocolo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr class="sec"><td colspan="8">Lo calificado — cada elemento es sumando y factor</td></tr><tr><td class="n">A1</td><td><strong>Declarar el repositorio complementario</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,60</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>El README y la caratula declaran cual es el repositorio oficial y cual el complementario, con la relacion entre ambos y la ruta de descarga. Un evaluador que clone solo el declarado llega a la evidencia.</td></tr><tr><td class="n">A2</td><td><strong>Explicar la identidad ajena al equipo</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,50</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">0,45</td><td class="n">0,90</td><td>Los cinco commits de la identidad ajena estan explicados por escrito en una declaracion de identidades de Git, con su version enmascarada. Falta que esa explicacion diga que archivos toco cada commit.</td></tr><tr><td class="n">A3</td><td><strong>Unificar correos e identidades</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,40</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,40</td><td class="n">1,00</td><td>El .mailmap unifica las identidades historicas, incluidas las dos con correo personal y la del dominio mal escrito.</td></tr><tr><td class="n">A4</td><td><strong>Reagrupar los videos de menos de un minuto</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,60</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>El inventario declara hoy sesiones de 313, 1.089 y 1.769 segundos donde antes habia fragmentos de 20 a 43 segundos haciendo de entrevistas.</td></tr><tr><td class="n">A5</td><td><strong>Recalcular el hash no verificado</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,40</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,40</td><td class="n">1,00</td><td>No queda ningun registro con estado NO_VERIFICADO en el inventario.</td></tr><tr><td class="n">A6</td><td><strong>Separar las transcripciones</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,30</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,30</td><td class="n">1,00</td><td>Hay un archivo por entrevista, nombrado con fecha y codigo de participante.</td></tr><tr><td class="n">A7</td><td><strong>Fotografias de aplicacion del cuestionario</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,20</td><td class="n">0 ↑</td><td class="n">10/10</td><td class="n">0,20</td><td class="n">1,00</td><td>Lo que estaba en cero esta resuelto: hay 15 fotografias de aplicacion donde antes solo habia un readme.</td></tr><tr><td class="n">B1</td><td><strong>Paquete de datos reproducible</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,60</td><td class="n">10 ↓</td><td class="n">7/10</td><td class="n">1,12</td><td class="n">0,70</td><td>El paquete esta completo, con quince archivos de resultados generados por script y un diccionario de 64 columnas. Recalcule sus manifiestos: 490 entradas verifican y cinco fallan, entre ellas README_datos.md, desviaciones.md y resultados/readme.md. El manifiesto se genero y despues se editaron los archivos sin regenerarlo, de modo que la comprobacion de integridad sobre un clon limpio termina con error.</td></tr><tr><td class="n">B2</td><td><strong>Evidencia de autoria completa de A1 a A12</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">1,60</td><td class="n">3 =</td><td class="n">3/10</td><td class="n">0,48</td><td class="n">0,30</td><td>Tres elementos de doce siguen sin cumplirse. No hay ninguna grabacion de sesion de trabajo del equipo: la carpeta contiene un readme que remite a los anexos del repositorio complementario, y A4 pide al menos dos de diez a quince minutos con la edicion efectiva a la vista. La correspondencia con la organizacion sigue siendo un readme sin comunicaciones. Y las capturas cubren cuatro identidades de los seis integrantes. Lo que si se corrigio son las notas de campo, hoy dieciseis, y las fotografias del equipo en la palmicultora, hoy tres y fechadas.</td></tr><tr><td class="n">B3</td><td><strong>Evidencia de campo del componente empirico</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,90</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">0,81</td><td class="n">0,90</td><td>La hoja de evaluacion a ciegas esta completa en formato largo, con aleatorizacion documentada y comprobacion del cegamiento. Los consentimientos estan firmados, aunque sus metadatos mezclan Canva, iLovePDF y una plantilla compuesta en LaTeX.</td></tr><tr><td class="n">B4</td><td><strong>Numeros calculados y documentados</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">0,70</td><td class="n">10 ↓</td><td class="n">4/10</td><td class="n">0,28</td><td class="n">0,40</td><td>Aqui esta el problema serio del expediente, y es de medida, no de calculo. Los kappa ponderados entre evaluadores son -0,044, 0,286 y -0,023 en completitud y -0,009 y 0,259 en ambigüedad: con fiabilidad en torno a cero, la variable que despues modelan no mide nada estable. El modelo ordinal mixto, ademas, ajusta la varianza del efecto de requisito en 1,5e-09, que es un ajuste singular. El aparato es el mas sofisticado del curso y descansa sobre una medida que no se sostiene.</td></tr><tr><td class="n">B5</td><td><strong>Requisitos del componente inteligente</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,40</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">1,26</td><td class="n">0,90</td><td>El texto cubre explicabilidad, equidad y monitoreo con holgura, y los requisitos estan enunciados con metrica y umbral. Queda por cerrar responsable y frecuencia de medicion en varios de ellos.</td></tr><tr><td class="n">B6</td><td><strong>Etica y proteccion de datos</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,80</td><td class="n">10 ↓</td><td class="n">8/10</td><td class="n">0,64</td><td class="n">0,80</td><td>Consentimientos firmados, capa restringida cifrada y declaracion legal presente. La mezcla de procedencias de los PDF de consentimiento conviene homogeneizarla.</td></tr><tr class="tot"><td colspan="5">Totales</td><td class="n">7,54</td><td class="n">0.048989</td><td></td></tr></tbody></table>
+<p class="meta">Suma de puntos S = 7,54 sobre 10<br>
+Producto de los factores 1,00 × 0,90 × 1,00 × 1,00 × 1,00 × 1,00 × 1,00 × 0,70 × 0,30 × 0,90 × 0,40 × 0,90 × 0,80 = 0.048989<br>
+<strong>Nota del proyecto = 0.048989 × 7,54 = 0,37 / 10,00</strong></p>
+<h2>Aporte de cada integrante</h2>
+<p class="meta">Medido sobre el historial completo del repositorio (669 commits, sin fusiones), atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code>. El reparto equitativo entre 6 integrantes es el 16,7 %: quien lo alcanza recibe la nota completa del proyecto, quien queda por debajo la recibe en proporcion. Ningun integrante puede superar la nota del proyecto.</p>
+<table><thead><tr><th>Integrante</th><th class="n">Commits</th><th class="n">Participacion</th><th class="n">Factor</th><th class="n">Nota final</th></tr></thead><tbody><tr><td>Rizzo Velez Edson Nagib</td><td class="n">143</td><td class="n">21,8 %</td><td class="n">1,000</td><td class="n">0,37</td></tr><tr><td>Arboleda Yanza Francisco Javier</td><td class="n">137</td><td class="n">20,9 %</td><td class="n">1,000</td><td class="n">0,37</td></tr><tr><td>Huilcapi Leon Denisses Fabiola</td><td class="n">113</td><td class="n">17,2 %</td><td class="n">1,000</td><td class="n">0,37</td></tr><tr><td>Macias Herrera Josthyn Esteban</td><td class="n">101</td><td class="n">15,4 %</td><td class="n">0,924</td><td class="n">0,34</td></tr><tr><td>Villafuerte Rosero Allan Noe</td><td class="n">99</td><td class="n">15,1 %</td><td class="n">0,905</td><td class="n">0,33</td></tr><tr><td>Alcivar Velez Anderson Adonis</td><td class="n">63</td><td class="n">9,6 %</td><td class="n">0,576</td><td class="n">0,21</td></tr></tbody></table>
+<h2>Informe del proyecto</h2>
+<p class="meta">Este es el informe global del equipo: se publica una sola vez y vale para los 6 integrantes. Se copia entero con su boton.</p>
+<button class="copiar" onclick="copiar('proy',this)">Copiar informe del proyecto</button><pre id="proy">==============================================================================
+ENTREGA FINAL DEL PROYECTO FIN DE CURSO -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL PROYECTO
+==============================================================================
+Equipo: SIMPA -- Sistema Inteligente de Mantenimiento de Palma Africana
+Integrantes: Rizzo Velez Edson Nagib, Arboleda Yanza Francisco Javier, Huilcapi Leon Denisses Fabiola, Macias Herrera Josthyn Esteban, Villafuerte Rosero Allan Noe, Alcivar Velez Anderson Adonis
+Repositorio: https://github.com/AlanNVR/SIMPA_ISR401
+Ultimo commit evaluado: 831b833 (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 669 commits de historia.
+
+QUE EVALUE
+Evalue los 13 elementos exigidos al cierre, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de los puntos.
+Los 5 elementos ya resueltos y verificados con anterioridad no vuelven a puntuar.
+No verifique solo que la evidencia estuviera: recalcule los manifiestos de sumas sobre el
+contenido real, revise los metadatos de los PDF de consentimiento, compare los repositorios
+entre equipos para descartar copia y recalcule los estadisticos desde los datos crudos.
+
+CRITERIOS DE PISO -- vigentes y expuestos
+  1. Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.
+  3. Que ningun archivo anuncie una pieza de evidencia sin contenerla.
+  4. Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.
+  5. Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.
+  6. Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.
+  7. Que exista la evidencia de autoria con los doce elementos de A1 a A12.
+  8. Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volvi a evaluar la entrega sobre el ultimo commit del repositorio, sin limite de fecha, y de las siete correcciones que les pedi las siete estan hechas, incluida la que estaba en cero: hoy hay quince fotografias de aplicacion del cuestionario donde no habia ninguna.
+Los videos que declaraban veinte segundos son hoy sesiones de 313, 1.089 y 1.769 segundos, no queda ningun hash sin verificar, las transcripciones estan separadas por entrevista, el repositorio complementario esta declarado en el README y en la caratula, y las notas de campo y las fotografias del equipo en la palmicultora aparecieron.
+Queda por tanto un expediente tecnicamente fuerte, y precisamente por eso les digo sin rodeos donde se rompe.
+En la carpeta de autoria siguen faltando tres elementos de doce: no hay ninguna grabacion de sesion de trabajo del equipo -la carpeta contiene un readme que remite a otro sitio-, la correspondencia con la organizacion sigue siendo un readme sin comunicaciones, y las capturas cubren cuatro identidades de los seis integrantes.
+En el paquete de datos, cinco entradas del manifiesto de sumas ya no cuadran con el contenido: el manifiesto se firmo y despues se siguieron editando archivos sin regenerarlo, de modo que la comprobacion de integridad sobre un clon limpio termina con error.
+Y el punto de fondo es la medida.
+Sus kappa ponderados entre evaluadores son -0,044, 0,286 y -0,023 en completitud, y -0,009 y 0,259 en ambigüedad.
+Con una fiabilidad en torno a cero, la puntuacion que despues modelan no mide algo estable, y el modelo ordinal mixto que construyen encima ajusta la varianza del efecto de requisito en 1,5 por diez elevado a menos nueve, que es un ajuste degenerado.
+Han montado el aparato estadistico mas ambicioso del curso sobre un instrumento cuya fiabilidad no establecieron antes: ese es el orden que hay que invertir.
+
+LO QUE YA ESTABA RESUELTO Y NO VUELVE A PUNTUAR
+  - El ERS se compila desde fuente LaTeX modular versionada, con bibliografia y figuras propias.
+  - La especificacion supera los minimos y el texto cubre explicabilidad, equidad y monitoreo.
+  - El inventario tecnico declara duracion, codec, tamano, SHA-256, contenedor y ruta interna.
+  - Los 16 consentimientos estan firmados y nombrados con fecha, rol y codigo de entrevista.
+  - Existe etiqueta anotada de linea base y comprobante de registro del protocolo.
+
+HOJA DE CALCULO
+  A1  Declarar el repositorio complementario         peso 0,60  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Hecho]
+  A2  Explicar la identidad ajena al equipo          peso 0,50  antes 10  ahora  9/10  puntos 0,45  factor 0,90  [Modificar]
+  A3  Unificar correos e identidades                 peso 0,40  antes 10  ahora 10/10  puntos 0,40  factor 1,00  [Hecho]
+  A4  Reagrupar los videos de menos de un minuto     peso 0,60  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Hecho]
+  A5  Recalcular el hash no verificado               peso 0,40  antes 10  ahora 10/10  puntos 0,40  factor 1,00  [Hecho]
+  A6  Separar las transcripciones                    peso 0,30  antes 10  ahora 10/10  puntos 0,30  factor 1,00  [Hecho]
+  A7  Fotografias de aplicacion del cuestionario     peso 0,20  antes  0  ahora 10/10  puntos 0,20  factor 1,00  [Hecho]
+  B1  Paquete de datos reproducible                  peso 1,60  antes 10  ahora  7/10  puntos 1,12  factor 0,70  [Modificar]
+  B2  Evidencia de autoria completa de A1 a A12      peso 1,60  antes  3  ahora  3/10  puntos 0,48  factor 0,30  [Por terminar]
+  B3  Evidencia de campo del componente empirico     peso 0,90  antes 10  ahora  9/10  puntos 0,81  factor 0,90  [Modificar]
+  B4  Numeros calculados y documentados              peso 0,70  antes 10  ahora  4/10  puntos 0,28  factor 0,40  [Por terminar]
+  B5  Requisitos del componente inteligente          peso 1,40  antes 10  ahora  9/10  puntos 1,26  factor 0,90  [Modificar]
+  B6  Etica y proteccion de datos                    peso 0,80  antes 10  ahora  8/10  puntos 0,64  factor 0,80  [Modificar]
+  Suma de puntos S = 7,54 sobre 10.
+  Producto de los factores = 0.048989.
+  NOTA DEL PROYECTO = 0.048989 x 7,54 = 0,37 sobre 10.
+
+APORTE DE CADA INTEGRANTE
+  Medido sobre el historial completo, unificando identidades con .mailmap.
+  El reparto equitativo entre 6 integrantes es el 16,7 %.
+  Rizzo Velez Edson Nagib              143 commits   aporte  21,8 %   factor 1,000   nota 0,37
+  Arboleda Yanza Francisco Javier      137 commits   aporte  20,9 %   factor 1,000   nota 0,37
+  Huilcapi Leon Denisses Fabiola       113 commits   aporte  17,2 %   factor 1,000   nota 0,37
+  Macias Herrera Josthyn Esteban       101 commits   aporte  15,4 %   factor 0,924   nota 0,34
+  Villafuerte Rosero Allan Noe          99 commits   aporte  15,1 %   factor 0,905   nota 0,33
+  Alcivar Velez Anderson Adonis         63 commits   aporte   9,6 %   factor 0,576   nota 0,21
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre>
+<h2>Informes del aporte individual</h2>
+<p class="meta">Un recuadro por estudiante, corto y sin repetir el informe del proyecto: lleva la nota del equipo, el enlace a esta pagina y el calculo de su aporte. Listo para pegar en el espacio del estudiante en el SGA.</p>
+<div class="rep"><h3>Rizzo Velez Edson Nagib <span>0,37 / 10</span></h3><button class="copiar" onclick="copiar('inf0',this)">Copiar informe individual</button><pre id="inf0">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Rizzo Velez Edson Nagib
+Equipo: SIMPA -- Sistema Inteligente de Mantenimiento de Palma Africana
+Repositorio: https://github.com/AlanNVR/SIMPA_ISR401
+Ultimo commit evaluado: 831b833 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,54 sobre 10 x producto de los factores 0.048989 = 0,37 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIMPA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (669 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 6 integrantes es el 16,7 %.
+  Rizzo Velez Edson Nagib              143 commits   aporte  21,8 %   factor 1,000   nota 0,37  &lt;-- usted
+  Arboleda Yanza Francisco Javier      137 commits   aporte  20,9 %   factor 1,000   nota 0,37
+  Huilcapi Leon Denisses Fabiola       113 commits   aporte  17,2 %   factor 1,000   nota 0,37
+  Macias Herrera Josthyn Esteban       101 commits   aporte  15,4 %   factor 0,924   nota 0,34
+  Villafuerte Rosero Allan Noe          99 commits   aporte  15,1 %   factor 0,905   nota 0,33
+  Alcivar Velez Anderson Adonis         63 commits   aporte   9,6 %   factor 0,576   nota 0,21
+
+  Su aporte: 21,8 % frente a un reparto equitativo del 16,7 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,37 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Arboleda Yanza Francisco Javier <span>0,37 / 10</span></h3><button class="copiar" onclick="copiar('inf1',this)">Copiar informe individual</button><pre id="inf1">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Arboleda Yanza Francisco Javier
+Equipo: SIMPA -- Sistema Inteligente de Mantenimiento de Palma Africana
+Repositorio: https://github.com/AlanNVR/SIMPA_ISR401
+Ultimo commit evaluado: 831b833 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,54 sobre 10 x producto de los factores 0.048989 = 0,37 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIMPA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (669 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 6 integrantes es el 16,7 %.
+  Rizzo Velez Edson Nagib              143 commits   aporte  21,8 %   factor 1,000   nota 0,37
+  Arboleda Yanza Francisco Javier      137 commits   aporte  20,9 %   factor 1,000   nota 0,37  &lt;-- usted
+  Huilcapi Leon Denisses Fabiola       113 commits   aporte  17,2 %   factor 1,000   nota 0,37
+  Macias Herrera Josthyn Esteban       101 commits   aporte  15,4 %   factor 0,924   nota 0,34
+  Villafuerte Rosero Allan Noe          99 commits   aporte  15,1 %   factor 0,905   nota 0,33
+  Alcivar Velez Anderson Adonis         63 commits   aporte   9,6 %   factor 0,576   nota 0,21
+
+  Su aporte: 20,9 % frente a un reparto equitativo del 16,7 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,37 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Huilcapi Leon Denisses Fabiola <span>0,37 / 10</span></h3><button class="copiar" onclick="copiar('inf2',this)">Copiar informe individual</button><pre id="inf2">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Huilcapi Leon Denisses Fabiola
+Equipo: SIMPA -- Sistema Inteligente de Mantenimiento de Palma Africana
+Repositorio: https://github.com/AlanNVR/SIMPA_ISR401
+Ultimo commit evaluado: 831b833 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,54 sobre 10 x producto de los factores 0.048989 = 0,37 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIMPA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (669 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 6 integrantes es el 16,7 %.
+  Rizzo Velez Edson Nagib              143 commits   aporte  21,8 %   factor 1,000   nota 0,37
+  Arboleda Yanza Francisco Javier      137 commits   aporte  20,9 %   factor 1,000   nota 0,37
+  Huilcapi Leon Denisses Fabiola       113 commits   aporte  17,2 %   factor 1,000   nota 0,37  &lt;-- usted
+  Macias Herrera Josthyn Esteban       101 commits   aporte  15,4 %   factor 0,924   nota 0,34
+  Villafuerte Rosero Allan Noe          99 commits   aporte  15,1 %   factor 0,905   nota 0,33
+  Alcivar Velez Anderson Adonis         63 commits   aporte   9,6 %   factor 0,576   nota 0,21
+
+  Su aporte: 17,2 % frente a un reparto equitativo del 16,7 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,37 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Macias Herrera Josthyn Esteban <span>0,34 / 10</span></h3><button class="copiar" onclick="copiar('inf3',this)">Copiar informe individual</button><pre id="inf3">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Macias Herrera Josthyn Esteban
+Equipo: SIMPA -- Sistema Inteligente de Mantenimiento de Palma Africana
+Repositorio: https://github.com/AlanNVR/SIMPA_ISR401
+Ultimo commit evaluado: 831b833 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,54 sobre 10 x producto de los factores 0.048989 = 0,37 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIMPA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (669 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 6 integrantes es el 16,7 %.
+  Rizzo Velez Edson Nagib              143 commits   aporte  21,8 %   factor 1,000   nota 0,37
+  Arboleda Yanza Francisco Javier      137 commits   aporte  20,9 %   factor 1,000   nota 0,37
+  Huilcapi Leon Denisses Fabiola       113 commits   aporte  17,2 %   factor 1,000   nota 0,37
+  Macias Herrera Josthyn Esteban       101 commits   aporte  15,4 %   factor 0,924   nota 0,34  &lt;-- usted
+  Villafuerte Rosero Allan Noe          99 commits   aporte  15,1 %   factor 0,905   nota 0,33
+  Alcivar Velez Anderson Adonis         63 commits   aporte   9,6 %   factor 0,576   nota 0,21
+
+  Su aporte: 15,4 % frente a un reparto equitativo del 16,7 %.
+  Factor individual: 0,924. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,34 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Villafuerte Rosero Allan Noe <span>0,33 / 10</span></h3><button class="copiar" onclick="copiar('inf4',this)">Copiar informe individual</button><pre id="inf4">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Villafuerte Rosero Allan Noe
+Equipo: SIMPA -- Sistema Inteligente de Mantenimiento de Palma Africana
+Repositorio: https://github.com/AlanNVR/SIMPA_ISR401
+Ultimo commit evaluado: 831b833 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,54 sobre 10 x producto de los factores 0.048989 = 0,37 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIMPA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (669 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 6 integrantes es el 16,7 %.
+  Rizzo Velez Edson Nagib              143 commits   aporte  21,8 %   factor 1,000   nota 0,37
+  Arboleda Yanza Francisco Javier      137 commits   aporte  20,9 %   factor 1,000   nota 0,37
+  Huilcapi Leon Denisses Fabiola       113 commits   aporte  17,2 %   factor 1,000   nota 0,37
+  Macias Herrera Josthyn Esteban       101 commits   aporte  15,4 %   factor 0,924   nota 0,34
+  Villafuerte Rosero Allan Noe          99 commits   aporte  15,1 %   factor 0,905   nota 0,33  &lt;-- usted
+  Alcivar Velez Anderson Adonis         63 commits   aporte   9,6 %   factor 0,576   nota 0,21
+
+  Su aporte: 15,1 % frente a un reparto equitativo del 16,7 %.
+  Factor individual: 0,905. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,33 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Alcivar Velez Anderson Adonis <span>0,21 / 10</span></h3><button class="copiar" onclick="copiar('inf5',this)">Copiar informe individual</button><pre id="inf5">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Alcivar Velez Anderson Adonis
+Equipo: SIMPA -- Sistema Inteligente de Mantenimiento de Palma Africana
+Repositorio: https://github.com/AlanNVR/SIMPA_ISR401
+Ultimo commit evaluado: 831b833 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,54 sobre 10 x producto de los factores 0.048989 = 0,37 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIMPA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (669 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 6 integrantes es el 16,7 %.
+  Rizzo Velez Edson Nagib              143 commits   aporte  21,8 %   factor 1,000   nota 0,37
+  Arboleda Yanza Francisco Javier      137 commits   aporte  20,9 %   factor 1,000   nota 0,37
+  Huilcapi Leon Denisses Fabiola       113 commits   aporte  17,2 %   factor 1,000   nota 0,37
+  Macias Herrera Josthyn Esteban       101 commits   aporte  15,4 %   factor 0,924   nota 0,34
+  Villafuerte Rosero Allan Noe          99 commits   aporte  15,1 %   factor 0,905   nota 0,33
+  Alcivar Velez Anderson Adonis         63 commits   aporte   9,6 %   factor 0,576   nota 0,21  &lt;-- usted
+
+  Su aporte: 9,6 % frente a un reparto equitativo del 16,7 %.
+  Factor individual: 0,576. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,21 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<footer><p><strong>Como audite.</strong> Clone los diez repositorios y evalue el ultimo commit de cada uno, sin aplicar fecha limite, de modo que todo el trabajo posterior a la evaluacion anterior cuenta. No me limite a comprobar que la evidencia estuviera: recalcule uno a uno los manifiestos de sumas de cada repositorio sobre el contenido real, verificando <strong>4.169 entradas</strong> y detectando cuales ya no cuadran; compare el contenido de los diez repositorios entre si para descartar copia -los unicos archivos identicos entre equipos son plantillas de clase y estilos bibliograficos publicados, ningun material propio-; examine los metadatos de los PDF depositados como consentimiento para distinguir escaneos reales de documentos compuestos por programa; busque archivos vacios y archivos con fecha futura; y recalcule desde los datos crudos los estadisticos publicados por cada equipo, comprobando si la inferencia que se hace de ellos se sostiene. El aporte individual lo medi sobre el historial completo con <code>git log --no-merges</code>, atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code> de cada repositorio.</p><p>Universidad Tecnica Estatal de Quevedo — PPA 2026-2027</p></footer>
+</div><script>
+function copiar(id,btn){const t=document.getElementById(id).innerText;
+navigator.clipboard.writeText(t).then(()=>{const o=btn.textContent;btn.textContent='Copiado';setTimeout(()=>btn.textContent=o,1400)});}
+</script></body></html>

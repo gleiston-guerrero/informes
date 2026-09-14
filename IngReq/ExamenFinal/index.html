@@ -1,0 +1,47 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrega final del PFC — Ingenieria de Requisitos (ISR-401)</title><style>
+:root{--tinta:#1b1b1b;--suave:#5a5a5a;--linea:#d8d8d8;--verde:#0b6b3a;--granate:#8c1c2e;--fondo:#fbfbf9;--caja:#f2f4f1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.62 Georgia,"Times New Roman",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 64px}
+h1{font-size:1.85rem;line-height:1.25;margin:.2em 0 .35em}
+h2{font-size:1.3rem;margin:2.2em 0 .6em;border-bottom:2px solid var(--verde);padding-bottom:.25em;color:var(--verde)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+.meta{color:var(--suave);font-size:.9rem;line-height:1.5}
+.nav a{color:var(--verde);text-decoration:none;border-bottom:1px solid transparent}
+.nav a:hover{border-bottom-color:var(--verde)}
+.ficha{background:var(--caja);border:1px solid var(--linea);border-left:5px solid var(--verde);padding:14px 16px;margin:18px 0}
+.nota{font-size:1.5rem;font-weight:700;color:var(--granate)}
+.nota small{font-size:.85rem;font-weight:400;color:var(--suave)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;background:#fff;margin:10px 0 6px}
+th,td{border:1px solid var(--linea);padding:7px 9px;vertical-align:top;text-align:left}
+th{background:#eef1ec;font-size:.82rem}
+td.n,th.n{text-align:center;white-space:nowrap}
+tr.sec td{background:#eef1ec;font-weight:700;font-size:.84rem}
+tr.tot td{background:#f7f3e8;font-weight:700}
+.badge{display:inline-block;font-size:.72rem;padding:1px 6px;border-radius:9px;border:1px solid}
+.b-hecho{color:#0b6b3a;border-color:#0b6b3a;background:#eef7f1}
+.b-mod{color:#8a6d00;border-color:#c9a227;background:#fdf7e3}
+.b-term{color:#8c1c2e;border-color:#8c1c2e;background:#fceff1}
+.piso{background:#fceff1;border:1px solid var(--granate);border-left:5px solid var(--granate);padding:12px 16px;margin:16px 0}
+.piso h3{margin-top:0;color:var(--granate)}
+pre{background:#11150f;color:#e8e8e0;padding:14px;overflow:auto;font:12.5px/1.5 "SFMono-Regular",Consolas,monospace;white-space:pre;border-radius:4px}
+.copiar{background:var(--verde);color:#fff;border:0;padding:6px 12px;font-size:.8rem;border-radius:3px;cursor:pointer;margin:6px 0}
+.copiar:hover{background:#094f2b}
+.rep{border-top:1px solid var(--linea);padding-top:10px;margin-top:26px}
+.rep h3{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rep h3 span{color:var(--granate);font-weight:700}
+.lista{columns:2;column-gap:28px}
+@media(max-width:820px){.lista{columns:1}table{font-size:.8rem}}
+footer{margin-top:44px;border-top:1px solid var(--linea);padding-top:12px;color:var(--suave);font-size:.82rem}
+</style></head><body><div class="wrap">
+<h1>Entrega final del Proyecto Fin de Curso — Ingenieria de Requisitos (ISR-401)</h1>
+<p class="meta">Septimo semestre · UTEQ, Facultad de Ciencias de la Computacion · PPA 2026-2027 · Paralelos 4.º A y 4.º B Software · Alcance: ultimo commit de cada repositorio, sin limite de fecha, revisado el 14 de septiembre de 2026 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p>
+<p><strong>Como se calcula la nota.</strong> De todo lo exigido al proyecto, una parte estaba resuelta y verificada con anterioridad y no vuelve a puntuar: aparece como <strong>Hecho</strong> en el primer bloque. Lo demas se califica, y cada elemento cuenta dos veces. Tiene un <strong>peso</strong> —los pesos suman 10— sobre el que recibe una calificacion de 0 a 10, y esa calificacion dividida entre su maximo da un <strong>factor</strong> que multiplica. La nota es <code>(f₁ × f₂ × … × fₙ) × (p₁ + p₂ + … + pₙ)</code>. El factor vale 1 solamente cuando el elemento esta terminado y correcto al cien por cien, y un elemento en cero deja el multiplicador en cero y con el la nota. Por eso, junto a cada nota publico tambien la suma de puntos: es la medida de cuanto trabajo hay hecho.</p>
+<h2>Resultados por equipo</h2>
+<table><thead><tr><th>Equipo</th><th>Sistema</th><th class="n">Paralelo</th><th class="n">Commits</th>
+<th class="n">Suma</th><th class="n">Producto</th><th class="n">Nota</th></tr></thead><tbody><tr><td><a href="SIGA.html">SIGA</a></td><td>Sistema de Gestion Academica y gestion de aulas</td><td class="n">4.º B</td><td class="n">265</td><td class="n">9,11</td><td class="n">0.328050</td><td class="n"><strong>2,99</strong></td></tr><tr><td><a href="MundiPets.html">MundiPets</a></td><td>Sistema de adopcion y cruza responsable de mascotas</td><td class="n">4.º B</td><td class="n">354</td><td class="n">8,92</td><td class="n">0.259200</td><td class="n"><strong>2,31</strong></td></tr><tr><td><a href="CarniCore.html">CarniCore</a></td><td>Sistema para la gestion integral de un centro carnico</td><td class="n">4.º A</td><td class="n">570</td><td class="n">8,30</td><td class="n">0.204120</td><td class="n"><strong>1,69</strong></td></tr><tr><td><a href="SGCVIA.html">SGCV-IA</a></td><td>Sistema de Gestion de Clinica Veterinaria con IA</td><td class="n">4.º A</td><td class="n">1215</td><td class="n">8,29</td><td class="n">0.174960</td><td class="n"><strong>1,45</strong></td></tr><tr><td><a href="FabroGym.html">FabroGym</a></td><td>Sistema de gestion para gimnasio</td><td class="n">4.º A</td><td class="n">528</td><td class="n">8,06</td><td class="n">0.131220</td><td class="n"><strong>1,06</strong></td></tr><tr><td><a href="MediCita.html">MediCita</a></td><td>Sistema de gestion inteligente para un centro medico</td><td class="n">4.º A</td><td class="n">1583</td><td class="n">8,14</td><td class="n">0.129600</td><td class="n"><strong>1,05</strong></td></tr><tr><td><a href="ACERS.html">ACERS</a></td><td>Sistema de gestion agricola con IA para cultivos de verde y cacao</td><td class="n">4.º A</td><td class="n">412</td><td class="n">7,91</td><td class="n">0.050388</td><td class="n"><strong>0,40</strong></td></tr><tr><td><a href="SIMPA.html">SIMPA</a></td><td>Sistema Inteligente de Mantenimiento de Palma Africana</td><td class="n">4.º A</td><td class="n">669</td><td class="n">7,54</td><td class="n">0.048989</td><td class="n"><strong>0,37</strong></td></tr><tr><td><a href="SICST.html">SICST</a></td><td>Sistema inteligente de seguimiento de terapia fisica</td><td class="n">4.º B</td><td class="n">476</td><td class="n">3,91</td><td class="n">0.000000</td><td class="n"><strong>0,00</strong></td></tr><tr><td><a href="SIGBUNI.html">SIGBUNI</a></td><td>Sistema inteligente de gestion bibliotecaria universitaria con IA</td><td class="n">4.º B</td><td class="n">74</td><td class="n">0,75</td><td class="n">0.000000</td><td class="n"><strong>0,00</strong></td></tr></tbody></table>
+<p class="meta">La suma de puntos mide cuanto trabajo hay hecho; la nota incorpora ademas el producto de los factores, que castiga dejar elementos incompletos en lugar de cerrarlos.</p>
+<footer><p><strong>Como audite.</strong> Clone los diez repositorios y evalue el ultimo commit de cada uno, sin aplicar fecha limite, de modo que todo el trabajo posterior a la evaluacion anterior cuenta. No me limite a comprobar que la evidencia estuviera: recalcule uno a uno los manifiestos de sumas de cada repositorio sobre el contenido real, verificando <strong>4.169 entradas</strong> y detectando cuales ya no cuadran; compare el contenido de los diez repositorios entre si para descartar copia -los unicos archivos identicos entre equipos son plantillas de clase y estilos bibliograficos publicados, ningun material propio-; examine los metadatos de los PDF depositados como consentimiento para distinguir escaneos reales de documentos compuestos por programa; busque archivos vacios y archivos con fecha futura; y recalcule desde los datos crudos los estadisticos publicados por cada equipo, comprobando si la inferencia que se hace de ellos se sostiene. El aporte individual lo medi sobre el historial completo con <code>git log --no-merges</code>, atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code> de cada repositorio.</p><p>Universidad Tecnica Estatal de Quevedo — PPA 2026-2027</p></footer>
+</div></body></html>

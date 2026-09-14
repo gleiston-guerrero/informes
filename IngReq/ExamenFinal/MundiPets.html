@@ -1,0 +1,288 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrega final del PFC — Equipo MundiPets</title><style>
+:root{--tinta:#1b1b1b;--suave:#5a5a5a;--linea:#d8d8d8;--verde:#0b6b3a;--granate:#8c1c2e;--fondo:#fbfbf9;--caja:#f2f4f1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.62 Georgia,"Times New Roman",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 64px}
+h1{font-size:1.85rem;line-height:1.25;margin:.2em 0 .35em}
+h2{font-size:1.3rem;margin:2.2em 0 .6em;border-bottom:2px solid var(--verde);padding-bottom:.25em;color:var(--verde)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+.meta{color:var(--suave);font-size:.9rem;line-height:1.5}
+.nav a{color:var(--verde);text-decoration:none;border-bottom:1px solid transparent}
+.nav a:hover{border-bottom-color:var(--verde)}
+.ficha{background:var(--caja);border:1px solid var(--linea);border-left:5px solid var(--verde);padding:14px 16px;margin:18px 0}
+.nota{font-size:1.5rem;font-weight:700;color:var(--granate)}
+.nota small{font-size:.85rem;font-weight:400;color:var(--suave)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;background:#fff;margin:10px 0 6px}
+th,td{border:1px solid var(--linea);padding:7px 9px;vertical-align:top;text-align:left}
+th{background:#eef1ec;font-size:.82rem}
+td.n,th.n{text-align:center;white-space:nowrap}
+tr.sec td{background:#eef1ec;font-weight:700;font-size:.84rem}
+tr.tot td{background:#f7f3e8;font-weight:700}
+.badge{display:inline-block;font-size:.72rem;padding:1px 6px;border-radius:9px;border:1px solid}
+.b-hecho{color:#0b6b3a;border-color:#0b6b3a;background:#eef7f1}
+.b-mod{color:#8a6d00;border-color:#c9a227;background:#fdf7e3}
+.b-term{color:#8c1c2e;border-color:#8c1c2e;background:#fceff1}
+.piso{background:#fceff1;border:1px solid var(--granate);border-left:5px solid var(--granate);padding:12px 16px;margin:16px 0}
+.piso h3{margin-top:0;color:var(--granate)}
+pre{background:#11150f;color:#e8e8e0;padding:14px;overflow:auto;font:12.5px/1.5 "SFMono-Regular",Consolas,monospace;white-space:pre;border-radius:4px}
+.copiar{background:var(--verde);color:#fff;border:0;padding:6px 12px;font-size:.8rem;border-radius:3px;cursor:pointer;margin:6px 0}
+.copiar:hover{background:#094f2b}
+.rep{border-top:1px solid var(--linea);padding-top:10px;margin-top:26px}
+.rep h3{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rep h3 span{color:var(--granate);font-weight:700}
+.lista{columns:2;column-gap:28px}
+@media(max-width:820px){.lista{columns:1}table{font-size:.8rem}}
+footer{margin-top:44px;border-top:1px solid var(--linea);padding-top:12px;color:var(--suave);font-size:.82rem}
+</style></head><body><div class="wrap">
+<h1>Entrega final del PFC — Equipo MundiPets</h1>
+<p class="meta">Septimo semestre · UTEQ, Facultad de Ciencias de la Computacion · Ingenieria de Requisitos (ISR-401) · PPA 2026-2027 · Paralelo 4.º B · Alcance: ultimo commit del repositorio, sin limite de fecha, revisado el 14 de septiembre de 2026 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p>
+<p class="nav"><a href="index.html">← Entrega final — Ingenieria de Requisitos</a></p>
+<div class="ficha">
+<p><strong>MundiPets — Sistema de adopcion y cruza responsable de mascotas</strong><br>
+Repositorio: <a href="https://github.com/andymendozap03/MundiPets-PFC-IngReq">github.com/andymendozap03/MundiPets-PFC-IngReq</a><br>
+Ultimo commit evaluado <code>7dec14f</code> (12 de septiembre de 2026) · 354 commits de historia · 16 elementos exigidos, de los cuales 5 ya estaban resueltos y 11 se califican aqui.</p>
+<p class="nota">Nota del proyecto: 2,31 / 10,00 <small>· suma de puntos 8,92 / 10,00</small></p>
+</div>
+<p><strong>Como se calcula la nota.</strong> De todo lo exigido al proyecto, una parte estaba resuelta y verificada con anterioridad y no vuelve a puntuar: aparece como <strong>Hecho</strong> en el primer bloque. Lo demas se califica, y cada elemento cuenta dos veces. Tiene un <strong>peso</strong> —los pesos suman 10— sobre el que recibe una calificacion de 0 a 10, y esa calificacion dividida entre su maximo da un <strong>factor</strong> que multiplica. La nota es <code>(f₁ × f₂ × … × fₙ) × (p₁ + p₂ + … + pₙ)</code>. El factor vale 1 solamente cuando el elemento esta terminado y correcto al cien por cien, y un elemento en cero deja el multiplicador en cero y con el la nota. Por eso, junto a cada nota publico tambien la suma de puntos: es la medida de cuanto trabajo hay hecho.</p>
+<div class="piso"><h3>Criterios de piso — vigentes y expuestos</h3><ol><li>Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.</li><li>Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.</li><li>Que ningun archivo anuncie una pieza de evidencia sin contenerla.</li><li>Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.</li><li>Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.</li><li>Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.</li><li>Que exista la evidencia de autoria con los doce elementos de A1 a A12.</li><li>Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.</li></ol>
+<p>En una evaluacion ordinaria el incumplimiento de cualquiera de ellos deja la calificacion en cero.</p></div>
+<h2>Hoja de calculo</h2>
+<table><thead><tr><th class="n">#</th><th>Elemento</th><th class="n">Peso</th><th class="n">Antes</th><th class="n">Ahora</th><th class="n">Puntos</th><th class="n">Factor</th><th>Que encontre</th></tr></thead><tbody><tr class="sec"><td colspan="8">Resuelto y verificado con anterioridad — no puntua</td></tr><tr><td class="n">1</td><td colspan="2">El historial es el mejor distribuido del curso: cinco integrantes, tres meses, correo institucional</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">2</td><td colspan="2">El inventario tecnico permite auditar la evidencia sin abrir el contenedor</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">3</td><td colspan="2">La cadena de analisis esta completa: entradas versionadas, cinco scripts y orquestador unico</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">4</td><td colspan="2">El estudio produce matriz de confusion, acuerdo entre evaluadores y contraste de significancia</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">5</td><td colspan="2">Los cinco archivos obligatorios de la raiz mas la evaluacion FAIR</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr class="sec"><td colspan="8">Lo calificado — cada elemento es sumando y factor</td></tr><tr><td class="n">A1</td><td><strong>El MVP accesible desde el repositorio declarado</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,80</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,80</td><td class="n">1,00</td><td>El MVP dejo de ser un submodulo que apuntaba a otro repositorio: hoy esta en el arbol, de modo que quien clone sin la opcion recursiva lo ve igual.</td></tr><tr><td class="n">A2</td><td><strong>Etiqueta anotada de linea base</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,70</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,70</td><td class="n">1,00</td><td>La etiqueta existe, es anotada, esta publicada y es alcanzable.</td></tr><tr><td class="n">A3</td><td><strong>Manifiesto de sumas que verifique en clon limpio</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">0,60</td><td class="n">10 ↓</td><td class="n">5/10</td><td class="n">0,30</td><td class="n">0,50</td><td>Esto era exactamente lo que les pedi y no esta resuelto. Recalcule el manifiesto sobre el contenido actual: de las 377 entradas que pude evaluar, 25 no cuadran, entre ellas tabla_8_significancia_estadistica.csv, tabla_5_consenso_por_requisito.csv y consenso_experto_vs_detector.csv, que son resultados del estudio. El manifiesto se firmo antes de la ultima regeneracion de las tablas.</td></tr><tr><td class="n">A4</td><td><strong>Unificar las diez identidades de Git</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,50</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,50</td><td class="n">1,00</td><td>El .mailmap reduce las diez identidades a las cinco personas del equipo.</td></tr><tr><td class="n">A5</td><td><strong>Fotografias de aplicacion del cuestionario</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,40</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,40</td><td class="n">1,00</td><td>Hay seis depositadas y el marcador .gitkeep desaparecio.</td></tr><tr><td class="n">B1</td><td><strong>Paquete de datos reproducible</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,60</td><td class="n">10 ↓</td><td class="n">8/10</td><td class="n">1,28</td><td class="n">0,80</td><td>La carpeta existe con la estructura exigida y no se sustituyo por 07_Publicacion, con quince archivos de resultados y figuras generadas por script. Comparte con A3 el defecto del manifiesto y el diccionario de datos, con quince columnas descritas, se queda corto frente a los dos conjuntos que documenta.</td></tr><tr><td class="n">B2</td><td><strong>Evidencia de autoria completa de A1 a A12</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,60</td><td class="n">6 ↑</td><td class="n">9/10</td><td class="n">1,44</td><td class="n">0,90</td><td>Es la carpeta mas completa del curso: bitacora con 31 filas para 31 dias con commits, tres capturas por cada uno de los cinco, dos grabaciones, 25 notas de campo, correspondencia fechada con la organizacion y 109 fuentes editables de diagramas. El inventario EXIF, que cubria solo tres fotografias, pasa a nueve filas. Queda extenderlo a las fotografias de evidencia.</td></tr><tr><td class="n">B3</td><td><strong>Evidencia de campo del componente empirico</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,90</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,90</td><td class="n">1,00</td><td>Estan el protocolo de anotacion con la definicion operativa de cada categoria, el registro del entrenamiento previo y de la ronda de calibracion, y el comprobante de registro del protocolo. Es lo que explica el resto de su estudio.</td></tr><tr><td class="n">B4</td><td><strong>Numeros calculados y documentados</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,70</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,70</td><td class="n">1,00</td><td>El analisis mas solido del curso. Sobre 61 requisitos: exactitud 0,8033 con intervalo de 0,7049 a 0,9016, precision 0,60, sensibilidad 0,75, F1 0,6667, todos con intervalo; kappa de Fleiss de 0,8569 y los tres pares entre 0,786 y 0,919; significancia por categoria y justificacion del tamano de muestra. El acuerdo casi perfecto entre evaluadores no es casualidad: es consecuencia del protocolo de anotacion y la calibracion previa.</td></tr><tr><td class="n">B5</td><td><strong>Requisitos del componente inteligente</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,40</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">1,26</td><td class="n">0,90</td><td>Los seis estan especificados por componente de inteligencia artificial, con equidad en el emparejamiento de adopcion, supervision humana sobre toda marca y plan de monitoreo.</td></tr><tr><td class="n">B6</td><td><strong>Etica y proteccion de datos</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,80</td><td class="n">10 ↓</td><td class="n">8/10</td><td class="n">0,64</td><td class="n">0,80</td><td>Consentimientos y contenedor cifrado en su sitio. Uno de los dos consentimientos en PDF tiene texto extraible y ninguna imagen, lo que indica plantilla y no ejemplar firmado.</td></tr><tr class="tot"><td colspan="5">Totales</td><td class="n">8,92</td><td class="n">0.259200</td><td></td></tr></tbody></table>
+<p class="meta">Suma de puntos S = 8,92 sobre 10<br>
+Producto de los factores 1,00 × 1,00 × 0,50 × 1,00 × 1,00 × 0,80 × 0,90 × 1,00 × 1,00 × 0,90 × 0,80 = 0.259200<br>
+<strong>Nota del proyecto = 0.259200 × 8,92 = 2,31 / 10,00</strong></p>
+<h2>Aporte de cada integrante</h2>
+<p class="meta">Medido sobre el historial completo del repositorio (354 commits, sin fusiones), atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code>. El reparto equitativo entre 5 integrantes es el 20,0 %: quien lo alcanza recibe la nota completa del proyecto, quien queda por debajo la recibe en proporcion. Ningun integrante puede superar la nota del proyecto.</p>
+<table><thead><tr><th>Integrante</th><th class="n">Commits</th><th class="n">Participacion</th><th class="n">Factor</th><th class="n">Nota final</th></tr></thead><tbody><tr><td>Mendoza Parraga Andy Johel</td><td class="n">104</td><td class="n">29,6 %</td><td class="n">1,000</td><td class="n">2,31</td></tr><tr><td>Nieves Sanchez Jimmy Samuel</td><td class="n">80</td><td class="n">22,8 %</td><td class="n">1,000</td><td class="n">2,31</td></tr><tr><td>Morales Sanchez Gary Alejandro</td><td class="n">57</td><td class="n">16,2 %</td><td class="n">0,812</td><td class="n">1,88</td></tr><tr><td>Fuertes Arraes Edson Daniel</td><td class="n">56</td><td class="n">16,0 %</td><td class="n">0,798</td><td class="n">1,84</td></tr><tr><td>Gutierrez Ortega Genesis Adriana</td><td class="n">54</td><td class="n">15,4 %</td><td class="n">0,769</td><td class="n">1,78</td></tr></tbody></table>
+<h2>Informe del proyecto</h2>
+<p class="meta">Este es el informe global del equipo: se publica una sola vez y vale para los 5 integrantes. Se copia entero con su boton.</p>
+<button class="copiar" onclick="copiar('proy',this)">Copiar informe del proyecto</button><pre id="proy">==============================================================================
+ENTREGA FINAL DEL PROYECTO FIN DE CURSO -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL PROYECTO
+==============================================================================
+Equipo: MundiPets -- Sistema de adopcion y cruza responsable de mascotas
+Integrantes: Mendoza Parraga Andy Johel, Nieves Sanchez Jimmy Samuel, Morales Sanchez Gary Alejandro, Fuertes Arraes Edson Daniel, Gutierrez Ortega Genesis Adriana
+Repositorio: https://github.com/andymendozap03/MundiPets-PFC-IngReq
+Ultimo commit evaluado: 7dec14f (12 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 354 commits de historia.
+
+QUE EVALUE
+Evalue los 11 elementos exigidos al cierre, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de los puntos.
+Los 5 elementos ya resueltos y verificados con anterioridad no vuelven a puntuar.
+No verifique solo que la evidencia estuviera: recalcule los manifiestos de sumas sobre el
+contenido real, revise los metadatos de los PDF de consentimiento, compare los repositorios
+entre equipos para descartar copia y recalcule los estadisticos desde los datos crudos.
+
+CRITERIOS DE PISO -- vigentes y expuestos
+  1. Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.
+  3. Que ningun archivo anuncie una pieza de evidencia sin contenerla.
+  4. Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.
+  5. Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.
+  6. Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.
+  7. Que exista la evidencia de autoria con los doce elementos de A1 a A12.
+  8. Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volvi a evaluar la entrega sobre el ultimo commit del repositorio, sin limite de fecha, y este expediente es el mas solido de los diez, asi que empiezo por ahi.
+El MVP dejo de estar en un submodulo y hoy cualquiera que clone el repositorio declarado lo ve; hay etiqueta anotada de linea base; el .mailmap reduce las diez identidades a cinco personas; y la carpeta de autoria esta completa de A1 a A12, con una bitacora de 31 filas para 31 dias con commits, tres capturas por cada integrante, dos grabaciones, veinticinco notas de campo y ciento nueve fuentes editables de diagramas.
+Su estudio es, con diferencia, el que un revisor externo aceptaria antes: sobre 61 requisitos reportan exactitud de 0,8033 con intervalo de 0,7049 a 0,9016, precision, sensibilidad, especificidad y F1 con sus intervalos, matriz de confusion, significancia por categoria y justificacion del tamano de muestra.
+El kappa de Fleiss entre los tres evaluadores es de 0,8569, casi perfecto, y no es casualidad: es la consecuencia directa de haber escrito un protocolo de anotacion con definiciones operativas y de haber hecho una ronda de calibracion antes de medir.
+Esa es exactamente la practica que a otros equipos les falto.
+Lo que impide que la nota sea mayor es una sola cosa, y es la misma que ya les habia senalado.
+Recalcule el manifiesto de sumas sobre el contenido actual y de las 377 entradas evaluables, 25 no cuadran, y entre ellas estan tabla_8_significancia_estadistica.csv, tabla_5_consenso_por_requisito.csv y consenso_experto_vs_detector.csv, que son resultados del estudio, no archivos accesorios.
+El manifiesto se firmo antes de la ultima regeneracion de las tablas y no se volvio a generar.
+Un tercero que clone en limpio y ejecute la comprobacion obtiene 25 discrepancias sobre los numeros que ustedes publican, y no tiene forma de saber si lo que cambio fue una coma o un resultado.
+
+LO QUE YA ESTABA RESUELTO Y NO VUELVE A PUNTUAR
+  - El historial es el mejor distribuido del curso: cinco integrantes, tres meses, correo institucional.
+  - El inventario tecnico permite auditar la evidencia sin abrir el contenedor.
+  - La cadena de analisis esta completa: entradas versionadas, cinco scripts y orquestador unico.
+  - El estudio produce matriz de confusion, acuerdo entre evaluadores y contraste de significancia.
+  - Los cinco archivos obligatorios de la raiz mas la evaluacion FAIR.
+
+HOJA DE CALCULO
+  A1  El MVP accesible desde el repositorio declarad peso 0,80  antes 10  ahora 10/10  puntos 0,80  factor 1,00  [Hecho]
+  A2  Etiqueta anotada de linea base                 peso 0,70  antes 10  ahora 10/10  puntos 0,70  factor 1,00  [Hecho]
+  A3  Manifiesto de sumas que verifique en clon limp peso 0,60  antes 10  ahora  5/10  puntos 0,30  factor 0,50  [Por terminar]
+  A4  Unificar las diez identidades de Git           peso 0,50  antes 10  ahora 10/10  puntos 0,50  factor 1,00  [Hecho]
+  A5  Fotografias de aplicacion del cuestionario     peso 0,40  antes 10  ahora 10/10  puntos 0,40  factor 1,00  [Hecho]
+  B1  Paquete de datos reproducible                  peso 1,60  antes 10  ahora  8/10  puntos 1,28  factor 0,80  [Modificar]
+  B2  Evidencia de autoria completa de A1 a A12      peso 1,60  antes  6  ahora  9/10  puntos 1,44  factor 0,90  [Modificar]
+  B3  Evidencia de campo del componente empirico     peso 0,90  antes 10  ahora 10/10  puntos 0,90  factor 1,00  [Hecho]
+  B4  Numeros calculados y documentados              peso 0,70  antes 10  ahora 10/10  puntos 0,70  factor 1,00  [Hecho]
+  B5  Requisitos del componente inteligente          peso 1,40  antes 10  ahora  9/10  puntos 1,26  factor 0,90  [Modificar]
+  B6  Etica y proteccion de datos                    peso 0,80  antes 10  ahora  8/10  puntos 0,64  factor 0,80  [Modificar]
+  Suma de puntos S = 8,92 sobre 10.
+  Producto de los factores = 0.259200.
+  NOTA DEL PROYECTO = 0.259200 x 8,92 = 2,31 sobre 10.
+
+APORTE DE CADA INTEGRANTE
+  Medido sobre el historial completo, unificando identidades con .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Mendoza Parraga Andy Johel           104 commits   aporte  29,6 %   factor 1,000   nota 2,31
+  Nieves Sanchez Jimmy Samuel           80 commits   aporte  22,8 %   factor 1,000   nota 2,31
+  Morales Sanchez Gary Alejandro        57 commits   aporte  16,2 %   factor 0,812   nota 1,88
+  Fuertes Arraes Edson Daniel           56 commits   aporte  16,0 %   factor 0,798   nota 1,84
+  Gutierrez Ortega Genesis Adriana      54 commits   aporte  15,4 %   factor 0,769   nota 1,78
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre>
+<h2>Informes del aporte individual</h2>
+<p class="meta">Un recuadro por estudiante, corto y sin repetir el informe del proyecto: lleva la nota del equipo, el enlace a esta pagina y el calculo de su aporte. Listo para pegar en el espacio del estudiante en el SGA.</p>
+<div class="rep"><h3>Mendoza Parraga Andy Johel <span>2,31 / 10</span></h3><button class="copiar" onclick="copiar('inf0',this)">Copiar informe individual</button><pre id="inf0">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Mendoza Parraga Andy Johel
+Equipo: MundiPets -- Sistema de adopcion y cruza responsable de mascotas
+Repositorio: https://github.com/andymendozap03/MundiPets-PFC-IngReq
+Ultimo commit evaluado: 7dec14f (12 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,92 sobre 10 x producto de los factores 0.259200 = 2,31 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MundiPets.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (354 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Mendoza Parraga Andy Johel           104 commits   aporte  29,6 %   factor 1,000   nota 2,31  &lt;-- usted
+  Nieves Sanchez Jimmy Samuel           80 commits   aporte  22,8 %   factor 1,000   nota 2,31
+  Morales Sanchez Gary Alejandro        57 commits   aporte  16,2 %   factor 0,812   nota 1,88
+  Fuertes Arraes Edson Daniel           56 commits   aporte  16,0 %   factor 0,798   nota 1,84
+  Gutierrez Ortega Genesis Adriana      54 commits   aporte  15,4 %   factor 0,769   nota 1,78
+
+  Su aporte: 29,6 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 2,31 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Nieves Sanchez Jimmy Samuel <span>2,31 / 10</span></h3><button class="copiar" onclick="copiar('inf1',this)">Copiar informe individual</button><pre id="inf1">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Nieves Sanchez Jimmy Samuel
+Equipo: MundiPets -- Sistema de adopcion y cruza responsable de mascotas
+Repositorio: https://github.com/andymendozap03/MundiPets-PFC-IngReq
+Ultimo commit evaluado: 7dec14f (12 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,92 sobre 10 x producto de los factores 0.259200 = 2,31 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MundiPets.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (354 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Mendoza Parraga Andy Johel           104 commits   aporte  29,6 %   factor 1,000   nota 2,31
+  Nieves Sanchez Jimmy Samuel           80 commits   aporte  22,8 %   factor 1,000   nota 2,31  &lt;-- usted
+  Morales Sanchez Gary Alejandro        57 commits   aporte  16,2 %   factor 0,812   nota 1,88
+  Fuertes Arraes Edson Daniel           56 commits   aporte  16,0 %   factor 0,798   nota 1,84
+  Gutierrez Ortega Genesis Adriana      54 commits   aporte  15,4 %   factor 0,769   nota 1,78
+
+  Su aporte: 22,8 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 2,31 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Morales Sanchez Gary Alejandro <span>1,88 / 10</span></h3><button class="copiar" onclick="copiar('inf2',this)">Copiar informe individual</button><pre id="inf2">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Morales Sanchez Gary Alejandro
+Equipo: MundiPets -- Sistema de adopcion y cruza responsable de mascotas
+Repositorio: https://github.com/andymendozap03/MundiPets-PFC-IngReq
+Ultimo commit evaluado: 7dec14f (12 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,92 sobre 10 x producto de los factores 0.259200 = 2,31 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MundiPets.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (354 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Mendoza Parraga Andy Johel           104 commits   aporte  29,6 %   factor 1,000   nota 2,31
+  Nieves Sanchez Jimmy Samuel           80 commits   aporte  22,8 %   factor 1,000   nota 2,31
+  Morales Sanchez Gary Alejandro        57 commits   aporte  16,2 %   factor 0,812   nota 1,88  &lt;-- usted
+  Fuertes Arraes Edson Daniel           56 commits   aporte  16,0 %   factor 0,798   nota 1,84
+  Gutierrez Ortega Genesis Adriana      54 commits   aporte  15,4 %   factor 0,769   nota 1,78
+
+  Su aporte: 16,2 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,812. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,88 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Fuertes Arraes Edson Daniel <span>1,84 / 10</span></h3><button class="copiar" onclick="copiar('inf3',this)">Copiar informe individual</button><pre id="inf3">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Fuertes Arraes Edson Daniel
+Equipo: MundiPets -- Sistema de adopcion y cruza responsable de mascotas
+Repositorio: https://github.com/andymendozap03/MundiPets-PFC-IngReq
+Ultimo commit evaluado: 7dec14f (12 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,92 sobre 10 x producto de los factores 0.259200 = 2,31 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MundiPets.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (354 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Mendoza Parraga Andy Johel           104 commits   aporte  29,6 %   factor 1,000   nota 2,31
+  Nieves Sanchez Jimmy Samuel           80 commits   aporte  22,8 %   factor 1,000   nota 2,31
+  Morales Sanchez Gary Alejandro        57 commits   aporte  16,2 %   factor 0,812   nota 1,88
+  Fuertes Arraes Edson Daniel           56 commits   aporte  16,0 %   factor 0,798   nota 1,84  &lt;-- usted
+  Gutierrez Ortega Genesis Adriana      54 commits   aporte  15,4 %   factor 0,769   nota 1,78
+
+  Su aporte: 16,0 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,798. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,84 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Gutierrez Ortega Genesis Adriana <span>1,78 / 10</span></h3><button class="copiar" onclick="copiar('inf4',this)">Copiar informe individual</button><pre id="inf4">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Gutierrez Ortega Genesis Adriana
+Equipo: MundiPets -- Sistema de adopcion y cruza responsable de mascotas
+Repositorio: https://github.com/andymendozap03/MundiPets-PFC-IngReq
+Ultimo commit evaluado: 7dec14f (12 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,92 sobre 10 x producto de los factores 0.259200 = 2,31 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MundiPets.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (354 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Mendoza Parraga Andy Johel           104 commits   aporte  29,6 %   factor 1,000   nota 2,31
+  Nieves Sanchez Jimmy Samuel           80 commits   aporte  22,8 %   factor 1,000   nota 2,31
+  Morales Sanchez Gary Alejandro        57 commits   aporte  16,2 %   factor 0,812   nota 1,88
+  Fuertes Arraes Edson Daniel           56 commits   aporte  16,0 %   factor 0,798   nota 1,84
+  Gutierrez Ortega Genesis Adriana      54 commits   aporte  15,4 %   factor 0,769   nota 1,78  &lt;-- usted
+
+  Su aporte: 15,4 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,769. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,78 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<footer><p><strong>Como audite.</strong> Clone los diez repositorios y evalue el ultimo commit de cada uno, sin aplicar fecha limite, de modo que todo el trabajo posterior a la evaluacion anterior cuenta. No me limite a comprobar que la evidencia estuviera: recalcule uno a uno los manifiestos de sumas de cada repositorio sobre el contenido real, verificando <strong>4.169 entradas</strong> y detectando cuales ya no cuadran; compare el contenido de los diez repositorios entre si para descartar copia -los unicos archivos identicos entre equipos son plantillas de clase y estilos bibliograficos publicados, ningun material propio-; examine los metadatos de los PDF depositados como consentimiento para distinguir escaneos reales de documentos compuestos por programa; busque archivos vacios y archivos con fecha futura; y recalcule desde los datos crudos los estadisticos publicados por cada equipo, comprobando si la inferencia que se hace de ellos se sostiene. El aporte individual lo medi sobre el historial completo con <code>git log --no-merges</code>, atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code> de cada repositorio.</p><p>Universidad Tecnica Estatal de Quevedo — PPA 2026-2027</p></footer>
+</div><script>
+function copiar(id,btn){const t=document.getElementById(id).innerText;
+navigator.clipboard.writeText(t).then(()=>{const o=btn.textContent;btn.textContent='Copiado';setTimeout(()=>btn.textContent=o,1400)});}
+</script></body></html>

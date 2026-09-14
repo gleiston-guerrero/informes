@@ -1,0 +1,291 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrega final del PFC — Equipo MediCita</title><style>
+:root{--tinta:#1b1b1b;--suave:#5a5a5a;--linea:#d8d8d8;--verde:#0b6b3a;--granate:#8c1c2e;--fondo:#fbfbf9;--caja:#f2f4f1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.62 Georgia,"Times New Roman",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 64px}
+h1{font-size:1.85rem;line-height:1.25;margin:.2em 0 .35em}
+h2{font-size:1.3rem;margin:2.2em 0 .6em;border-bottom:2px solid var(--verde);padding-bottom:.25em;color:var(--verde)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+.meta{color:var(--suave);font-size:.9rem;line-height:1.5}
+.nav a{color:var(--verde);text-decoration:none;border-bottom:1px solid transparent}
+.nav a:hover{border-bottom-color:var(--verde)}
+.ficha{background:var(--caja);border:1px solid var(--linea);border-left:5px solid var(--verde);padding:14px 16px;margin:18px 0}
+.nota{font-size:1.5rem;font-weight:700;color:var(--granate)}
+.nota small{font-size:.85rem;font-weight:400;color:var(--suave)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;background:#fff;margin:10px 0 6px}
+th,td{border:1px solid var(--linea);padding:7px 9px;vertical-align:top;text-align:left}
+th{background:#eef1ec;font-size:.82rem}
+td.n,th.n{text-align:center;white-space:nowrap}
+tr.sec td{background:#eef1ec;font-weight:700;font-size:.84rem}
+tr.tot td{background:#f7f3e8;font-weight:700}
+.badge{display:inline-block;font-size:.72rem;padding:1px 6px;border-radius:9px;border:1px solid}
+.b-hecho{color:#0b6b3a;border-color:#0b6b3a;background:#eef7f1}
+.b-mod{color:#8a6d00;border-color:#c9a227;background:#fdf7e3}
+.b-term{color:#8c1c2e;border-color:#8c1c2e;background:#fceff1}
+.piso{background:#fceff1;border:1px solid var(--granate);border-left:5px solid var(--granate);padding:12px 16px;margin:16px 0}
+.piso h3{margin-top:0;color:var(--granate)}
+pre{background:#11150f;color:#e8e8e0;padding:14px;overflow:auto;font:12.5px/1.5 "SFMono-Regular",Consolas,monospace;white-space:pre;border-radius:4px}
+.copiar{background:var(--verde);color:#fff;border:0;padding:6px 12px;font-size:.8rem;border-radius:3px;cursor:pointer;margin:6px 0}
+.copiar:hover{background:#094f2b}
+.rep{border-top:1px solid var(--linea);padding-top:10px;margin-top:26px}
+.rep h3{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rep h3 span{color:var(--granate);font-weight:700}
+.lista{columns:2;column-gap:28px}
+@media(max-width:820px){.lista{columns:1}table{font-size:.8rem}}
+footer{margin-top:44px;border-top:1px solid var(--linea);padding-top:12px;color:var(--suave);font-size:.82rem}
+</style></head><body><div class="wrap">
+<h1>Entrega final del PFC — Equipo MediCita</h1>
+<p class="meta">Septimo semestre · UTEQ, Facultad de Ciencias de la Computacion · Ingenieria de Requisitos (ISR-401) · PPA 2026-2027 · Paralelo 4.º A · Alcance: ultimo commit del repositorio, sin limite de fecha, revisado el 14 de septiembre de 2026 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p>
+<p class="nav"><a href="index.html">← Entrega final — Ingenieria de Requisitos</a></p>
+<div class="ficha">
+<p><strong>MediCita — Sistema de gestion inteligente para un centro medico</strong><br>
+Repositorio: <a href="https://github.com/ptigasis-Alexander/MediCita_ISR401">github.com/ptigasis-Alexander/MediCita_ISR401</a><br>
+Ultimo commit evaluado <code>ce254a8</code> (13 de septiembre de 2026) · 1583 commits de historia · 17 elementos exigidos, de los cuales 5 ya estaban resueltos y 12 se califican aqui.</p>
+<p class="nota">Nota del proyecto: 1,05 / 10,00 <small>· suma de puntos 8,14 / 10,00</small></p>
+</div>
+<p><strong>Como se calcula la nota.</strong> De todo lo exigido al proyecto, una parte estaba resuelta y verificada con anterioridad y no vuelve a puntuar: aparece como <strong>Hecho</strong> en el primer bloque. Lo demas se califica, y cada elemento cuenta dos veces. Tiene un <strong>peso</strong> —los pesos suman 10— sobre el que recibe una calificacion de 0 a 10, y esa calificacion dividida entre su maximo da un <strong>factor</strong> que multiplica. La nota es <code>(f₁ × f₂ × … × fₙ) × (p₁ + p₂ + … + pₙ)</code>. El factor vale 1 solamente cuando el elemento esta terminado y correcto al cien por cien, y un elemento en cero deja el multiplicador en cero y con el la nota. Por eso, junto a cada nota publico tambien la suma de puntos: es la medida de cuanto trabajo hay hecho.</p>
+<div class="piso"><h3>Criterios de piso — vigentes y expuestos</h3><ol><li>Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.</li><li>Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.</li><li>Que ningun archivo anuncie una pieza de evidencia sin contenerla.</li><li>Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.</li><li>Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.</li><li>Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.</li><li>Que exista la evidencia de autoria con los doce elementos de A1 a A12.</li><li>Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.</li></ol>
+<p>En una evaluacion ordinaria el incumplimiento de cualquiera de ellos deja la calificacion en cero.</p></div>
+<h2>Hoja de calculo</h2>
+<table><thead><tr><th class="n">#</th><th>Elemento</th><th class="n">Peso</th><th class="n">Antes</th><th class="n">Ahora</th><th class="n">Puntos</th><th class="n">Factor</th><th>Que encontre</th></tr></thead><tbody><tr class="sec"><td colspan="8">Resuelto y verificado con anterioridad — no puntua</td></tr><tr><td class="n">1</td><td colspan="2">El ERS se genera desde LaTeX y la especificacion supera con holgura los minimos</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">2</td><td colspan="2">El inventario tecnico trae duracion, codec, tamano y hash por archivo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">3</td><td colspan="2">Los archivos obligatorios de la raiz estan completos, incluido el manifiesto de sumas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">4</td><td colspan="2">Comprobante de registro del protocolo y registro de desviaciones</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">5</td><td colspan="2">Datos procesados y resultados versionados en CSV, no incrustados solo en el documento</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr class="sec"><td colspan="8">Lo calificado — cada elemento es sumando y factor</td></tr><tr><td class="n">A1</td><td><strong>Atribuir la identidad generica</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,70</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,70</td><td class="n">1,00</td><td>El .mailmap resuelve MediCita Team a una persona concreta del equipo, de modo que los ocho commits huerfanos ya tienen autor acreditado.</td></tr><tr><td class="n">A2</td><td><strong>Contenedor de video integro</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,60</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>Los 598 fragmentos con uno de 2 bytes desaparecieron: hoy hay contenedores integros y no queda ni un archivo de cero o un byte en todo el repositorio.</td></tr><tr><td class="n">A3</td><td><strong>Una sola matriz de trazabilidad</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,60</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>Queda una sola matriz vigente y la sustitucion consta en el registro de cambios.</td></tr><tr><td class="n">A4</td><td><strong>Cadena de analisis separada</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,60</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>Hay lectura de datos crudos, procesamiento y generacion de resultados en scripts distintos, con run_all.py como orquestador.</td></tr><tr><td class="n">A5</td><td><strong>Carpeta ajena fuera de la raiz</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,30</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,30</td><td class="n">1,00</td><td>La carpeta de la practica de la Unidad V ya no esta en el arbol del proyecto.</td></tr><tr><td class="n">A6</td><td><strong>Nombre del script de sumas</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,20</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,20</td><td class="n">1,00</td><td>El script se llama generar_checksums.sh y su uso esta documentado en el README.</td></tr><tr><td class="n">B1</td><td><strong>Paquete de datos reproducible</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,60</td><td class="n">10 ↓</td><td class="n">8/10</td><td class="n">1,28</td><td class="n">0,80</td><td>La estructura esta completa, el diccionario tiene 43 columnas descritas y recalcule 344 sumas que verifican sin un solo fallo. Lo que baja la nota es que 61 entradas del manifiesto apuntan a archivos que no existen en el arbol: el manifiesto describe un paquete mayor que el entregado, y un tercero que lo verifique obtiene 61 ausencias.</td></tr><tr><td class="n">B2</td><td><strong>Evidencia de autoria completa de A1 a A12</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">1,60</td><td class="n">3 ↑</td><td class="n">5/10</td><td class="n">0,80</td><td class="n">0,50</td><td>La correspondencia con el centro medico, que estaba vacia, hoy tiene once piezas fechadas: corregido. Siguen fallando dos elementos. Las capturas de pantalla: solo dos de los cinco integrantes llegan al minimo de tres, y ptigasis tiene una sola, ademas con nomenclatura rota. Y las fotos del equipo en la organizacion son tres fotografias del local -fachada, pasillo y area de recepcion- sin ningun integrante identificable.</td></tr><tr><td class="n">B3</td><td><strong>Evidencia de campo del componente empirico</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,90</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">0,81</td><td class="n">0,90</td><td>Estan la ficha de observacion por sesion, la cobertura de requisitos obligatorios verificada en sesion y el perfil agregado sin datos reidentificables. Observo que siete de los ocho consentimientos en PDF fueron generados por ReportLab, una biblioteca de composicion programatica, con imagenes incrustadas: son ejemplares ensamblados por script a partir de firmas escaneadas, no escaneos directos.</td></tr><tr><td class="n">B4</td><td><strong>Numeros calculados y documentados</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">0,70</td><td class="n">10 ↓</td><td class="n">5/10</td><td class="n">0,35</td><td class="n">0,50</td><td>El analisis existe y es reproducible, pero la lectura que se hace de el no se sostiene. La prueba de permutacion da p = 0,413, es decir, ningun efecto, y a continuacion se reporta la V de Cramer de 0,1663 con intervalo de 0,0839 a 0,2622 como si respaldara algo: la V no puede ser negativa, de modo que su intervalo nunca incluye el cero y no informa de significancia. Ademas tres de las seis celdas de la tabla estan a cero y el calculo de potencia es una referencia generica de d = 0,5 y n = 128 ajena al diseno ejecutado.</td></tr><tr><td class="n">B5</td><td><strong>Requisitos del componente inteligente</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,40</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">1,26</td><td class="n">0,90</td><td>Los seis estan como RNF-19 a RNF-22, con equidad en el acceso a la cita, supervision humana sobre toda decision que afecte a un paciente, monitoreo y clasificacion de riesgo con atencion a que son datos de salud.</td></tr><tr><td class="n">B6</td><td><strong>Etica y proteccion de datos</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,80</td><td class="n">10 ↓</td><td class="n">8/10</td><td class="n">0,64</td><td class="n">0,80</td><td>La capa restringida esta cifrada, la publica esta anonimizada y la declaracion legal esta. Lo que queda anotado es la forma de los consentimientos descrita en B3: un ejemplar firmado debe poder mostrarse como lo que es.</td></tr><tr class="tot"><td colspan="5">Totales</td><td class="n">8,14</td><td class="n">0.129600</td><td></td></tr></tbody></table>
+<p class="meta">Suma de puntos S = 8,14 sobre 10<br>
+Producto de los factores 1,00 × 1,00 × 1,00 × 1,00 × 1,00 × 1,00 × 0,80 × 0,50 × 0,90 × 0,50 × 0,90 × 0,80 = 0.129600<br>
+<strong>Nota del proyecto = 0.129600 × 8,14 = 1,05 / 10,00</strong></p>
+<h2>Aporte de cada integrante</h2>
+<p class="meta">Medido sobre el historial completo del repositorio (1583 commits, sin fusiones), atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code>. El reparto equitativo entre 5 integrantes es el 20,0 %: quien lo alcanza recibe la nota completa del proyecto, quien queda por debajo la recibe en proporcion. Ningun integrante puede superar la nota del proyecto.</p>
+<table><thead><tr><th>Integrante</th><th class="n">Commits</th><th class="n">Participacion</th><th class="n">Factor</th><th class="n">Nota final</th></tr></thead><tbody><tr><td>Tigasi Sampedro Paul Alexander</td><td class="n">325</td><td class="n">20,7 %</td><td class="n">1,000</td><td class="n">1,05</td></tr><tr><td>Herrera Ramos Thais Melanie</td><td class="n">314</td><td class="n">20,0 %</td><td class="n">0,999</td><td class="n">1,05</td></tr><tr><td>Diaz Ponton Steven Santiago</td><td class="n">313</td><td class="n">19,9 %</td><td class="n">0,996</td><td class="n">1,05</td></tr><tr><td>Gamarra Zarate Jamileth Estefania</td><td class="n">311</td><td class="n">19,8 %</td><td class="n">0,989</td><td class="n">1,04</td></tr><tr><td>Trujillo Vega Mayummy Jailly</td><td class="n">309</td><td class="n">19,7 %</td><td class="n">0,983</td><td class="n">1,04</td></tr></tbody></table>
+<h2>Informe del proyecto</h2>
+<p class="meta">Este es el informe global del equipo: se publica una sola vez y vale para los 5 integrantes. Se copia entero con su boton.</p>
+<button class="copiar" onclick="copiar('proy',this)">Copiar informe del proyecto</button><pre id="proy">==============================================================================
+ENTREGA FINAL DEL PROYECTO FIN DE CURSO -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL PROYECTO
+==============================================================================
+Equipo: MediCita -- Sistema de gestion inteligente para un centro medico
+Integrantes: Tigasi Sampedro Paul Alexander, Herrera Ramos Thais Melanie, Diaz Ponton Steven Santiago, Gamarra Zarate Jamileth Estefania, Trujillo Vega Mayummy Jailly
+Repositorio: https://github.com/ptigasis-Alexander/MediCita_ISR401
+Ultimo commit evaluado: ce254a8 (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 1583 commits de historia.
+
+QUE EVALUE
+Evalue los 12 elementos exigidos al cierre, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de los puntos.
+Los 5 elementos ya resueltos y verificados con anterioridad no vuelven a puntuar.
+No verifique solo que la evidencia estuviera: recalcule los manifiestos de sumas sobre el
+contenido real, revise los metadatos de los PDF de consentimiento, compare los repositorios
+entre equipos para descartar copia y recalcule los estadisticos desde los datos crudos.
+
+CRITERIOS DE PISO -- vigentes y expuestos
+  1. Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.
+  3. Que ningun archivo anuncie una pieza de evidencia sin contenerla.
+  4. Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.
+  5. Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.
+  6. Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.
+  7. Que exista la evidencia de autoria con los doce elementos de A1 a A12.
+  8. Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volvi a evaluar la entrega sobre el ultimo commit del repositorio, sin limite de fecha, y las seis correcciones que les pedi estan todas hechas y verificadas: la identidad generica atribuida, el contenedor de video integro sin un solo archivo vacio, una sola matriz de trazabilidad, la cadena de analisis separada en lectura, procesamiento y generacion, la carpeta ajena fuera de la raiz y el script de sumas con el nombre corregido.
+La correspondencia con el centro medico, que era una carpeta con un solo README, tiene hoy once piezas fechadas.
+Y las 344 sumas que pude recalcular verifican sin fallos.
+Lo que queda pendiente son tres cosas concretas.
+La primera son las capturas de pantalla: solo dos de los cinco integrantes llegan al minimo de tres, y uno tiene una sola, ademas con la nomenclatura rota.
+La segunda son las fotografias del equipo en la organizacion, que en realidad son tres fotografias del local -fachada, pasillo y recepcion- sin ningun integrante identificable; la exigencia pide al equipo dentro de la organizacion, con dos personas reconocibles.
+La tercera es la lectura del analisis, y es la que mas pesa.
+La prueba de permutacion da p igual a 0,413, es decir, ningun efecto detectable, y a continuacion se presenta la V de Cramer de 0,1663 con un intervalo de 0,0839 a 0,2622 como si respaldara una conclusion.
+La V de Cramer no puede ser negativa, de modo que su intervalo nunca incluye el cero y no dice nada sobre significancia; presentarlo asi es un error de interpretacion, no de calculo.
+A eso se suma que tres de las seis celdas de la tabla estan a cero y que el calculo de potencia que acompanan es una referencia generica que no corresponde al diseno que ejecutaron.
+Anoto por ultimo que siete de los ocho consentimientos en PDF fueron compuestos por una biblioteca programatica con firmas incrustadas como imagen: son ejemplares ensamblados por script, y conviene que un consentimiento pueda mostrarse como lo que es.
+
+LO QUE YA ESTABA RESUELTO Y NO VUELVE A PUNTUAR
+  - El ERS se genera desde LaTeX y la especificacion supera con holgura los minimos.
+  - El inventario tecnico trae duracion, codec, tamano y hash por archivo.
+  - Los archivos obligatorios de la raiz estan completos, incluido el manifiesto de sumas.
+  - Comprobante de registro del protocolo y registro de desviaciones.
+  - Datos procesados y resultados versionados en CSV, no incrustados solo en el documento.
+
+HOJA DE CALCULO
+  A1  Atribuir la identidad generica                 peso 0,70  antes 10  ahora 10/10  puntos 0,70  factor 1,00  [Hecho]
+  A2  Contenedor de video integro                    peso 0,60  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Hecho]
+  A3  Una sola matriz de trazabilidad                peso 0,60  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Hecho]
+  A4  Cadena de analisis separada                    peso 0,60  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Hecho]
+  A5  Carpeta ajena fuera de la raiz                 peso 0,30  antes 10  ahora 10/10  puntos 0,30  factor 1,00  [Hecho]
+  A6  Nombre del script de sumas                     peso 0,20  antes 10  ahora 10/10  puntos 0,20  factor 1,00  [Hecho]
+  B1  Paquete de datos reproducible                  peso 1,60  antes 10  ahora  8/10  puntos 1,28  factor 0,80  [Modificar]
+  B2  Evidencia de autoria completa de A1 a A12      peso 1,60  antes  3  ahora  5/10  puntos 0,80  factor 0,50  [Por terminar]
+  B3  Evidencia de campo del componente empirico     peso 0,90  antes 10  ahora  9/10  puntos 0,81  factor 0,90  [Modificar]
+  B4  Numeros calculados y documentados              peso 0,70  antes 10  ahora  5/10  puntos 0,35  factor 0,50  [Por terminar]
+  B5  Requisitos del componente inteligente          peso 1,40  antes 10  ahora  9/10  puntos 1,26  factor 0,90  [Modificar]
+  B6  Etica y proteccion de datos                    peso 0,80  antes 10  ahora  8/10  puntos 0,64  factor 0,80  [Modificar]
+  Suma de puntos S = 8,14 sobre 10.
+  Producto de los factores = 0.129600.
+  NOTA DEL PROYECTO = 0.129600 x 8,14 = 1,05 sobre 10.
+
+APORTE DE CADA INTEGRANTE
+  Medido sobre el historial completo, unificando identidades con .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Tigasi Sampedro Paul Alexander       325 commits   aporte  20,7 %   factor 1,000   nota 1,05
+  Herrera Ramos Thais Melanie          314 commits   aporte  20,0 %   factor 0,999   nota 1,05
+  Diaz Ponton Steven Santiago          313 commits   aporte  19,9 %   factor 0,996   nota 1,05
+  Gamarra Zarate Jamileth Estefania    311 commits   aporte  19,8 %   factor 0,989   nota 1,04
+  Trujillo Vega Mayummy Jailly         309 commits   aporte  19,7 %   factor 0,983   nota 1,04
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre>
+<h2>Informes del aporte individual</h2>
+<p class="meta">Un recuadro por estudiante, corto y sin repetir el informe del proyecto: lleva la nota del equipo, el enlace a esta pagina y el calculo de su aporte. Listo para pegar en el espacio del estudiante en el SGA.</p>
+<div class="rep"><h3>Tigasi Sampedro Paul Alexander <span>1,05 / 10</span></h3><button class="copiar" onclick="copiar('inf0',this)">Copiar informe individual</button><pre id="inf0">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Tigasi Sampedro Paul Alexander
+Equipo: MediCita -- Sistema de gestion inteligente para un centro medico
+Repositorio: https://github.com/ptigasis-Alexander/MediCita_ISR401
+Ultimo commit evaluado: ce254a8 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,14 sobre 10 x producto de los factores 0.129600 = 1,05 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MediCita.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (1583 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Tigasi Sampedro Paul Alexander       325 commits   aporte  20,7 %   factor 1,000   nota 1,05  &lt;-- usted
+  Herrera Ramos Thais Melanie          314 commits   aporte  20,0 %   factor 0,999   nota 1,05
+  Diaz Ponton Steven Santiago          313 commits   aporte  19,9 %   factor 0,996   nota 1,05
+  Gamarra Zarate Jamileth Estefania    311 commits   aporte  19,8 %   factor 0,989   nota 1,04
+  Trujillo Vega Mayummy Jailly         309 commits   aporte  19,7 %   factor 0,983   nota 1,04
+
+  Su aporte: 20,7 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,05 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Herrera Ramos Thais Melanie <span>1,05 / 10</span></h3><button class="copiar" onclick="copiar('inf1',this)">Copiar informe individual</button><pre id="inf1">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Herrera Ramos Thais Melanie
+Equipo: MediCita -- Sistema de gestion inteligente para un centro medico
+Repositorio: https://github.com/ptigasis-Alexander/MediCita_ISR401
+Ultimo commit evaluado: ce254a8 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,14 sobre 10 x producto de los factores 0.129600 = 1,05 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MediCita.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (1583 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Tigasi Sampedro Paul Alexander       325 commits   aporte  20,7 %   factor 1,000   nota 1,05
+  Herrera Ramos Thais Melanie          314 commits   aporte  20,0 %   factor 0,999   nota 1,05  &lt;-- usted
+  Diaz Ponton Steven Santiago          313 commits   aporte  19,9 %   factor 0,996   nota 1,05
+  Gamarra Zarate Jamileth Estefania    311 commits   aporte  19,8 %   factor 0,989   nota 1,04
+  Trujillo Vega Mayummy Jailly         309 commits   aporte  19,7 %   factor 0,983   nota 1,04
+
+  Su aporte: 20,0 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,999. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,05 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Diaz Ponton Steven Santiago <span>1,05 / 10</span></h3><button class="copiar" onclick="copiar('inf2',this)">Copiar informe individual</button><pre id="inf2">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Diaz Ponton Steven Santiago
+Equipo: MediCita -- Sistema de gestion inteligente para un centro medico
+Repositorio: https://github.com/ptigasis-Alexander/MediCita_ISR401
+Ultimo commit evaluado: ce254a8 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,14 sobre 10 x producto de los factores 0.129600 = 1,05 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MediCita.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (1583 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Tigasi Sampedro Paul Alexander       325 commits   aporte  20,7 %   factor 1,000   nota 1,05
+  Herrera Ramos Thais Melanie          314 commits   aporte  20,0 %   factor 0,999   nota 1,05
+  Diaz Ponton Steven Santiago          313 commits   aporte  19,9 %   factor 0,996   nota 1,05  &lt;-- usted
+  Gamarra Zarate Jamileth Estefania    311 commits   aporte  19,8 %   factor 0,989   nota 1,04
+  Trujillo Vega Mayummy Jailly         309 commits   aporte  19,7 %   factor 0,983   nota 1,04
+
+  Su aporte: 19,9 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,996. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,05 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Gamarra Zarate Jamileth Estefania <span>1,04 / 10</span></h3><button class="copiar" onclick="copiar('inf3',this)">Copiar informe individual</button><pre id="inf3">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Gamarra Zarate Jamileth Estefania
+Equipo: MediCita -- Sistema de gestion inteligente para un centro medico
+Repositorio: https://github.com/ptigasis-Alexander/MediCita_ISR401
+Ultimo commit evaluado: ce254a8 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,14 sobre 10 x producto de los factores 0.129600 = 1,05 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MediCita.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (1583 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Tigasi Sampedro Paul Alexander       325 commits   aporte  20,7 %   factor 1,000   nota 1,05
+  Herrera Ramos Thais Melanie          314 commits   aporte  20,0 %   factor 0,999   nota 1,05
+  Diaz Ponton Steven Santiago          313 commits   aporte  19,9 %   factor 0,996   nota 1,05
+  Gamarra Zarate Jamileth Estefania    311 commits   aporte  19,8 %   factor 0,989   nota 1,04  &lt;-- usted
+  Trujillo Vega Mayummy Jailly         309 commits   aporte  19,7 %   factor 0,983   nota 1,04
+
+  Su aporte: 19,8 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,989. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,04 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Trujillo Vega Mayummy Jailly <span>1,04 / 10</span></h3><button class="copiar" onclick="copiar('inf4',this)">Copiar informe individual</button><pre id="inf4">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Trujillo Vega Mayummy Jailly
+Equipo: MediCita -- Sistema de gestion inteligente para un centro medico
+Repositorio: https://github.com/ptigasis-Alexander/MediCita_ISR401
+Ultimo commit evaluado: ce254a8 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 8,14 sobre 10 x producto de los factores 0.129600 = 1,05 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/MediCita.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (1583 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Tigasi Sampedro Paul Alexander       325 commits   aporte  20,7 %   factor 1,000   nota 1,05
+  Herrera Ramos Thais Melanie          314 commits   aporte  20,0 %   factor 0,999   nota 1,05
+  Diaz Ponton Steven Santiago          313 commits   aporte  19,9 %   factor 0,996   nota 1,05
+  Gamarra Zarate Jamileth Estefania    311 commits   aporte  19,8 %   factor 0,989   nota 1,04
+  Trujillo Vega Mayummy Jailly         309 commits   aporte  19,7 %   factor 0,983   nota 1,04  &lt;-- usted
+
+  Su aporte: 19,7 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,983. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 1,04 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<footer><p><strong>Como audite.</strong> Clone los diez repositorios y evalue el ultimo commit de cada uno, sin aplicar fecha limite, de modo que todo el trabajo posterior a la evaluacion anterior cuenta. No me limite a comprobar que la evidencia estuviera: recalcule uno a uno los manifiestos de sumas de cada repositorio sobre el contenido real, verificando <strong>4.169 entradas</strong> y detectando cuales ya no cuadran; compare el contenido de los diez repositorios entre si para descartar copia -los unicos archivos identicos entre equipos son plantillas de clase y estilos bibliograficos publicados, ningun material propio-; examine los metadatos de los PDF depositados como consentimiento para distinguir escaneos reales de documentos compuestos por programa; busque archivos vacios y archivos con fecha futura; y recalcule desde los datos crudos los estadisticos publicados por cada equipo, comprobando si la inferencia que se hace de ellos se sostiene. El aporte individual lo medi sobre el historial completo con <code>git log --no-merges</code>, atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code> de cada repositorio.</p><p>Universidad Tecnica Estatal de Quevedo — PPA 2026-2027</p></footer>
+</div><script>
+function copiar(id,btn){const t=document.getElementById(id).innerText;
+navigator.clipboard.writeText(t).then(()=>{const o=btn.textContent;btn.textContent='Copiado';setTimeout(()=>btn.textContent=o,1400)});}
+</script></body></html>

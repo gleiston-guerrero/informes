@@ -1,0 +1,289 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrega final del PFC — Equipo ACERS</title><style>
+:root{--tinta:#1b1b1b;--suave:#5a5a5a;--linea:#d8d8d8;--verde:#0b6b3a;--granate:#8c1c2e;--fondo:#fbfbf9;--caja:#f2f4f1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.62 Georgia,"Times New Roman",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 64px}
+h1{font-size:1.85rem;line-height:1.25;margin:.2em 0 .35em}
+h2{font-size:1.3rem;margin:2.2em 0 .6em;border-bottom:2px solid var(--verde);padding-bottom:.25em;color:var(--verde)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+.meta{color:var(--suave);font-size:.9rem;line-height:1.5}
+.nav a{color:var(--verde);text-decoration:none;border-bottom:1px solid transparent}
+.nav a:hover{border-bottom-color:var(--verde)}
+.ficha{background:var(--caja);border:1px solid var(--linea);border-left:5px solid var(--verde);padding:14px 16px;margin:18px 0}
+.nota{font-size:1.5rem;font-weight:700;color:var(--granate)}
+.nota small{font-size:.85rem;font-weight:400;color:var(--suave)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;background:#fff;margin:10px 0 6px}
+th,td{border:1px solid var(--linea);padding:7px 9px;vertical-align:top;text-align:left}
+th{background:#eef1ec;font-size:.82rem}
+td.n,th.n{text-align:center;white-space:nowrap}
+tr.sec td{background:#eef1ec;font-weight:700;font-size:.84rem}
+tr.tot td{background:#f7f3e8;font-weight:700}
+.badge{display:inline-block;font-size:.72rem;padding:1px 6px;border-radius:9px;border:1px solid}
+.b-hecho{color:#0b6b3a;border-color:#0b6b3a;background:#eef7f1}
+.b-mod{color:#8a6d00;border-color:#c9a227;background:#fdf7e3}
+.b-term{color:#8c1c2e;border-color:#8c1c2e;background:#fceff1}
+.piso{background:#fceff1;border:1px solid var(--granate);border-left:5px solid var(--granate);padding:12px 16px;margin:16px 0}
+.piso h3{margin-top:0;color:var(--granate)}
+pre{background:#11150f;color:#e8e8e0;padding:14px;overflow:auto;font:12.5px/1.5 "SFMono-Regular",Consolas,monospace;white-space:pre;border-radius:4px}
+.copiar{background:var(--verde);color:#fff;border:0;padding:6px 12px;font-size:.8rem;border-radius:3px;cursor:pointer;margin:6px 0}
+.copiar:hover{background:#094f2b}
+.rep{border-top:1px solid var(--linea);padding-top:10px;margin-top:26px}
+.rep h3{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rep h3 span{color:var(--granate);font-weight:700}
+.lista{columns:2;column-gap:28px}
+@media(max-width:820px){.lista{columns:1}table{font-size:.8rem}}
+footer{margin-top:44px;border-top:1px solid var(--linea);padding-top:12px;color:var(--suave);font-size:.82rem}
+</style></head><body><div class="wrap">
+<h1>Entrega final del PFC — Equipo ACERS</h1>
+<p class="meta">Septimo semestre · UTEQ, Facultad de Ciencias de la Computacion · Ingenieria de Requisitos (ISR-401) · PPA 2026-2027 · Paralelo 4.º A · Alcance: ultimo commit del repositorio, sin limite de fecha, revisado el 14 de septiembre de 2026 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p>
+<p class="nav"><a href="index.html">← Entrega final — Ingenieria de Requisitos</a></p>
+<div class="ficha">
+<p><strong>ACERS — Sistema de gestion agricola con IA para cultivos de verde y cacao</strong><br>
+Repositorio: <a href="https://github.com/charito20/ACERS_Sistema_de_Gestion_Agricola_con_IA">github.com/charito20/ACERS_Sistema_de_Gestion_Agricola_con_IA</a><br>
+Ultimo commit evaluado <code>b3ab898</code> (13 de septiembre de 2026) · 412 commits de historia · 16 elementos exigidos, de los cuales 4 ya estaban resueltos y 12 se califican aqui.</p>
+<p class="nota">Nota del proyecto: 0,40 / 10,00 <small>· suma de puntos 7,91 / 10,00</small></p>
+</div>
+<p><strong>Como se calcula la nota.</strong> De todo lo exigido al proyecto, una parte estaba resuelta y verificada con anterioridad y no vuelve a puntuar: aparece como <strong>Hecho</strong> en el primer bloque. Lo demas se califica, y cada elemento cuenta dos veces. Tiene un <strong>peso</strong> —los pesos suman 10— sobre el que recibe una calificacion de 0 a 10, y esa calificacion dividida entre su maximo da un <strong>factor</strong> que multiplica. La nota es <code>(f₁ × f₂ × … × fₙ) × (p₁ + p₂ + … + pₙ)</code>. El factor vale 1 solamente cuando el elemento esta terminado y correcto al cien por cien, y un elemento en cero deja el multiplicador en cero y con el la nota. Por eso, junto a cada nota publico tambien la suma de puntos: es la medida de cuanto trabajo hay hecho.</p>
+<div class="piso"><h3>Criterios de piso — vigentes y expuestos</h3><ol><li>Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.</li><li>Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.</li><li>Que ningun archivo anuncie una pieza de evidencia sin contenerla.</li><li>Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.</li><li>Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.</li><li>Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.</li><li>Que exista la evidencia de autoria con los doce elementos de A1 a A12.</li><li>Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.</li></ol>
+<p>En una evaluacion ordinaria el incumplimiento de cualquiera de ellos deja la calificacion en cero.</p></div>
+<h2>Hoja de calculo</h2>
+<table><thead><tr><th class="n">#</th><th>Elemento</th><th class="n">Peso</th><th class="n">Antes</th><th class="n">Ahora</th><th class="n">Puntos</th><th class="n">Factor</th><th>Que encontre</th></tr></thead><tbody><tr class="sec"><td colspan="8">Resuelto y verificado con anterioridad — no puntua</td></tr><tr><td class="n">1</td><td colspan="2">Las cinco integrantes firman con correo institucional y las cinco aparecen en el historial</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">2</td><td colspan="2">Instrumentos de recoleccion redactados y versionados, incluida la hoja de evaluacion a ciegas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">3</td><td colspan="2">Scripts de analisis con sus dependencias declaradas en requirements.txt</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">4</td><td colspan="2">Protocolo de anonimizacion de datos empresariales redactado y versionado</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr class="sec"><td colspan="8">Lo calificado — cada elemento es sumando y factor</td></tr><tr><td class="n">A1</td><td><strong>Especificacion desarrollada, no enunciada</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,80</td><td class="n">6 =</td><td class="n">6/10</td><td class="n">0,48</td><td class="n">0,60</td><td>El documento crecio de 27 a 37 paginas y declara 39 RF, 21 RNF, 15 CU y 17 historias. Conte 37 precondiciones y 33 poscondiciones, pero cero flujos alternativos en todo el documento. Un caso de uso sin flujo alternativo esta enunciado, no especificado, y 37 paginas siguen siendo pocas para ese numero de identificadores.</td></tr><tr><td class="n">A2</td><td><strong>Inventario tecnico de la evidencia</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,60</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>El fichas_tecnicas.csv que estaba vacio tiene hoy 99 filas con nombre, tipo, fecha de sesion, codigo de participante, duracion, codec, tamano y SHA-256. Es el formato exigido y esta completo.</td></tr><tr><td class="n">A3</td><td><strong>Grabaciones de elicitacion depositadas</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,60</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>Donde no habia ni un archivo de audio hay hoy 28 partes de un contenedor cifrado en 02_Evidencias/00_Restringido, con su inventario tecnico y sus hashes calculados antes de cifrar.</td></tr><tr><td class="n">A4</td><td><strong>Comprobante de registro previo con sello externo</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">0,40</td><td class="n">6 =</td><td class="n">6/10</td><td class="n">0,24</td><td class="n">0,60</td><td>El comprobante de OSF es externo y lo verifique contra la API publica: registro 7cvhy del 2 de agosto de 2026. El problema es la fecha. Su primera sesion de elicitacion es del 20 de junio de 2026 segun su propio inventario, de modo que el registro es posterior a la recoleccion y no anterior, que era la condicion. Documentaron la enmienda, y por eso no es cero.</td></tr><tr><td class="n">A5</td><td><strong>Ritmo del historial</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,30</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,30</td><td class="n">1,00</td><td>De 90 commits concentrados en un dia se paso a 412 repartidos en doce dias distintos, con mensajes que dicen que cambio. El defecto que senale esta corregido.</td></tr><tr><td class="n">A6</td><td><strong>Etiqueta anotada de linea base</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,30</td><td class="n">10 ↓</td><td class="n">8/10</td><td class="n">0,24</td><td class="n">0,80</td><td>Existe v2.0-final, es objeto de etiqueta anotada y es alcanzable desde la rama por defecto, de modo que la linea base esta congelada. Junto a ella convive v2.1-final, ligera, sin que ningun documento declare cual rige; dos etiquetas llamadas final se leen como dos lineas base.</td></tr><tr><td class="n">B1</td><td><strong>Paquete de datos reproducible</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,60</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">1,44</td><td class="n">0,90</td><td>La carpeta tiene la estructura exacta, el orquestador unico, diccionario de 14 columnas, licencia de datos propia y registro de deposito con DOI de Zenodo verificado. Recalcule las 461 entradas de sus manifiestos de sumas y las 461 verifican, sin un solo fallo: es el unico expediente del paralelo con integridad intacta. Le resta que tres entradas del manifiesto apuntan a archivos que ya no existen.</td></tr><tr><td class="n">B2</td><td><strong>Evidencia de autoria completa de A1 a A12</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">1,60</td><td class="n">10 ↓</td><td class="n">6/10</td><td class="n">0,96</td><td class="n">0,60</td><td>Fallan dos elementos de los doce. Las capturas cubren cuatro identidades (Roselyn15, charito20, darteagaaboop y kcalled) y no hay ninguna de Robinson Espinoza, cuando A2 exige un minimo de tres por integrante. Y lo depositado como fotos del equipo en la organizacion son dos capturas de pantalla de una sesion de trabajo del 12 de septiembre, no fotografias tomadas en la empresa con dos integrantes identificables.</td></tr><tr><td class="n">B3</td><td><strong>Evidencia de campo del componente empirico</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,90</td><td class="n">10 ↓</td><td class="n">8/10</td><td class="n">0,72</td><td class="n">0,80</td><td>Estan los dos conjuntos de requisitos versionados en texto plano, las grabaciones cifradas y los consentimientos. De los dos consentimientos en PDF, uno es un escaneo real sin capa de texto y el otro es un documento de Word con texto extraible y sin imagenes, es decir, la plantilla en limpio y no un ejemplar firmado.</td></tr><tr><td class="n">B4</td><td><strong>Numeros calculados y documentados</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">0,70</td><td class="n">10 ↓</td><td class="n">5/10</td><td class="n">0,35</td><td class="n">0,50</td><td>Estan el McNemar, el bootstrap de la diferencia de cobertura, el analisis de potencia y la doble codificacion. Dos cosas los invalidan como inferencia. La primera es que la doble codificacion de la cobertura legal devuelve kappa de 1,000 con acuerdo 26 de 26 en los dos brazos: un acuerdo perfecto en una tarea de juicio indica tarea mecanica o segundo codificador no independiente. La segunda es que la cobertura se mide contra la misma lista de 26 criterios que guio el enfoque evaluado, de modo que pasar de 7 a 25 esta garantizado por construccion.</td></tr><tr><td class="n">B5</td><td><strong>Requisitos del componente inteligente</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,40</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">1,26</td><td class="n">0,90</td><td>Los seis puntos estan como requisitos no funcionales con identificador propio, incluidos equidad, supervision humana sobre las recomendaciones y clasificacion de riesgo, y aparecen en la matriz de trazabilidad. Lo que no pude comprobar en todos es que cada uno cierre metrica, unidad, umbral, metodo, responsable y frecuencia.</td></tr><tr><td class="n">B6</td><td><strong>Etica y proteccion de datos</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,80</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">0,72</td><td class="n">0,90</td><td>Los consentimientos estan, la zona restringida esta cifrada y la carpeta de etica declara base de licitud y responsable del tratamiento. Queda el desajuste de fechas del registro previo, que es tambien un asunto etico porque el protocolo debia estar sellado antes de tocar a las personas.</td></tr><tr class="tot"><td colspan="5">Totales</td><td class="n">7,91</td><td class="n">0.050388</td><td></td></tr></tbody></table>
+<p class="meta">Suma de puntos S = 7,91 sobre 10<br>
+Producto de los factores 0,60 × 1,00 × 1,00 × 0,60 × 1,00 × 0,80 × 0,90 × 0,60 × 0,80 × 0,50 × 0,90 × 0,90 = 0.050388<br>
+<strong>Nota del proyecto = 0.050388 × 7,91 = 0,40 / 10,00</strong></p>
+<h2>Aporte de cada integrante</h2>
+<p class="meta">Medido sobre el historial completo del repositorio (412 commits, sin fusiones), atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code>. El reparto equitativo entre 5 integrantes es el 20,0 %: quien lo alcanza recibe la nota completa del proyecto, quien queda por debajo la recibe en proporcion. Ningun integrante puede superar la nota del proyecto.</p>
+<table><thead><tr><th>Integrante</th><th class="n">Commits</th><th class="n">Participacion</th><th class="n">Factor</th><th class="n">Nota final</th></tr></thead><tbody><tr><td>Calle Delgado Kamila Annabella</td><td class="n">136</td><td class="n">35,4 %</td><td class="n">1,000</td><td class="n">0,40</td></tr><tr><td>Escudero Plaza Maria del Rosario</td><td class="n">98</td><td class="n">25,5 %</td><td class="n">1,000</td><td class="n">0,40</td></tr><tr><td>Sanchez Centeno Roselyn Andreina</td><td class="n">67</td><td class="n">17,4 %</td><td class="n">0,872</td><td class="n">0,35</td></tr><tr><td>Arteaga Alava Danela Dayana</td><td class="n">61</td><td class="n">15,9 %</td><td class="n">0,794</td><td class="n">0,32</td></tr><tr><td>Robinson Espinoza Jeanpierre</td><td class="n">22</td><td class="n">5,7 %</td><td class="n">0,286</td><td class="n">0,11</td></tr></tbody></table>
+<h2>Informe del proyecto</h2>
+<p class="meta">Este es el informe global del equipo: se publica una sola vez y vale para los 5 integrantes. Se copia entero con su boton.</p>
+<button class="copiar" onclick="copiar('proy',this)">Copiar informe del proyecto</button><pre id="proy">==============================================================================
+ENTREGA FINAL DEL PROYECTO FIN DE CURSO -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL PROYECTO
+==============================================================================
+Equipo: ACERS -- Sistema de gestion agricola con IA para cultivos de verde y cacao
+Integrantes: Calle Delgado Kamila Annabella, Escudero Plaza Maria del Rosario, Sanchez Centeno Roselyn Andreina, Arteaga Alava Danela Dayana, Robinson Espinoza Jeanpierre
+Repositorio: https://github.com/charito20/ACERS_Sistema_de_Gestion_Agricola_con_IA
+Ultimo commit evaluado: b3ab898 (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 412 commits de historia.
+
+QUE EVALUE
+Evalue los 12 elementos exigidos al cierre, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de los puntos.
+Los 4 elementos ya resueltos y verificados con anterioridad no vuelven a puntuar.
+No verifique solo que la evidencia estuviera: recalcule los manifiestos de sumas sobre el
+contenido real, revise los metadatos de los PDF de consentimiento, compare los repositorios
+entre equipos para descartar copia y recalcule los estadisticos desde los datos crudos.
+
+CRITERIOS DE PISO -- vigentes y expuestos
+  1. Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.
+  3. Que ningun archivo anuncie una pieza de evidencia sin contenerla.
+  4. Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.
+  5. Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.
+  6. Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.
+  7. Que exista la evidencia de autoria con los doce elementos de A1 a A12.
+  8. Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volvi a evaluar la entrega sobre el ultimo commit del repositorio, sin limite de fecha, y el avance respecto del 2 de septiembre es de los mayores del curso.
+De noventa commits concentrados en un solo dia pasaron a 412 repartidos en doce, el inventario tecnico vacio tiene hoy 99 filas completas, las grabaciones de elicitacion que no existian estan depositadas cifradas con sus hashes, y hay etiqueta anotada de linea base.
+Recalcule ademas las 461 entradas de sus manifiestos de sumas, una por una, y las 461 verifican sin un solo fallo: es el unico expediente de los diez con la integridad intacta, y eso hay que decirlo.
+Ahora lo que no se sostiene.
+La especificacion crecio a 37 paginas para 39 requisitos funcionales, 21 no funcionales y 15 casos de uso, con precondiciones y poscondiciones, pero no hay un solo flujo alternativo en todo el documento; un caso de uso sin flujo alternativo esta enunciado, no especificado.
+El comprobante de registro previo es externo y verificable, y eso lo comprobe contra la propia plataforma, pero esta fechado el 2 de agosto mientras su primera sesion de elicitacion es del 20 de junio: el registro llega despues de la recoleccion, que es justo lo contrario de lo que un registro previo significa.
+En la carpeta de autoria faltan las capturas de un integrante, Robinson Espinoza, y lo depositado como fotografias del equipo en la organizacion son dos capturas de pantalla de una sesion de trabajo, no fotografias tomadas en la empresa.
+Y el punto que mas pesa es el analisis.
+La doble codificacion de la cobertura legal devuelve un acuerdo perfecto, kappa de 1,000 con 26 de 26 en los dos brazos: un acuerdo perfecto en una tarea de juicio significa que la tarea era mecanica o que el segundo codificador no fue independiente, y en ninguno de los dos casos mide fiabilidad.
+Ademas la cobertura se evalua contra la misma lista de 26 criterios que guio el enfoque evaluado, de modo que pasar de 7 a 25 estaba garantizado por construccion, no descubierto por el experimento.
+
+LO QUE YA ESTABA RESUELTO Y NO VUELVE A PUNTUAR
+  - Las cinco integrantes firman con correo institucional y las cinco aparecen en el historial.
+  - Instrumentos de recoleccion redactados y versionados, incluida la hoja de evaluacion a ciegas.
+  - Scripts de analisis con sus dependencias declaradas en requirements.txt.
+  - Protocolo de anonimizacion de datos empresariales redactado y versionado.
+
+HOJA DE CALCULO
+  A1  Especificacion desarrollada, no enunciada      peso 0,80  antes  6  ahora  6/10  puntos 0,48  factor 0,60  [Modificar]
+  A2  Inventario tecnico de la evidencia             peso 0,60  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Hecho]
+  A3  Grabaciones de elicitacion depositadas         peso 0,60  antes 10  ahora 10/10  puntos 0,60  factor 1,00  [Hecho]
+  A4  Comprobante de registro previo con sello exter peso 0,40  antes  6  ahora  6/10  puntos 0,24  factor 0,60  [Por terminar]
+  A5  Ritmo del historial                            peso 0,30  antes 10  ahora 10/10  puntos 0,30  factor 1,00  [Hecho]
+  A6  Etiqueta anotada de linea base                 peso 0,30  antes 10  ahora  8/10  puntos 0,24  factor 0,80  [Modificar]
+  B1  Paquete de datos reproducible                  peso 1,60  antes 10  ahora  9/10  puntos 1,44  factor 0,90  [Modificar]
+  B2  Evidencia de autoria completa de A1 a A12      peso 1,60  antes 10  ahora  6/10  puntos 0,96  factor 0,60  [Por terminar]
+  B3  Evidencia de campo del componente empirico     peso 0,90  antes 10  ahora  8/10  puntos 0,72  factor 0,80  [Modificar]
+  B4  Numeros calculados y documentados              peso 0,70  antes 10  ahora  5/10  puntos 0,35  factor 0,50  [Por terminar]
+  B5  Requisitos del componente inteligente          peso 1,40  antes 10  ahora  9/10  puntos 1,26  factor 0,90  [Modificar]
+  B6  Etica y proteccion de datos                    peso 0,80  antes 10  ahora  9/10  puntos 0,72  factor 0,90  [Modificar]
+  Suma de puntos S = 7,91 sobre 10.
+  Producto de los factores = 0.050388.
+  NOTA DEL PROYECTO = 0.050388 x 7,91 = 0,40 sobre 10.
+
+APORTE DE CADA INTEGRANTE
+  Medido sobre el historial completo, unificando identidades con .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Calle Delgado Kamila Annabella       136 commits   aporte  35,4 %   factor 1,000   nota 0,40
+  Escudero Plaza Maria del Rosario      98 commits   aporte  25,5 %   factor 1,000   nota 0,40
+  Sanchez Centeno Roselyn Andreina      67 commits   aporte  17,4 %   factor 0,872   nota 0,35
+  Arteaga Alava Danela Dayana           61 commits   aporte  15,9 %   factor 0,794   nota 0,32
+  Robinson Espinoza Jeanpierre          22 commits   aporte   5,7 %   factor 0,286   nota 0,11
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre>
+<h2>Informes del aporte individual</h2>
+<p class="meta">Un recuadro por estudiante, corto y sin repetir el informe del proyecto: lleva la nota del equipo, el enlace a esta pagina y el calculo de su aporte. Listo para pegar en el espacio del estudiante en el SGA.</p>
+<div class="rep"><h3>Calle Delgado Kamila Annabella <span>0,40 / 10</span></h3><button class="copiar" onclick="copiar('inf0',this)">Copiar informe individual</button><pre id="inf0">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Calle Delgado Kamila Annabella
+Equipo: ACERS -- Sistema de gestion agricola con IA para cultivos de verde y cacao
+Repositorio: https://github.com/charito20/ACERS_Sistema_de_Gestion_Agricola_con_IA
+Ultimo commit evaluado: b3ab898 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,91 sobre 10 x producto de los factores 0.050388 = 0,40 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/ACERS.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (412 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Calle Delgado Kamila Annabella       136 commits   aporte  35,4 %   factor 1,000   nota 0,40  &lt;-- usted
+  Escudero Plaza Maria del Rosario      98 commits   aporte  25,5 %   factor 1,000   nota 0,40
+  Sanchez Centeno Roselyn Andreina      67 commits   aporte  17,4 %   factor 0,872   nota 0,35
+  Arteaga Alava Danela Dayana           61 commits   aporte  15,9 %   factor 0,794   nota 0,32
+  Robinson Espinoza Jeanpierre          22 commits   aporte   5,7 %   factor 0,286   nota 0,11
+
+  Su aporte: 35,4 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,40 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Escudero Plaza Maria del Rosario <span>0,40 / 10</span></h3><button class="copiar" onclick="copiar('inf1',this)">Copiar informe individual</button><pre id="inf1">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Escudero Plaza Maria del Rosario
+Equipo: ACERS -- Sistema de gestion agricola con IA para cultivos de verde y cacao
+Repositorio: https://github.com/charito20/ACERS_Sistema_de_Gestion_Agricola_con_IA
+Ultimo commit evaluado: b3ab898 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,91 sobre 10 x producto de los factores 0.050388 = 0,40 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/ACERS.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (412 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Calle Delgado Kamila Annabella       136 commits   aporte  35,4 %   factor 1,000   nota 0,40
+  Escudero Plaza Maria del Rosario      98 commits   aporte  25,5 %   factor 1,000   nota 0,40  &lt;-- usted
+  Sanchez Centeno Roselyn Andreina      67 commits   aporte  17,4 %   factor 0,872   nota 0,35
+  Arteaga Alava Danela Dayana           61 commits   aporte  15,9 %   factor 0,794   nota 0,32
+  Robinson Espinoza Jeanpierre          22 commits   aporte   5,7 %   factor 0,286   nota 0,11
+
+  Su aporte: 25,5 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,40 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Sanchez Centeno Roselyn Andreina <span>0,35 / 10</span></h3><button class="copiar" onclick="copiar('inf2',this)">Copiar informe individual</button><pre id="inf2">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Sanchez Centeno Roselyn Andreina
+Equipo: ACERS -- Sistema de gestion agricola con IA para cultivos de verde y cacao
+Repositorio: https://github.com/charito20/ACERS_Sistema_de_Gestion_Agricola_con_IA
+Ultimo commit evaluado: b3ab898 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,91 sobre 10 x producto de los factores 0.050388 = 0,40 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/ACERS.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (412 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Calle Delgado Kamila Annabella       136 commits   aporte  35,4 %   factor 1,000   nota 0,40
+  Escudero Plaza Maria del Rosario      98 commits   aporte  25,5 %   factor 1,000   nota 0,40
+  Sanchez Centeno Roselyn Andreina      67 commits   aporte  17,4 %   factor 0,872   nota 0,35  &lt;-- usted
+  Arteaga Alava Danela Dayana           61 commits   aporte  15,9 %   factor 0,794   nota 0,32
+  Robinson Espinoza Jeanpierre          22 commits   aporte   5,7 %   factor 0,286   nota 0,11
+
+  Su aporte: 17,4 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,872. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,35 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Arteaga Alava Danela Dayana <span>0,32 / 10</span></h3><button class="copiar" onclick="copiar('inf3',this)">Copiar informe individual</button><pre id="inf3">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Arteaga Alava Danela Dayana
+Equipo: ACERS -- Sistema de gestion agricola con IA para cultivos de verde y cacao
+Repositorio: https://github.com/charito20/ACERS_Sistema_de_Gestion_Agricola_con_IA
+Ultimo commit evaluado: b3ab898 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,91 sobre 10 x producto de los factores 0.050388 = 0,40 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/ACERS.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (412 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Calle Delgado Kamila Annabella       136 commits   aporte  35,4 %   factor 1,000   nota 0,40
+  Escudero Plaza Maria del Rosario      98 commits   aporte  25,5 %   factor 1,000   nota 0,40
+  Sanchez Centeno Roselyn Andreina      67 commits   aporte  17,4 %   factor 0,872   nota 0,35
+  Arteaga Alava Danela Dayana           61 commits   aporte  15,9 %   factor 0,794   nota 0,32  &lt;-- usted
+  Robinson Espinoza Jeanpierre          22 commits   aporte   5,7 %   factor 0,286   nota 0,11
+
+  Su aporte: 15,9 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,794. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,32 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Robinson Espinoza Jeanpierre <span>0,11 / 10</span></h3><button class="copiar" onclick="copiar('inf4',this)">Copiar informe individual</button><pre id="inf4">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Robinson Espinoza Jeanpierre
+Equipo: ACERS -- Sistema de gestion agricola con IA para cultivos de verde y cacao
+Repositorio: https://github.com/charito20/ACERS_Sistema_de_Gestion_Agricola_con_IA
+Ultimo commit evaluado: b3ab898 (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 7,91 sobre 10 x producto de los factores 0.050388 = 0,40 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/ACERS.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (412 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 5 integrantes es el 20,0 %.
+  Calle Delgado Kamila Annabella       136 commits   aporte  35,4 %   factor 1,000   nota 0,40
+  Escudero Plaza Maria del Rosario      98 commits   aporte  25,5 %   factor 1,000   nota 0,40
+  Sanchez Centeno Roselyn Andreina      67 commits   aporte  17,4 %   factor 0,872   nota 0,35
+  Arteaga Alava Danela Dayana           61 commits   aporte  15,9 %   factor 0,794   nota 0,32
+  Robinson Espinoza Jeanpierre          22 commits   aporte   5,7 %   factor 0,286   nota 0,11  &lt;-- usted
+
+  Su aporte: 5,7 % frente a un reparto equitativo del 20,0 %.
+  Factor individual: 0,286. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,11 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<footer><p><strong>Como audite.</strong> Clone los diez repositorios y evalue el ultimo commit de cada uno, sin aplicar fecha limite, de modo que todo el trabajo posterior a la evaluacion anterior cuenta. No me limite a comprobar que la evidencia estuviera: recalcule uno a uno los manifiestos de sumas de cada repositorio sobre el contenido real, verificando <strong>4.169 entradas</strong> y detectando cuales ya no cuadran; compare el contenido de los diez repositorios entre si para descartar copia -los unicos archivos identicos entre equipos son plantillas de clase y estilos bibliograficos publicados, ningun material propio-; examine los metadatos de los PDF depositados como consentimiento para distinguir escaneos reales de documentos compuestos por programa; busque archivos vacios y archivos con fecha futura; y recalcule desde los datos crudos los estadisticos publicados por cada equipo, comprobando si la inferencia que se hace de ellos se sostiene. El aporte individual lo medi sobre el historial completo con <code>git log --no-merges</code>, atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code> de cada repositorio.</p><p>Universidad Tecnica Estatal de Quevedo — PPA 2026-2027</p></footer>
+</div><script>
+function copiar(id,btn){const t=document.getElementById(id).innerText;
+navigator.clipboard.writeText(t).then(()=>{const o=btn.textContent;btn.textContent='Copiado';setTimeout(()=>btn.textContent=o,1400)});}
+</script></body></html>

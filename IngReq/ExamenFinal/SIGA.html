@@ -1,0 +1,224 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrega final del PFC — Equipo SIGA</title><style>
+:root{--tinta:#1b1b1b;--suave:#5a5a5a;--linea:#d8d8d8;--verde:#0b6b3a;--granate:#8c1c2e;--fondo:#fbfbf9;--caja:#f2f4f1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.62 Georgia,"Times New Roman",serif}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 20px 64px}
+h1{font-size:1.85rem;line-height:1.25;margin:.2em 0 .35em}
+h2{font-size:1.3rem;margin:2.2em 0 .6em;border-bottom:2px solid var(--verde);padding-bottom:.25em;color:var(--verde)}
+h3{font-size:1.05rem;margin:1.6em 0 .4em}
+.meta{color:var(--suave);font-size:.9rem;line-height:1.5}
+.nav a{color:var(--verde);text-decoration:none;border-bottom:1px solid transparent}
+.nav a:hover{border-bottom-color:var(--verde)}
+.ficha{background:var(--caja);border:1px solid var(--linea);border-left:5px solid var(--verde);padding:14px 16px;margin:18px 0}
+.nota{font-size:1.5rem;font-weight:700;color:var(--granate)}
+.nota small{font-size:.85rem;font-weight:400;color:var(--suave)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;background:#fff;margin:10px 0 6px}
+th,td{border:1px solid var(--linea);padding:7px 9px;vertical-align:top;text-align:left}
+th{background:#eef1ec;font-size:.82rem}
+td.n,th.n{text-align:center;white-space:nowrap}
+tr.sec td{background:#eef1ec;font-weight:700;font-size:.84rem}
+tr.tot td{background:#f7f3e8;font-weight:700}
+.badge{display:inline-block;font-size:.72rem;padding:1px 6px;border-radius:9px;border:1px solid}
+.b-hecho{color:#0b6b3a;border-color:#0b6b3a;background:#eef7f1}
+.b-mod{color:#8a6d00;border-color:#c9a227;background:#fdf7e3}
+.b-term{color:#8c1c2e;border-color:#8c1c2e;background:#fceff1}
+.piso{background:#fceff1;border:1px solid var(--granate);border-left:5px solid var(--granate);padding:12px 16px;margin:16px 0}
+.piso h3{margin-top:0;color:var(--granate)}
+pre{background:#11150f;color:#e8e8e0;padding:14px;overflow:auto;font:12.5px/1.5 "SFMono-Regular",Consolas,monospace;white-space:pre;border-radius:4px}
+.copiar{background:var(--verde);color:#fff;border:0;padding:6px 12px;font-size:.8rem;border-radius:3px;cursor:pointer;margin:6px 0}
+.copiar:hover{background:#094f2b}
+.rep{border-top:1px solid var(--linea);padding-top:10px;margin-top:26px}
+.rep h3{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rep h3 span{color:var(--granate);font-weight:700}
+.lista{columns:2;column-gap:28px}
+@media(max-width:820px){.lista{columns:1}table{font-size:.8rem}}
+footer{margin-top:44px;border-top:1px solid var(--linea);padding-top:12px;color:var(--suave);font-size:.82rem}
+</style></head><body><div class="wrap">
+<h1>Entrega final del PFC — Equipo SIGA</h1>
+<p class="meta">Septimo semestre · UTEQ, Facultad de Ciencias de la Computacion · Ingenieria de Requisitos (ISR-401) · PPA 2026-2027 · Paralelo 4.º B · Alcance: ultimo commit del repositorio, sin limite de fecha, revisado el 14 de septiembre de 2026 · Docente: Dr. Gleiston C. Guerrero Ulloa, Ph.D.</p>
+<p class="nav"><a href="index.html">← Entrega final — Ingenieria de Requisitos</a></p>
+<div class="ficha">
+<p><strong>SIGA — Sistema de Gestion Academica y gestion de aulas</strong><br>
+Repositorio: <a href="https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B">github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B</a><br>
+Ultimo commit evaluado <code>6be559a</code> (13 de septiembre de 2026) · 265 commits de historia · 16 elementos exigidos, de los cuales 5 ya estaban resueltos y 11 se califican aqui.</p>
+<p class="nota">Nota del proyecto: 2,99 / 10,00 <small>· suma de puntos 9,11 / 10,00</small></p>
+</div>
+<p><strong>Como se calcula la nota.</strong> De todo lo exigido al proyecto, una parte estaba resuelta y verificada con anterioridad y no vuelve a puntuar: aparece como <strong>Hecho</strong> en el primer bloque. Lo demas se califica, y cada elemento cuenta dos veces. Tiene un <strong>peso</strong> —los pesos suman 10— sobre el que recibe una calificacion de 0 a 10, y esa calificacion dividida entre su maximo da un <strong>factor</strong> que multiplica. La nota es <code>(f₁ × f₂ × … × fₙ) × (p₁ + p₂ + … + pₙ)</code>. El factor vale 1 solamente cuando el elemento esta terminado y correcto al cien por cien, y un elemento en cero deja el multiplicador en cero y con el la nota. Por eso, junto a cada nota publico tambien la suma de puntos: es la medida de cuanto trabajo hay hecho.</p>
+<div class="piso"><h3>Criterios de piso — vigentes y expuestos</h3><ol><li>Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.</li><li>Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.</li><li>Que ningun archivo anuncie una pieza de evidencia sin contenerla.</li><li>Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.</li><li>Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.</li><li>Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.</li><li>Que exista la evidencia de autoria con los doce elementos de A1 a A12.</li><li>Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.</li></ol>
+<p>En una evaluacion ordinaria el incumplimiento de cualquiera de ellos deja la calificacion en cero.</p></div>
+<h2>Hoja de calculo</h2>
+<table><thead><tr><th class="n">#</th><th>Elemento</th><th class="n">Peso</th><th class="n">Antes</th><th class="n">Ahora</th><th class="n">Puntos</th><th class="n">Factor</th><th>Que encontre</th></tr></thead><tbody><tr class="sec"><td colspan="8">Resuelto y verificado con anterioridad — no puntua</td></tr><tr><td class="n">1</td><td colspan="2">Es el unico expediente sin un solo archivo vacio y con etiqueta de linea base publicada</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">2</td><td colspan="2">El componente empirico esta completo: protocolo, registro, datos crudos y procesados, scripts y Makefile</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">3</td><td colspan="2">El reporte del estudio existe como documento propio con fuente LaTeX y bibliografia versionadas</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">4</td><td colspan="2">La especificacion cumple los minimos y el texto cubre explicabilidad, equidad y monitoreo</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr><td class="n">5</td><td colspan="2">El registro de desviaciones esta documentado, incluida la de la clave de desciego</td><td class="n">—</td><td class="n">Hecho</td><td class="n">—</td><td class="n">—</td><td>Verificado en la evaluacion anterior y confirmado hoy.</td></tr><tr class="sec"><td colspan="8">Lo calificado — cada elemento es sumando y factor</td></tr><tr><td class="n">A1</td><td><strong>Acreditar el trabajo de cada integrante</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,80</td><td class="n">6 ↑</td><td class="n">10/10</td><td class="n">0,80</td><td class="n">1,00</td><td>La solicitud de cambio de composicion esta firmada y depositada, declara por si misma que llega despues del hecho, nombra al integrante retirado y al nombre que no participo, y no reclama para el integrante reincorporado trabajo anterior a su fecha. Los tres integrantes declarados acreditan commits con correo institucional.</td></tr><tr><td class="n">A2</td><td><strong>Retirar la clave de desciego</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,70</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,70</td><td class="n">1,00</td><td>La clave salio del repositorio publico y en su lugar hay una nota que indica donde esta y quien la custodia, manteniendo la anotacion de la desviacion.</td></tr><tr><td class="n">A3</td><td><strong>Documentar el trabajo anterior al 30 de agosto</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,60</td><td class="n">6 ↑</td><td class="n">10/10</td><td class="n">0,60</td><td class="n">1,00</td><td>El registro de cambios documenta origen, fecha de creacion, primer commit y motivo de la migracion, y el README enlaza el repositorio de la entrega anterior, que comprobe que responde sin autenticar.</td></tr><tr><td class="n">A4</td><td><strong>Recompilar el ERS en A4</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,50</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,50</td><td class="n">1,00</td><td>El documento mide A4 en todas sus paginas y no hay desbordes de tablas ni figuras.</td></tr><tr><td class="n">A5</td><td><strong>Declarar la etiqueta vigente</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,40</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,40</td><td class="n">1,00</td><td>El README declara 2B-final-v5.4 como vigente y explica las anteriores como referencia historica.</td></tr><tr><td class="n">B1</td><td><strong>Paquete de datos reproducible</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,60</td><td class="n">6 ↑</td><td class="n">9/10</td><td class="n">1,44</td><td class="n">0,90</td><td>La carpeta de resultados, que tenia un solo archivo, tiene hoy dieciocho, y las 461 entradas del manifiesto que pude recalcular verifican sin un solo fallo. Queda que la cadena que genera las tablas del documento siga viviendo en 06_Experimento.</td></tr><tr><td class="n">B2</td><td><strong>Evidencia de autoria completa de A1 a A12</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,60</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">1,44</td><td class="n">0,90</td><td>Completa de A1 a A12: bitacora de 24 filas para 14 dias con commits, tres capturas por cada uno de los tres integrantes activos, veintiuna grabaciones, doble codificacion, correspondencia y un inventario EXIF que cubre exactamente las dos fotografias existentes. Las fuentes editables de los diagramas estan depositadas junto a sus imagenes: 39 archivos de modelado, cuatro de diagramacion y uno vectorial. Las notas de campo, con seis piezas, son lo mas corto.</td></tr><tr><td class="n">B3</td><td><strong>Evidencia de campo del componente empirico</strong><br><span class="badge b-hecho">Hecho</span></td><td class="n">0,90</td><td class="n">10 =</td><td class="n">10/10</td><td class="n">0,90</td><td class="n">1,00</td><td>Hoja de evaluacion a ciegas en formato largo con 765 filas, corpus fuente completo y registro integro de las instrucciones dadas a la herramienta generativa, con fecha, version y parametros. Ese ultimo punto es el que hace auditable el estudio.</td></tr><tr><td class="n">B4</td><td><strong>Numeros calculados y documentados</strong><br><span class="badge b-term">Por terminar</span></td><td class="n">0,70</td><td class="n">10 ↓</td><td class="n">5/10</td><td class="n">0,35</td><td class="n">0,50</td><td>Los kappa estan bien hechos y son creibles: ponderados de 0,42 a 0,65 por pares y Fleiss de 0,3382 con intervalo de 0,1968 a 0,4671. El problema esta en los tamanos del efecto: d apareada de -2,35 con intervalo de -18,38 a 0,00 y de -5,27 con intervalo de -42,72 a 0,00. Un intervalo de amplitud cuarenta no es un intervalo, es el aviso de que el apareamiento se hizo sobre muy pocas unidades. Ninguna diferencia sobrevive a la correccion de Holm, y eso si lo reportan.</td></tr><tr><td class="n">B5</td><td><strong>Requisitos del componente inteligente</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">1,40</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">1,26</td><td class="n">0,90</td><td>Los seis estan, con el monitoreo convertido en plan con indicadores, periodicidad, responsable y umbral de alerta, y todos en la matriz de trazabilidad.</td></tr><tr><td class="n">B6</td><td><strong>Etica y proteccion de datos</strong><br><span class="badge b-mod">Modificar</span></td><td class="n">0,80</td><td class="n">10 ↓</td><td class="n">9/10</td><td class="n">0,72</td><td class="n">0,90</td><td>Veintitres consentimientos depositados, mayoritariamente escaneos sin capa de texto, capa restringida cifrada y declaracion legal presente.</td></tr><tr class="tot"><td colspan="5">Totales</td><td class="n">9,11</td><td class="n">0.328050</td><td></td></tr></tbody></table>
+<p class="meta">Suma de puntos S = 9,11 sobre 10<br>
+Producto de los factores 1,00 × 1,00 × 1,00 × 1,00 × 1,00 × 0,90 × 0,90 × 1,00 × 0,50 × 0,90 × 0,90 = 0.328050<br>
+<strong>Nota del proyecto = 0.328050 × 9,11 = 2,99 / 10,00</strong></p>
+<h2>Aporte de cada integrante</h2>
+<p class="meta">Medido sobre el historial completo del repositorio (265 commits, sin fusiones), atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code>. El reparto equitativo entre 3 integrantes es el 33,3 %: quien lo alcanza recibe la nota completa del proyecto, quien queda por debajo la recibe en proporcion. Ningun integrante puede superar la nota del proyecto.</p>
+<table><thead><tr><th>Integrante</th><th class="n">Commits</th><th class="n">Participacion</th><th class="n">Factor</th><th class="n">Nota final</th></tr></thead><tbody><tr><td>Sanchez Cornejo Gary Alberto</td><td class="n">173</td><td class="n">64,6 %</td><td class="n">1,000</td><td class="n">2,99</td></tr><tr><td>Munoz Quinonez Yeranick Esther</td><td class="n">83</td><td class="n">31,0 %</td><td class="n">0,929</td><td class="n">2,78</td></tr><tr><td>Cedeno Avila Winston Damian</td><td class="n">12</td><td class="n">4,5 %</td><td class="n">0,134</td><td class="n">0,40</td></tr></tbody></table>
+<h2>Informe del proyecto</h2>
+<p class="meta">Este es el informe global del equipo: se publica una sola vez y vale para los 3 integrantes. Se copia entero con su boton.</p>
+<button class="copiar" onclick="copiar('proy',this)">Copiar informe del proyecto</button><pre id="proy">==============================================================================
+ENTREGA FINAL DEL PROYECTO FIN DE CURSO -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL PROYECTO
+==============================================================================
+Equipo: SIGA -- Sistema de Gestion Academica y gestion de aulas
+Integrantes: Sanchez Cornejo Gary Alberto, Munoz Quinonez Yeranick Esther, Cedeno Avila Winston Damian
+Repositorio: https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B
+Ultimo commit evaluado: 6be559a (13 de septiembre de 2026)
+Alcance: ultimo commit del repositorio, sin limite de fecha, con 265 commits de historia.
+
+QUE EVALUE
+Evalue los 11 elementos exigidos al cierre, uno por uno, sobre el repositorio completo.
+Cada elemento tiene un peso; los pesos suman 10.
+La calificacion de cada elemento dividida entre su maximo da un factor que multiplica.
+La nota del proyecto es el producto de los factores por la suma de los puntos.
+Los 5 elementos ya resueltos y verificados con anterioridad no vuelven a puntuar.
+No verifique solo que la evidencia estuviera: recalcule los manifiestos de sumas sobre el
+contenido real, revise los metadatos de los PDF de consentimiento, compare los repositorios
+entre equipos para descartar copia y recalcule los estadisticos desde los datos crudos.
+
+CRITERIOS DE PISO -- vigentes y expuestos
+  1. Subir al SGA un PDF con caratula de identificacion que muestre, en una sola linea y de forma legible, la direccion del repositorio donde esta el trabajo.
+  2. Que el PDF se regenere clonando el repositorio y compilando el archivo principal, con las instrucciones de compilacion escritas en el README.
+  3. Que ningun archivo anuncie una pieza de evidencia sin contenerla.
+  4. Que todo autor del historial sea un integrante declarado del equipo firmando con su correo institucional.
+  5. Que exista una etiqueta anotada, publicada y alcanzable desde la rama por defecto, que identifique la version entregada.
+  6. Que exista el paquete de datos con su estructura y que la cadena de analisis se ejecute con una sola orden.
+  7. Que exista la evidencia de autoria con los doce elementos de A1 a A12.
+  8. Que cada integrante acredite contribucion verificable en el repositorio y sepa explicar lo que se le atribuye.
+  En una evaluacion ordinaria el incumplimiento de cualquiera deja la nota en cero.
+
+LECTURA DEL TRABAJO DEL EQUIPO
+Volvi a evaluar la entrega sobre el ultimo commit del repositorio, sin limite de fecha, e incorporo las cuatro objeciones que presentaron, las cuatro verificadas y las cuatro procedentes.
+La migracion desde el repositorio de la entrega anterior esta documentada con origen, fecha, primer commit y motivo, y el repositorio enlazado responde sin autenticar.
+Las fuentes editables de los diagramas estan depositadas junto a sus imagenes: treinta y nueve archivos de modelado, cuatro de diagramacion y uno vectorial.
+Las capturas son tres por cada integrante activo y el inventario EXIF cubre exactamente las dos fotografias existentes.
+Y la solicitud de cambio de composicion esta firmada, fechada y depositada, declarando por si misma que llega despues del hecho.
+Ademas resolvieron lo que aceptaron: la carpeta de resultados, que tenia un solo archivo, tiene hoy dieciocho, y las 461 entradas de su manifiesto de sumas que pude recalcular verifican sin un solo fallo.
+Queda un punto, y es estadistico.
+Sus kappa estan bien hechos y son creibles, con intervalos que informan: ponderados de 0,42 a 0,65 por pares y Fleiss de 0,3382 con intervalo de 0,1968 a 0,4671.
+Pero los tamanos del efecto no: una d apareada de -2,35 con intervalo de -18,38 a 0,00 y otra de -5,27 con intervalo de -42,72 a 0,00.
+Un intervalo de amplitud cuarenta no es una estimacion, es el aviso de que el apareamiento se hizo sobre muy pocas unidades y de que ese numero no debe reportarse como efecto.
+Que ninguna diferencia sobreviva a la correccion de Holm y que ustedes lo digan es correcto; lo que falta es retirar o reformular los efectos cuyos intervalos carecen de sentido.
+
+LO QUE YA ESTABA RESUELTO Y NO VUELVE A PUNTUAR
+  - Es el unico expediente sin un solo archivo vacio y con etiqueta de linea base publicada.
+  - El componente empirico esta completo: protocolo, registro, datos crudos y procesados, scripts y Makefile.
+  - El reporte del estudio existe como documento propio con fuente LaTeX y bibliografia versionadas.
+  - La especificacion cumple los minimos y el texto cubre explicabilidad, equidad y monitoreo.
+  - El registro de desviaciones esta documentado, incluida la de la clave de desciego.
+
+HOJA DE CALCULO
+  A1  Acreditar el trabajo de cada integrante        peso 0,80  antes  6  ahora 10/10  puntos 0,80  factor 1,00  [Hecho]
+  A2  Retirar la clave de desciego                   peso 0,70  antes 10  ahora 10/10  puntos 0,70  factor 1,00  [Hecho]
+  A3  Documentar el trabajo anterior al 30 de agosto peso 0,60  antes  6  ahora 10/10  puntos 0,60  factor 1,00  [Hecho]
+  A4  Recompilar el ERS en A4                        peso 0,50  antes 10  ahora 10/10  puntos 0,50  factor 1,00  [Hecho]
+  A5  Declarar la etiqueta vigente                   peso 0,40  antes 10  ahora 10/10  puntos 0,40  factor 1,00  [Hecho]
+  B1  Paquete de datos reproducible                  peso 1,60  antes  6  ahora  9/10  puntos 1,44  factor 0,90  [Modificar]
+  B2  Evidencia de autoria completa de A1 a A12      peso 1,60  antes 10  ahora  9/10  puntos 1,44  factor 0,90  [Modificar]
+  B3  Evidencia de campo del componente empirico     peso 0,90  antes 10  ahora 10/10  puntos 0,90  factor 1,00  [Hecho]
+  B4  Numeros calculados y documentados              peso 0,70  antes 10  ahora  5/10  puntos 0,35  factor 0,50  [Por terminar]
+  B5  Requisitos del componente inteligente          peso 1,40  antes 10  ahora  9/10  puntos 1,26  factor 0,90  [Modificar]
+  B6  Etica y proteccion de datos                    peso 0,80  antes 10  ahora  9/10  puntos 0,72  factor 0,90  [Modificar]
+  Suma de puntos S = 9,11 sobre 10.
+  Producto de los factores = 0.328050.
+  NOTA DEL PROYECTO = 0.328050 x 9,11 = 2,99 sobre 10.
+
+APORTE DE CADA INTEGRANTE
+  Medido sobre el historial completo, unificando identidades con .mailmap.
+  El reparto equitativo entre 3 integrantes es el 33,3 %.
+  Sanchez Cornejo Gary Alberto         173 commits   aporte  64,6 %   factor 1,000   nota 2,99
+  Munoz Quinonez Yeranick Esther        83 commits   aporte  31,0 %   factor 0,929   nota 2,78
+  Cedeno Avila Winston Damian           12 commits   aporte   4,5 %   factor 0,134   nota 0,40
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre>
+<h2>Informes del aporte individual</h2>
+<p class="meta">Un recuadro por estudiante, corto y sin repetir el informe del proyecto: lleva la nota del equipo, el enlace a esta pagina y el calculo de su aporte. Listo para pegar en el espacio del estudiante en el SGA.</p>
+<div class="rep"><h3>Sanchez Cornejo Gary Alberto <span>2,99 / 10</span></h3><button class="copiar" onclick="copiar('inf0',this)">Copiar informe individual</button><pre id="inf0">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Sanchez Cornejo Gary Alberto
+Equipo: SIGA -- Sistema de Gestion Academica y gestion de aulas
+Repositorio: https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B
+Ultimo commit evaluado: 6be559a (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 9,11 sobre 10 x producto de los factores 0.328050 = 2,99 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIGA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (265 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 3 integrantes es el 33,3 %.
+  Sanchez Cornejo Gary Alberto         173 commits   aporte  64,6 %   factor 1,000   nota 2,99  &lt;-- usted
+  Munoz Quinonez Yeranick Esther        83 commits   aporte  31,0 %   factor 0,929   nota 2,78
+  Cedeno Avila Winston Damian           12 commits   aporte   4,5 %   factor 0,134   nota 0,40
+
+  Su aporte: 64,6 % frente a un reparto equitativo del 33,3 %.
+  Factor individual: 1,000. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 2,99 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Munoz Quinonez Yeranick Esther <span>2,78 / 10</span></h3><button class="copiar" onclick="copiar('inf1',this)">Copiar informe individual</button><pre id="inf1">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Munoz Quinonez Yeranick Esther
+Equipo: SIGA -- Sistema de Gestion Academica y gestion de aulas
+Repositorio: https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B
+Ultimo commit evaluado: 6be559a (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 9,11 sobre 10 x producto de los factores 0.328050 = 2,99 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIGA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (265 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 3 integrantes es el 33,3 %.
+  Sanchez Cornejo Gary Alberto         173 commits   aporte  64,6 %   factor 1,000   nota 2,99
+  Munoz Quinonez Yeranick Esther        83 commits   aporte  31,0 %   factor 0,929   nota 2,78  &lt;-- usted
+  Cedeno Avila Winston Damian           12 commits   aporte   4,5 %   factor 0,134   nota 0,40
+
+  Su aporte: 31,0 % frente a un reparto equitativo del 33,3 %.
+  Factor individual: 0,929. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 2,78 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div><div class="rep"><h3>Cedeno Avila Winston Damian <span>0,40 / 10</span></h3><button class="copiar" onclick="copiar('inf2',this)">Copiar informe individual</button><pre id="inf2">==============================================================================
+ENTREGA FINAL DEL PFC -- INGENIERIA DE REQUISITOS (ISR-401)
+INFORME DEL APORTE INDIVIDUAL
+==============================================================================
+Estudiante: Cedeno Avila Winston Damian
+Equipo: SIGA -- Sistema de Gestion Academica y gestion de aulas
+Repositorio: https://github.com/gsanchezc6-beep/SIGA_FGMMN_ISR401_AVANCE_2B
+Ultimo commit evaluado: 6be559a (13 de septiembre de 2026)
+
+NOTA DEL PROYECTO
+  Suma de puntos 9,11 sobre 10 x producto de los factores 0.328050 = 2,99 sobre 10.
+  El informe completo del proyecto, con la hoja de calculo elemento por elemento y
+  lo que encontre en cada uno, esta publicado en:
+  https://gleiston-guerrero.github.io/informes/IngReq/ExamenFinal/SIGA.html
+
+SU APORTE
+  Medido sobre el historial completo del repositorio (265 commits, sin fusiones),
+  atribuyendo por el correo del autor y unificando identidades con el .mailmap.
+  El reparto equitativo entre 3 integrantes es el 33,3 %.
+  Sanchez Cornejo Gary Alberto         173 commits   aporte  64,6 %   factor 1,000   nota 2,99
+  Munoz Quinonez Yeranick Esther        83 commits   aporte  31,0 %   factor 0,929   nota 2,78
+  Cedeno Avila Winston Damian           12 commits   aporte   4,5 %   factor 0,134   nota 0,40  &lt;-- usted
+
+  Su aporte: 4,5 % frente a un reparto equitativo del 33,3 %.
+  Factor individual: 0,134. Ningun integrante puede superar la nota del proyecto.
+  NOTA FINAL: 0,40 sobre 10,00.
+
+Ing. Gleiston Ciceron Guerrero Ulloa, PhD</pre></div>
+<footer><p><strong>Como audite.</strong> Clone los diez repositorios y evalue el ultimo commit de cada uno, sin aplicar fecha limite, de modo que todo el trabajo posterior a la evaluacion anterior cuenta. No me limite a comprobar que la evidencia estuviera: recalcule uno a uno los manifiestos de sumas de cada repositorio sobre el contenido real, verificando <strong>4.169 entradas</strong> y detectando cuales ya no cuadran; compare el contenido de los diez repositorios entre si para descartar copia -los unicos archivos identicos entre equipos son plantillas de clase y estilos bibliograficos publicados, ningun material propio-; examine los metadatos de los PDF depositados como consentimiento para distinguir escaneos reales de documentos compuestos por programa; busque archivos vacios y archivos con fecha futura; y recalcule desde los datos crudos los estadisticos publicados por cada equipo, comprobando si la inferencia que se hace de ellos se sostiene. El aporte individual lo medi sobre el historial completo con <code>git log --no-merges</code>, atribuyendo por el correo del autor y unificando identidades con el <code>.mailmap</code> de cada repositorio.</p><p>Universidad Tecnica Estatal de Quevedo — PPA 2026-2027</p></footer>
+</div><script>
+function copiar(id,btn){const t=document.getElementById(id).innerText;
+navigator.clipboard.writeText(t).then(()=>{const o=btn.textContent;btn.textContent='Copiado';setTimeout(()=>btn.textContent=o,1400)});}
+</script></body></html>
